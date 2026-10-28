@@ -207,6 +207,7 @@ section{padding:130px 0}
 .glass .q p{font-family:var(--h);font-weight:600;font-size:17px;line-height:1.45}
 .glass .q small{display:block;margin-top:6px;font-size:12.5px;color:rgba(255,255,255,.55)}
 .glass .fine{font-size:12.5px;color:rgba(255,255,255,.5);margin-top:8px}
+.glass .btn{margin-top:22px}
 
 /* prices */
 .prl{border-top:1.5px solid var(--ink)}
@@ -350,6 +351,56 @@ details p{color:var(--ink2);margin-top:12px;max-width:620px;animation:fade .5s}
 .w>span{display:inline-block;transform:translateY(105%);transition:transform 1s var(--ease)}
 h2.in .w>span{transform:none}
 
+
+/* conversion kit: offer, one CTA, cost of delay, risk reversal */
+.gift{display:inline-flex;align-items:center;gap:7px;padding:6px 12px 6px 9px;border-radius:999px;background:var(--w);color:var(--k);font-family:var(--u,var(--h));font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+.gift svg{width:15px;height:15px;flex:none;transform-origin:50% 60%;animation:wig 3.2s ease-in-out infinite}
+@keyframes wig{0%,78%,100%{transform:rotate(0)}84%{transform:rotate(-14deg)}90%{transform:rotate(11deg)}95%{transform:rotate(-6deg)}}
+.offer{list-style:none;display:flex;flex-wrap:wrap;gap:8px 10px;margin:-14px 0 30px;max-width:680px;opacity:0;animation:fade 1s .6s forwards}
+.offer li{display:inline-flex;align-items:center;gap:9px;padding:9px 15px 9px 10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);font-size:13.5px;font-weight:600;line-height:1.3;color:#fff;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.offer li::before{content:"";width:18px;height:18px;flex:none;border-radius:50%;background:var(--a) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230a141c' stroke-width='3.6'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/10px no-repeat}
+.hero-proof{display:flex;align-items:center;flex-wrap:wrap;gap:6px 12px;margin-top:20px;font-size:13.5px;color:rgba(255,255,255,.78);opacity:0;animation:fade 1s .8s forwards}
+.hero-proof .stars{color:var(--w)}
+.hero-proof b{color:#fff}
+.hero-proof a{display:inline-flex;align-items:center;gap:6px;color:#fff;border-bottom:1px solid rgba(255,255,255,.35);transition:border-color .25s}
+.hero-proof a svg{width:15px;height:15px}
+.hero-proof a:hover{border-color:var(--a)}
+.pl{animation:pl 2.8s ease-in-out infinite}
+@keyframes pl{0%,100%{box-shadow:0 14px 40px -14px rgba(125,214,255,.65),0 0 0 0 rgba(125,214,255,.45)}60%{box-shadow:0 14px 40px -14px rgba(125,214,255,.65),0 0 0 13px rgba(125,214,255,0)}}
+.ph svg{animation:ring2 2.4s ease-in-out infinite}
+@keyframes ring2{0%,60%,100%{transform:rotate(0)}65%{transform:rotate(-14deg)}70%{transform:rotate(12deg)}75%{transform:rotate(-8deg)}80%{transform:rotate(5deg)}}
+.cta{position:relative;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px 32px;margin-top:56px;padding:30px 34px;border-radius:26px;background:var(--k);color:#fff;overflow:hidden}
+.cta::before{content:"";position:absolute;right:-90px;top:-110px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(125,214,255,.24),transparent 70%);animation:ctaglow 6s ease-in-out infinite alternate;pointer-events:none}
+@keyframes ctaglow{to{transform:translate(-50px,40px) scale(1.15)}}
+.dark .cta{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12)}
+.cta>*{position:relative;min-width:0}
+.cta-t{flex:1 1 280px}
+.cta-t b{display:block;font-family:var(--h);font-weight:800;font-size:clamp(20px,2.1vw,27px);line-height:1.2;letter-spacing:-.01em}
+.cta-t>span{display:block;margin-top:8px;font-size:14px;color:rgba(255,255,255,.66)}
+.cta-t .stars{display:inline;font-size:13px;letter-spacing:2px;margin-right:6px;color:var(--w)}
+.cta-t a{color:#fff;border-bottom:1px solid rgba(255,255,255,.35);transition:border-color .25s}
+.cta-t a:hover{border-color:var(--a)}
+.cta-b{display:flex;gap:12px;flex-wrap:wrap}
+.delay{display:grid;grid-template-columns:auto 1fr auto;gap:18px 26px;align-items:center;margin-top:44px;padding:28px 30px;border-radius:24px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--w)}
+.delay>svg{width:50px;height:50px;color:var(--ad);animation:hg 5s var(--ease) infinite}
+@keyframes hg{0%,72%{transform:rotate(0)}88%,100%{transform:rotate(180deg)}}
+.delay .dk{display:block;font-family:var(--u,var(--h));font-weight:800;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ad)}
+.delay p{margin-top:6px;font-size:16px;line-height:1.55;color:var(--ink2);max-width:720px}
+.delay p b{color:var(--ink)}
+.lead .stack{list-style:none;display:grid;gap:12px;margin-top:30px}
+.lead .stack li{display:grid;grid-template-columns:auto 1fr;gap:2px 16px;align-items:start;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:#fff;transition:transform .35s var(--ease),border-color .35s}
+.lead .stack li:hover{transform:translateX(6px);border-color:rgba(125,214,255,.5)}
+.lead .stack li::before{content:none;display:none}
+.stack i{grid-row:span 2;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--a);color:var(--k);font-style:normal;font-family:var(--h);font-weight:800;font-size:18px}
+.stack i svg{width:20px;height:20px}
+.stack b{font-family:var(--u,var(--h));font-weight:700;font-size:16px;line-height:1.3}
+.stack span{font-size:14px;line-height:1.45;color:rgba(255,255,255,.66)}
+.risk{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;line-height:1.45;color:rgba(255,255,255,.82);text-align:left}
+.risk svg{width:18px;height:18px;flex:none;margin-top:1px;color:var(--a)}
+.picked{display:none;align-items:center;gap:10px;padding:12px 16px;border-radius:16px;background:rgba(125,214,255,.12);border:1px solid rgba(125,214,255,.35);font-size:14px;font-weight:600;color:#fff}
+.picked.on{display:flex;animation:pk .8s var(--ease)}
+@keyframes pk{0%{opacity:0;transform:scale(.96)}50%{opacity:1;transform:scale(1.02)}100%{transform:none}}
+
 @media (max-width:1100px){
   .menu{display:none}
   .picker,.biz,.lead .wrap,.faq,.ft{grid-template-columns:1fr}
@@ -399,6 +450,14 @@ h2.in .w>span{transform:none}
   .mbar a.a{background:var(--a);color:var(--k)}
 }
 @media (max-width:380px){.faults{grid-template-columns:1fr}}
+@media (max-width:720px){
+  .offer{margin:-8px 0 24px}.offer li{font-size:13px}
+  .cta{margin-top:40px;padding:24px 20px;border-radius:22px}
+  .cta-b{width:100%}.cta-b .btn{flex:1 1 100%}
+  .delay{grid-template-columns:1fr;padding:22px 20px;gap:14px}.delay .btn{width:100%}
+  .mbar a:first-child{flex:0 0 auto;padding:0 18px}
+}
+@media (prefers-reduced-motion:reduce){.offer,.hero-proof{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   .rv,.hero-lead,.hero-cta,.hero-bar{opacity:1;transform:none}
@@ -412,7 +471,7 @@ h2.in .w>span{transform:none}
 </head>
 <body>
 <div class="prog" id="prog"></div>
-<div class="demo" id="demo">Демо-концепт от AI Partner Group для <b>«Рукастый Мастер»</b>. Не официальный сайт. Цены и отзывы из вашей карточки 2ГИС. Фото сгенерированы для примера.</div>
+<div class="demo" id="demo">Демо-концепт от AI Partner Group для <b>«Рукастый Мастер»</b>. Не официальный сайт. Цены и отзывы из вашей карточки 2ГИС. Фото сгенерированы для примера. Офферы, бонусы и гарантии на этом демо предложены нами для примера и согласуются с вами перед запуском.</div>
 
 <header class="nav" id="nav">
   <div class="wrap">
@@ -433,13 +492,15 @@ h2.in .w>span{transform:none}
   <div class="hero-bg"><img src="img/hero.jpg?v=1" alt="Ремонт холодильника на дому в Волгограде: открытый холодильник на кухне и ящик с инструментами мастера"></div>
   <canvas class="hero-fx" id="fx" aria-hidden="true"></canvas>
   <div class="wrap">
-    <div class="hero-kicker"><span class="stars">★★★★★</span>4,9 в 2ГИС · 95 оценок</div>
+    <div class="hero-kicker"><span class="gift"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1.5"/><path d="M3 13h18M12 9v12M12 9C10 5 6 5 7 8c.5 1.5 5 1 5 1zM12 9c2-4 6-4 5-1-.5 1.5-5 1-5 1z"/></svg>Заявка с сайта</span>При ремонте почистим дренаж холодильника или фильтр стиралки в подарок</div>
     <h1><span class="ln"><span>Ремонт</span></span><span class="ln"><span>холодильников</span></span><span class="ln"><span>и <em>стиральных машин</em></span></span><span class="ln geo"><span>на дому в Волгограде</span></span></h1>
-    <p class="hero-lead">Чиним холодильники и стиралки у вас дома: мастер приезжает сам. Ремонтируем бытовые холодильники, стиральные машины и торговые витрины. Запчасти в продаже, привезём по городу.</p>
+    <p class="hero-lead">Мастер сам приедет и починит холодильник или стиралку у вас дома. Технику никуда не везёте. Ремонт на дому по прайсу 2ГИС — 500 ₽. В отзывах пишут: «приехал через час», «помогли в тот же день».</p>
+    <ul class="offer"><li>Ремонт на дому — 500 ₽</li><li>Цену называем до начала работы</li><li>От вас — только номер телефона</li></ul>
     <div class="hero-cta">
-      <a class="btn btn-a" href="#fault">Что сломалось? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn-gl ph" href="tel:+79275406633"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>Позвонить мастеру</a>
+      <a class="btn btn-a pl" href="#lead">Вызвать мастера <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-gl ph" href="tel:+79275406633"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>Позвонить</a>
     </div>
+    <div class="hero-proof"><span class="stars">★★★★★</span>4,9 в 2ГИС · 95 оценок</div>
     <div class="hero-bar">
       <div><b>4,9</b><span>рейтинг в 2ГИС</span></div>
       <div><b>95</b><span>оценок клиентов</span></div>
@@ -505,6 +566,7 @@ h2.in .w>span{transform:none}
       <article class="sv rv d1"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h16v14H3zM19 13h6l4 5v4h-10"/><circle cx="9" cy="24" r="2.5"/><circle cx="24" cy="24" r="2.5"/></svg><h3>Доставка по городу</h3><p>Привезём нужную запчасть по Волгограду.</p></article>
       <article class="sv rv d2"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 27h26M5 27l20-12h4"/><circle cx="12" cy="9" r="3"/></svg><h3>Удобный вход</h3><p>Мастерская в цокольном этаже, есть пандус.</p></article>
     </div>
+    <div class="cta rv"><div class="cta-t"><b>Что-то из этого сломалось? Мастер приедет к вам.</b><span><span class="stars">★★★★★</span>4,9 в 2ГИС · 95 оценок</span></div><div class="cta-b"><a class="btn btn-a pl" href="#lead">Вызвать мастера <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-gl ph" href="tel:+79275406633"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>Позвонить</a></div></div>
   </div>
 </section>
 
@@ -518,6 +580,7 @@ h2.in .w>span{transform:none}
       <div class="q"><p>«мастер откликнулся и приехал через час. Быстро заменил сломанный термостат.»</p><small>Екатерина Миненкова, 2ГИС</small></div>
       <div class="q"><p>«мастера помогли в тот же день. Цены дешевле, чем у конкурентов»</p><small>Сара Фазтановна, 2ГИС</small></div>
       <p class="fine">Когда сможет приехать мастер к вам, уточняйте по телефону.</p>
+      <a class="btn btn-a pl" href="#lead">Вызвать мастера <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </div>
 </section>
@@ -534,6 +597,7 @@ h2.in .w>span{transform:none}
       <div class="pr rv d2"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="24" height="24" rx="2"/><path d="M4 12h24M4 20h24M16 4v24"/></svg><h3>Ремонт холодильной витрины, шкафов торгового оборудования<small>для магазинов</small></h3><b>500 ₽</b></div>
     </div>
     <p class="note rv">Прайс из карточки «Рукастый Мастер» в 2ГИС, обновлён 30.09.2025. Цены указаны без «от». Не является публичной офертой.</p>
+    <div class="delay rv"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5h24M12 43h24M15 5c0 10 9 13 9 19s-9 9-9 19M33 5c0 10-9 13-9 19s9 9 9 19"/><path d="M18 39.5h12L24 33z" fill="currentColor" stroke="none"/><path d="M20 13h8l-4 5z" fill="currentColor" stroke="none" opacity=".55"/></svg><div><span class="dk">Цена промедления</span><p>Пока холодильник не морозит, <b>портятся продукты</b>, а компрессор работает без остановки и изнашивается. Мелкая поломка вроде термостата может стать дорогой. Стиралка гудит на отжиме — обычно это подшипники: <b>чем дольше тянуть, тем дороже ремонт</b>.</p></div><a class="btn btn-a pl" href="#lead">Вызвать мастера <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 
@@ -549,7 +613,7 @@ h2.in .w>span{transform:none}
         <div><b>Холодильные камеры</b><span>Объём работ уточняйте у мастера</span></div>
         <div><b>Запчасти</b><span>В продаже, привезём по городу</span></div>
       </div>
-      <div class="rv d3"><a class="btn btn-a" href="#lead" data-pick="2">Вызвать мастера в магазин <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      <div class="rv d3"><a class="btn btn-a pl" href="#lead" data-pick="2">Вызвать мастера <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     </div>
     <div class="case rv d1" id="case" aria-hidden="true">
       <div class="glassp">
@@ -583,6 +647,7 @@ h2.in .w>span{transform:none}
       <article class="rev rv d1"><div class="st">★★★★★</div><p>«мастер откликнулся и приехал через час. Быстро заменил сломанный термостат.»</p><div class="by"><span><b>Екатерина Миненкова</b></span><span class="src">2ГИС</span></div></article>
       <article class="rev rv d2"><div class="st">★★★★★</div><p>«мастера помогли в тот же день. Цены дешевле, чем у конкурентов»</p><div class="by"><span><b>Сара Фазтановна</b></span><span class="src">2ГИС</span></div></article>
     </div>
+    <div class="cta rv"><div class="cta-t"><b>Починим так же: аккуратно и всё объясним.</b><span><span class="stars">★★★★★</span>4,9 в 2ГИС · 95 оценок</span></div><div class="cta-b"><a class="btn btn-a pl" href="#lead">Вызвать мастера <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-gl ph" href="tel:+79275406633"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>Позвонить</a></div></div>
   </div>
 </section>
 
@@ -606,14 +671,16 @@ h2.in .w>span{transform:none}
     <div>
       <span class="eyebrow rv">Вызов мастера</span>
       <h2 class="rv d1">Вызвать мастера по ремонту холодильников <em>на дом</em></h2>
-      <p class="sub rv d2">Оставьте телефон и опишите поломку. Мастер перезвонит и договорится о выезде.</p>
-      <ul class="rv d3"><li>Ремонт на дому по прайсу 2ГИС: 500 ₽</li><li>Запчасти в продаже</li><li>Холодильники, стиралки, витрины</li></ul>
+      <p class="sub rv d2">Оставьте только телефон. Мастер перезвонит, спросит, что случилось, и договорится о выезде.</p>
+      <ul class="stack rv d3"><li><i>₽</i><b>Цена — до начала работы</b><span>Мастер называет стоимость ремонта до работы, и она не меняется. Не устроила — просто откажитесь.</span></li><li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1.5"/><path d="M3 13h18M12 9v12M12 9C10 5 6 5 7 8c.5 1.5 5 1 5 1zM12 9c2-4 6-4 5-1-.5 1.5-5 1-5 1z"/></svg></i><b>Подарок за заявку с сайта</b><span>При ремонте почистим дренаж холодильника или фильтр стиральной машины.</span></li><li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><b>Заявка до 15:00 — стараемся приехать в тот же день</b><span>Что пришло позже, ставим на ближайшее утро.</span></li></ul>
     </div>
     <form class="lead-form js-form rv d1" onsubmit="return false">
-      <div class="two"><input class="inp" placeholder="Ваше имя" aria-label="Имя" autocomplete="name"><input class="inp" type="tel" placeholder="Телефон" aria-label="Телефон" autocomplete="tel" required></div>
-      <select class="inp" id="what" aria-label="Что сломалось"><option>Холодильник</option><option>Стиральная машина</option><option>Витрина или торговый шкаф</option><option>Нужна запчасть</option><option>Другое</option></select>
-      <textarea class="inp" id="cmt" placeholder="Что случилось: марка, что не работает" aria-label="Что случилось"></textarea>
-      <button class="btn btn-a" type="submit">Вызвать мастера <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <div class="picked" id="picked" aria-live="polite"></div>
+      <input class="inp" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" autocomplete="tel" required>
+      <input class="inp" name="name" placeholder="Имя (можно не писать)" aria-label="Имя, необязательно" autocomplete="name">
+      <input type="hidden" name="what" id="what" value="">
+      <button class="btn btn-a pl" type="submit">Вызвать мастера <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="risk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Цену называем до начала ремонта, и она не меняется. Не устроила — откажитесь.</p>
       <div class="demo-note">Это демо: в рабочей версии заявка придёт вам в MAX или Telegram.</div>
       <small>Нажимая кнопку, вы соглашаетесь на обработку персональных данных</small>
       <div class="ok">Спасибо! В демо заявка никуда не отправляется.</div>
@@ -665,7 +732,7 @@ h2.in .w>span{transform:none}
   </div>
 </footer>
 
-<div class="mbar"><a href="tel:+79275406633">Позвонить</a><a class="a" href="#fault">Что сломалось?</a></div>
+<div class="mbar"><a href="tel:+79275406633">Позвонить</a><a class="a" href="#lead">Вызвать мастера</a></div>
 
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "@id": "https://tolstikhserg-droid.github.io/Demo/rukastyi-master/#business", "name": "Рукастый Мастер", "description": "Центр ремонта холодильников и продажи запчастей для бытовой техники в Волгограде. Ремонт холодильников и стиральных машин на дому, ремонт холодильных витрин и шкафов торгового оборудования.", "url": "https://tolstikhserg-droid.github.io/Demo/rukastyi-master/", "image": "https://tolstikhserg-droid.github.io/Demo/rukastyi-master/img/hero.jpg", "telephone": "+7 927 540-66-33", "email": "kotov134@list.ru", "address": {"@type": "PostalAddress", "streetAddress": "ул. им. Рокоссовского, 60, цокольный этаж", "addressLocality": "Волгоград", "addressRegion": "Волгоградская область", "addressCountry": "RU"}, "areaServed": {"@type": "City", "name": "Волгоград"}, "priceRange": "500 ₽", "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "95", "bestRating": "5"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Ремонт на дому, прайс 2ГИС от 30.09.2025", "itemListElement": [{"@type": "Offer", "price": "500", "priceCurrency": "RUB", "itemOffered": {"@type": "Service", "name": "Ремонт холодильника на дому"}}, {"@type": "Offer", "price": "500", "priceCurrency": "RUB", "itemOffered": {"@type": "Service", "name": "Ремонт стиральной машины на дому"}}, {"@type": "Offer", "price": "500", "priceCurrency": "RUB", "itemOffered": {"@type": "Service", "name": "Ремонт холодильной витрины, шкафов торгового оборудования"}}]}}
@@ -716,9 +783,10 @@ h2.in .w>span{transform:none}
     if(rm){fill(i);return}pb.classList.add('sw');setTimeout(function(){fill(i);pb.classList.remove('sw')},250)}
   document.querySelectorAll('.fl').forEach(function(b){b.addEventListener('click',function(){pick(+b.dataset.f)})});
   fill(0);pb.dataset.ready=1;
-  function toForm(sel,txt){var w=document.getElementById('what'),c=document.getElementById('cmt');w.selectedIndex=sel;if(txt)c.value=txt;[w,c].forEach(function(el){el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')})}
-  document.getElementById('p-go').addEventListener('click',function(){var d=F[cur];toForm(d.sel,d.k+': '+d.h.toLowerCase()+'.')});
-  document.querySelectorAll('[data-pick]').forEach(function(a){a.addEventListener('click',function(){toForm(+a.dataset.pick,'')})});
+  var what=document.getElementById('what'),pkd=document.getElementById('picked'),LBL=['Холодильник','Стиральная машина','Витрина или торговый шкаф'];
+  function toForm(txt){if(!txt)return;what.value=txt;pkd.textContent='Вы выбрали: '+txt;pkd.classList.remove('on');void pkd.offsetWidth;pkd.classList.add('on')}
+  document.getElementById('p-go').addEventListener('click',function(){var d=F[cur];toForm(d.k+', '+d.h.toLowerCase())});
+  document.querySelectorAll('[data-pick]').forEach(function(a){a.addEventListener('click',function(){toForm(LBL[+a.dataset.pick])})});
 
   // clock counter
   var gl=document.getElementById('glass'),mins=document.getElementById('mins');
@@ -729,8 +797,8 @@ h2.in .w>span{transform:none}
   new IntersectionObserver(function(es,o){if(!es[0].isIntersecting)return;o.disconnect();setTimeout(function(){cs.classList.add('on')},rm?0:500)},{threshold:.4}).observe(cs);
 
   // count-up
-  var pio=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;pio.unobserve(e.target);var t=e.target.firstChild;if(!t||t.nodeType!==3||rm)return;var raw=t.textContent.trim(),dec=raw.indexOf(',')>-1,end=parseFloat(raw.replace(',','.'));if(isNaN(end))return;var st=null;requestAnimationFrame(function f(ts){if(!st)st=ts;var p=Math.min(1,(ts-st)/1600),v=end*(1-Math.pow(1-p,3));t.textContent=dec?v.toFixed(1).replace('.',','):Math.round(v);if(p<1)requestAnimationFrame(f)})})},{threshold:.5});
-  document.querySelectorAll('.proof b').forEach(function(b){pio.observe(b)});
+  var pio=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;pio.unobserve(e.target);var t=e.target.firstChild;if(!t||t.nodeType!==3||rm)return;var orig=t.textContent,raw=orig.trim();if(!/^\d+(,\d+)?$/.test(raw))return;var dec=raw.indexOf(',')>-1,end=parseFloat(raw.replace(',','.'));if(isNaN(end))return;var st=null;requestAnimationFrame(function f(ts){if(!st)st=ts;var p=Math.min(1,(ts-st)/1600),v=end*(1-Math.pow(1-p,3));t.textContent=(dec?v.toFixed(1).replace('.',','):Math.round(v))+(/\s$/.test(orig)?' ':'');if(p<1)requestAnimationFrame(f)})})},{threshold:.5});
+  document.querySelectorAll('.proof b,.hero-bar b').forEach(function(b){pio.observe(b)});
 
   // card tilt
   if(!rm&&hov){document.querySelectorAll('.sv,.rev,.fl').forEach(function(c){c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transition='transform .1s,border-color .35s,background .35s';c.style.transform='perspective(900px) rotateY('+(x*6)+'deg) rotateX('+(-y*6)+'deg) translateY(-6px)'});c.addEventListener('mouseleave',function(){c.style.transition='';c.style.transform=''})})}
