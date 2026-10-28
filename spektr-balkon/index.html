@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="img/hero.jpg?v=1">
+<script>document.documentElement.className+=" js";setTimeout(function(){if(!window.rvOk)document.documentElement.classList.remove("js")},4000)</script>
 <style>
 :root{
   --k:#0e1445; --g:#151c55; --g2:#1d2565; --g3:#2b3480;
@@ -96,7 +97,6 @@ em{font-style:normal;color:var(--a)}
 .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:62% 55%;transform:scale(1.1);animation:kb 22s var(--ease) forwards}
 @keyframes kb{to{transform:scale(1)}}
 .hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(9,12,40,.94) 0%,rgba(9,12,40,.78) 34%,rgba(9,12,40,.2) 68%,rgba(9,12,40,.06) 100%),linear-gradient(0deg,rgba(9,12,40,.92) 0%,rgba(9,12,40,0) 40%)}
-.hero-fx{position:absolute;inset:0;z-index:1;pointer-events:none;width:100%;height:100%}
 .hero-prism{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(110deg,transparent 38%,rgba(43,58,168,.16) 45%,rgba(122,43,176,.14) 51%,rgba(208,33,139,.13) 57%,transparent 64%);background-size:260% 100%;mix-blend-mode:screen;animation:sweep 9s ease-in-out infinite}
 @keyframes sweep{0%{background-position:120% 0}60%,100%{background-position:-60% 0}}
 .hero .wrap{position:relative;z-index:2;padding:160px 0 0}
@@ -142,7 +142,7 @@ section{padding:130px 0}
 /* services */
 .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .sv{background:#fff;border-radius:24px;padding:32px 28px;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:transform .45s var(--ease),box-shadow .45s var(--ease),opacity .9s var(--ease)}
-.sv:hover{box-shadow:0 30px 60px -34px rgba(14,20,69,.5)}
+.sv:hover{box-shadow:0 30px 60px -34px rgba(14,20,69,.5);transform:translateY(-6px)}
 .sv::before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:var(--spec);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease)}
 .sv:hover::before{transform:scaleX(1)}
 .sv svg{width:40px;height:40px;color:var(--ad);margin-bottom:22px;transition:transform .5s var(--ease)}
@@ -195,16 +195,20 @@ section{padding:130px 0}
 
 /* second room ideas */
 .ideas{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.idea{border-radius:26px;padding:34px 30px;background:var(--g);border:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;transition:transform .45s var(--ease),border-color .3s,opacity .9s var(--ease);min-height:340px}
-.idea:hover{border-color:rgba(154,166,255,.45)}
-.idea svg{width:100%;height:130px;margin-bottom:22px}
-.idea svg .ln{fill:none;stroke:var(--a);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:400;stroke-dashoffset:400;transition:stroke-dashoffset 2.2s var(--ease) .2s}
-.idea svg .lw{stroke:var(--warm)}
-.idea.in svg .ln{stroke-dashoffset:0}
+.idea{border-radius:26px;padding:0;overflow:hidden;background:var(--g);border:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;transition:transform .45s var(--ease),border-color .3s,box-shadow .45s var(--ease),opacity .9s var(--ease)}
+.idea:hover{border-color:rgba(154,166,255,.45);box-shadow:0 34px 70px -36px rgba(0,0,0,.7)}
+.idea .ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(135deg,#1d2565,#2b3aa8 55%,#7a2bb0)}
+.idea .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.6s var(--ease)}
+.js .idea:not(.in) .ph img{transform:scale(1.14)}
+.idea.in:hover .ph img,.no-io .idea:hover .ph img{transform:scale(1.06)}
+.idea .ph::after{content:"";position:absolute;inset:auto 0 0 0;height:38%;background:linear-gradient(0deg,var(--g),rgba(21,28,85,0));pointer-events:none}
+.idea.cta .ph::after{background:linear-gradient(0deg,#1a1a5a,rgba(26,26,90,0))}
+.idea .bd{display:flex;flex-direction:column;flex:1;padding:22px 30px 32px}
 .idea h3{font-weight:800;font-size:24px;margin-bottom:8px}
 .idea p{color:rgba(255,255,255,.65);font-size:15px;flex:1}
 .idea .btn{margin-top:22px;align-self:flex-start}
 .idea.cta{background:linear-gradient(150deg,#2c1f6e,#0e1445);border-color:rgba(154,166,255,.35)}
+.idea:hover{transform:translateY(-6px)}
 
 /* zamer timeline */
 .tl{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;position:relative;padding-top:40px}
@@ -233,7 +237,7 @@ section{padding:130px 0}
 .score.in .st5 i{width:96%}
 .score span{color:rgba(255,255,255,.62);font-size:14.5px}
 .rev{background:#fff;border-radius:22px;padding:30px 28px;display:flex;flex-direction:column;transition:transform .45s var(--ease),box-shadow .45s var(--ease),opacity .9s var(--ease)}
-.rev:hover{box-shadow:0 30px 60px -34px rgba(14,20,69,.5)}
+.rev:hover{box-shadow:0 30px 60px -34px rgba(14,20,69,.5);transform:translateY(-6px)}
 .rev .q{font-family:var(--h);font-weight:900;font-size:60px;line-height:.6;height:26px;background:var(--spec);-webkit-background-clip:text;background-clip:text;color:transparent}
 .rev p{font-size:16.5px;flex:1;margin-bottom:18px}
 .rev .who{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:13.5px;border-top:1px solid var(--line);padding-top:14px}
@@ -324,11 +328,14 @@ footer{background:var(--k);color:rgba(255,255,255,.6);padding:80px 0 120px;font-
 .mbar{display:none}
 
 /* reveal & motion */
-.rv{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv{transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .rv:not(.in){opacity:0;transform:translateY(34px)}
 .rv.in{opacity:1;transform:none}
+.sv.in:hover,.rev.in:hover,.idea.in:hover,.dl.in:hover{transform:translateY(-6px)}
 .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
-.w>span{display:inline-block;transform:translateY(105%);transition:transform 1s var(--ease)}
+.w>span{display:inline-block;transition:transform 1s var(--ease)}
+.js h2:not(.in) .w>span{transform:translateY(105%)}
 h2.in .w>span{transform:none}
 
 @media (max-width:1100px){
@@ -360,7 +367,7 @@ h2.in .w>span{transform:none}
   .ba{min-height:340px;border-radius:22px}
   .ba .tg{font-size:10.5px;top:14px}.ba .tg.l{left:14px}.ba .tg.r{right:14px}
   .scn{padding:28px 20px;border-radius:22px}
-  .idea{min-height:0;padding:28px 22px}
+  .idea .bd{padding:18px 22px 28px}
   .quiz{padding:26px 18px}
   .opts{grid-template-columns:1fr}
   .ct-main{padding:32px 22px}
@@ -371,9 +378,9 @@ h2.in .w>span{transform:none}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
-  .rv{opacity:1;transform:none}.hero h1 .ln span,.w>span{transform:none}
+  .js .rv:not(.in){opacity:1;transform:none}.hero h1 .ln span,.js h2:not(.in) .w>span{transform:none}
   .hero-lead,.hero-cta,.hero-bar,.hero-kicker{opacity:1}
-  .idea svg .ln{stroke-dashoffset:0}.tl::after{transform:none}.score .st5 i{width:96%}
+  .js .idea:not(.in) .ph img{transform:none}.tl::after{transform:none}.score .st5 i{width:96%}
   .btn-a::after{display:none}
 }
 
@@ -408,14 +415,20 @@ h2.in .w>span{transform:none}
 .stack-sec{background:var(--paper2)}
 .stack{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:start}
 .stack>*{min-width:0}
-.stack-list{list-style:none;background:#fff;border-radius:28px;padding:10px 34px}
-.stack-list li{display:grid;grid-template-columns:46px 1fr auto;gap:16px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line);opacity:0;transform:translateX(-18px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:calc(var(--i,0)*.09s)}
+.stack-card{background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 30px 70px -48px rgba(14,20,69,.55)}
+.stack-ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(135deg,#1d2565,#2b3aa8 55%,#7a2bb0)}
+.stack-ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.8s var(--ease)}
+.js .stack-card:not(.in) .stack-ph img{transform:scale(1.12)}
+.stack-card.in:hover .stack-ph img,.no-io .stack-card:hover .stack-ph img{transform:scale(1.05)}
+.stack-ph figcaption{position:absolute;left:20px;bottom:20px;font-family:var(--h);font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:8px 14px;border-radius:999px;background:rgba(14,20,69,.72);color:#fff;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.stack-bd{padding:12px 34px 14px}
+.stack-list{list-style:none}
+.stack-list li{display:grid;grid-template-columns:46px 1fr auto;gap:16px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:calc(.3s + var(--i,0)*.12s)}
+.js .stack-card:not(.in) .stack-list li{opacity:0;transform:translateY(16px)}
 .stack-list li:last-child{border-bottom:0}
-.stack-list.in li{opacity:1;transform:none}
-.stack-list .ic{width:46px;height:46px;border-radius:15px;background:var(--grad);color:#fff;display:grid;place-items:center}
-.stack-list .ic svg{width:22px;height:22px}
+.stack-list .ic{width:46px;height:46px;border-radius:15px;background:var(--grad);color:#fff;display:grid;place-items:center;font-family:var(--h);font-weight:800;font-size:15px;letter-spacing:.02em}
 .stack-list b{display:block;font-family:var(--h);font-weight:800;font-size:17px;line-height:1.25}
-.stack-list span{display:block;font-size:14px;color:var(--ink2);margin-top:2px}
+.stack-list div span{display:block;font-size:14px;color:var(--ink2);margin-top:2px}
 .stack-list .val{font-family:var(--h);font-weight:800;font-size:12px;letter-spacing:.04em;padding:7px 12px;border-radius:999px;background:var(--k);color:#fff;white-space:nowrap;margin:0}
 .stack-side{display:grid;gap:22px}
 .guar{background:var(--k);color:#fff;border-radius:28px;padding:32px 30px;position:relative;overflow:hidden}
@@ -464,7 +477,9 @@ h2.in .w>span{transform:none}
 @media (max-width:1100px){.stack,.delay-grid{grid-template-columns:1fr}}
 @media (max-width:720px){
   .hero h1{font-size:clamp(36px,10vw,54px)}
-  .stack-list{padding:4px 18px;border-radius:22px}
+  .stack-card{border-radius:22px}
+  .stack-bd{padding:4px 18px 8px}
+  .stack-ph figcaption{left:14px;bottom:14px;font-size:10.5px}
   .stack-list li{grid-template-columns:40px 1fr;gap:12px}
   .stack-list .ic{width:40px;height:40px}
   .stack-list .val{grid-column:2;justify-self:start}
@@ -475,7 +490,7 @@ h2.in .w>span{transform:none}
   .ft-cta{padding:26px 20px}.ft-cta .btn{flex:1 1 100%}
 }
 @media (prefers-reduced-motion:reduce){
-  .stack-list li{opacity:1;transform:none}.guar svg .ck{stroke-dashoffset:0}
+  .js .stack-card:not(.in) .stack-list li{opacity:1;transform:none}.js .stack-card:not(.in) .stack-ph img{transform:none}.guar svg .ck{stroke-dashoffset:0}
   .hero .cta-proof{opacity:1}
 }
 </style>
@@ -501,7 +516,7 @@ h2.in .w>span{transform:none}
 <main id="top">
 <section class="hero">
   <div class="hero-bg"><img src="img/hero.jpg?v=1" alt="Утеплённая лоджия после внутренней отделки: тёплый свет, кресло и столик"></div>
-  <canvas class="hero-fx" id="fx"></canvas><div class="hero-prism"></div>
+  <div class="hero-prism"></div>
   <div class="wrap">
     <div class="hero-kicker"><span class="tag hot"><i></i>Замерщик приедет с образцами</span><span class="tag">Цена сразу после замера</span></div>
     <h1><span class="ln"><span>Балкон,</span></span><span class="ln"><span>который станет</span></span><span class="ln"><span><em>ещё комнатой</em></span></span><span class="ln sm"><span>Остекление балконов и лоджий в Волгограде</span></span></h1>
@@ -559,7 +574,7 @@ h2.in .w>span{transform:none}
       </div>
       <div class="scn rv d1">
         <div class="scn-tabs" id="scn-tabs"><button type="button" data-s="0">Остекление</button><button type="button" data-s="1" class="on">Утепление</button><button type="button" data-s="2">Отделка «под комнату»</button></div>
-        <div class="scn-body" id="scn-body"></div>
+        <div class="scn-body" id="scn-body"><h3>Утепление</h3><p class="desc">Утепляем балкон, чтобы там было тепло и им можно было пользоваться как частью квартиры.</p><ul><li>Утепление балкона или лоджии</li><li>Можно вместе с внутренней отделкой</li><li>Лишнего не навязываем</li></ul><blockquote><p>«балкон утеплили просто шикарно, всем будем советовать только вас.»</p><span>Алиночка Долгих, 2ГИС</span></blockquote></div>
       </div>
     </div>
   </div>
@@ -572,14 +587,19 @@ h2.in .w>span{transform:none}
       <p class="rv d2">Одна заявка, один замер и одна команда от остекления до отделки. Вот что входит.</p>
     </div>
     <div class="stack">
-      <ul class="stack-list" id="stack">
-        <li style="--i:0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l14-14 4 4L7 21H3z"/><path d="M7 13l2 2M10 10l2 2M13 7l2 2"/></svg></span><div><b>Выезд замерщика с образцами</b><span>Материалы можно посмотреть и потрогать у себя дома</span></div><p class="val">с образцами</p></li>
-        <li style="--i:1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></span><div><b>Цена сразу после замера</b><span>Без «перезвоним через неделю»</span></div><p class="val">на месте</p></li>
-        <li style="--i:2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="15" rx="1"/><path d="M3 10h18M9 10v10M15 10v10"/></svg></span><div><b>Остекление, утепление и отделка</b><span>Одна команда, без поиска разных подрядчиков</span></div><p class="val">под ключ</p></li>
-        <li style="--i:3"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Работа в оговорённый срок</b><span>«сделали в сроки, все идеально ровно и красиво», Галина</span></div><p class="val">в срок</p></li>
-        <li style="--i:4"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg></span><div><b>Лишнего не навязываем</b><span>Только то, что нужно вашему балкону</span></div><p class="val">честно</p></li>
-        <li style="--i:5"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span><div><b>Доставка и удобная оплата</b><span>Карта, наличные, через банк или переводом</span></div><p class="val">как удобно</p></li>
-      </ul>
+      <div class="stack-card rv">
+        <figure class="stack-ph"><img src="img/offer.jpg?v=1" alt="Утеплённая лоджия под ключ с отделкой: остекление, утепление и отделка балконов в Волгограде" loading="lazy"><figcaption>Что входит</figcaption></figure>
+        <div class="stack-bd">
+        <ol class="stack-list" id="stack">
+          <li style="--i:0"><span class="ic" aria-hidden="true">01</span><div><b>Выезд замерщика с образцами</b><span>Материалы можно посмотреть и потрогать у себя дома</span></div><p class="val">с образцами</p></li>
+          <li style="--i:1"><span class="ic" aria-hidden="true">02</span><div><b>Цена сразу после замера</b><span>Без «перезвоним через неделю»</span></div><p class="val">на месте</p></li>
+          <li style="--i:2"><span class="ic" aria-hidden="true">03</span><div><b>Остекление, утепление и отделка</b><span>Одна команда, без поиска разных подрядчиков</span></div><p class="val">под ключ</p></li>
+          <li style="--i:3"><span class="ic" aria-hidden="true">04</span><div><b>Работа в оговорённый срок</b><span>«сделали в сроки, все идеально ровно и красиво», Галина</span></div><p class="val">в срок</p></li>
+          <li style="--i:4"><span class="ic" aria-hidden="true">05</span><div><b>Лишнего не навязываем</b><span>Только то, что нужно вашему балкону</span></div><p class="val">честно</p></li>
+          <li style="--i:5"><span class="ic" aria-hidden="true">06</span><div><b>Доставка и удобная оплата</b><span>Карта, наличные, через банк или переводом</span></div><p class="val">как удобно</p></li>
+        </ol>
+        </div>
+      </div>
       <div class="stack-side">
         <div class="guar rv d1"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l16 6v12c0 10-7 17-16 20C15 39 8 32 8 22V10z"/><path class="ck" d="M16 24l6 6 11-12"/></svg>
           <h3>Цена из договора не меняется</h3>
@@ -600,17 +620,17 @@ h2.in .w>span{transform:none}
     </div>
     <div class="ideas">
       <div class="idea rv">
-        <svg viewBox="0 0 240 130" aria-hidden="true"><path class="ln" d="M20 110h200M40 60h110v50M48 60v50M142 60v50"/><path class="ln lw" d="M70 60V36h50v24M86 36l8-10 8 10"/><path class="ln" d="M170 110V70h30v40M175 70l10-22 10 22"/></svg>
-        <h3>Кабинет</h3><p>Стол у окна, дневной свет и закрытая дверь. Работать из дома становится проще.</p>
+        <div class="ph"><img src="img/i1.jpg?v=1" alt="Кабинет на утеплённой лоджии: рабочий стол у окна и дневной свет" loading="lazy"></div>
+        <div class="bd"><h3>Кабинет</h3><p>Стол у окна, дневной свет и закрытая дверь. Работать из дома становится проще.</p></div>
       </div>
       <div class="idea rv d1">
-        <svg viewBox="0 0 240 130" aria-hidden="true"><path class="ln" d="M20 110h200M40 110V74a10 10 0 0110-10h50a10 10 0 0110 10v36M40 88h70"/><path class="ln lw" d="M150 110V84h40v26M160 84V62M178 84V62M156 62h28"/><path class="ln lw" d="M200 30a12 12 0 11-1 0"/></svg>
-        <h3>Место для отдыха</h3><p>Кресло, столик и тёплый свет вечером. Своё тихое место в квартире.</p>
+        <div class="ph"><img src="img/i2.jpg?v=1" alt="Место для отдыха на лоджии: кресло, столик и тёплый вечерний свет" loading="lazy"></div>
+        <div class="bd"><h3>Место для отдыха</h3><p>Кресло, столик и тёплый свет вечером. Своё тихое место в квартире.</p></div>
       </div>
       <div class="idea cta rv d2">
-        <svg viewBox="0 0 240 130" aria-hidden="true"><path class="ln" d="M30 110h180M40 110V30h160v80M40 70h160M120 30v80"/><path class="ln lw" d="M104 50h32M120 34v32"/></svg>
-        <h3>Ваш вариант</h3><p>Расскажите замерщику, что хотите получить. Он подскажет материалы и назовёт цену на месте.</p>
-        <a class="btn btn-a btn-sm" href="#quiz" data-need="Внутренняя отделка">Вызвать замерщика</a>
+        <div class="ph"><img src="img/i3.jpg?v=1" alt="Панорамная остеклённая лоджия вечером с отделкой и подсветкой" loading="lazy"></div>
+        <div class="bd"><h3>Ваш вариант</h3><p>Расскажите замерщику, что хотите получить. Он подскажет материалы и назовёт цену на месте.</p>
+        <a class="btn btn-a btn-sm" href="#quiz" data-need="Внутренняя отделка">Вызвать замерщика</a></div>
       </div>
     </div>
   </div>
@@ -765,19 +785,20 @@ h2.in .w>span{transform:none}
       if(c.nodeType===3){var f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(function(t){if(!t)return;if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(t));return}var w=document.createElement('span');w.className='w';var s=document.createElement('span');s.textContent=t;s.style.transitionDelay=(.07*i++)+'s';w.appendChild(s);f.appendChild(w)});n.replaceChild(f,c)}
       else if(c.nodeType===1&&c.tagName!=='BR')walk(c)})})(h)});
 
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
-  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
-
-  // hero: spectral dust
-  (function(){var c=document.getElementById('fx');if(!c||rm)return;var x=c.getContext('2d'),P=[],W,H,d=Math.min(2,devicePixelRatio||1),cols=['142,155,255','197,139,255','255,111,185','255,255,255'];
-    function rs(){W=c.width=c.offsetWidth*d;H=c.height=c.offsetHeight*d}rs();addEventListener('resize',rs);
-    for(var i=0;i<56;i++)P.push({x:Math.random(),y:Math.random(),r:Math.random()*1.6+.4,s:Math.random()*.22+.05,a:Math.random()*6.28,o:Math.random()*.4+.12,c:cols[i%4]});
-    (function f(){x.clearRect(0,0,W,H);P.forEach(function(p){p.y-=p.s/1000;p.a+=.01;if(p.y<-.02){p.y=1.02;p.x=Math.random()}var px=(p.x+Math.sin(p.a)*.01)*W,py=p.y*H,r=p.r*4*d;var g=x.createRadialGradient(px,py,0,px,py,r);g.addColorStop(0,'rgba('+p.c+','+p.o+')');g.addColorStop(1,'rgba('+p.c+',0)');x.fillStyle=g;x.beginPath();x.arc(px,py,r,0,7);x.fill()});requestAnimationFrame(f)})();
-  })();
+  // reveal: IntersectionObserver + scroll/timer fallback, so content never stays hidden
+  var rvs=[].slice.call(document.querySelectorAll('.rv'));
+  function show(el){el.classList.add('in')}
+  function chk(){var vh=innerHeight||800;rvs=rvs.filter(function(el){if(el.classList.contains('in'))return false;if(el.getBoundingClientRect().top<vh*.94){show(el);return false}return true})}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target)}})},{threshold:.12});
+    rvs.forEach(function(el){io.observe(el)});
+  }else{document.documentElement.classList.add('no-io');rvs.forEach(show);rvs=[]}
+  var tk=false;addEventListener('scroll',function(){if(tk)return;tk=true;setTimeout(function(){tk=false;chk()},200)},{passive:true});
+  window.rvOk=1;setTimeout(chk,1200);setTimeout(chk,3000);addEventListener('load',function(){setTimeout(chk,300)});
 
   // count-up for score
   var sc=document.querySelector('.score b');
-  new IntersectionObserver(function(es,o){if(!es[0].isIntersecting)return;o.disconnect();if(rm)return;var st=null;requestAnimationFrame(function f(ts){if(!st)st=ts;var p=Math.min(1,(ts-st)/1600),v=4.8*(1-Math.pow(1-p,3));sc.textContent=v.toFixed(1).replace('.',',');if(p<1)requestAnimationFrame(f)})},{threshold:.5}).observe(sc);
+  if('IntersectionObserver' in window)new IntersectionObserver(function(es,o){if(!es[0].isIntersecting)return;o.disconnect();if(rm)return;var st=null;requestAnimationFrame(function f(ts){if(!st)st=ts;var p=Math.min(1,(ts-st)/1600),v=4.8*(1-Math.pow(1-p,3));sc.textContent=v.toFixed(1).replace('.',',');if(p<1)requestAnimationFrame(f)})},{threshold:.5}).observe(sc);
 
   // tomorrow's date
   var t=new Date();t.setDate(t.getDate()+1);var ds=t.toLocaleDateString('ru-RU',{day:'numeric',month:'long'});
@@ -796,11 +817,7 @@ h2.in .w>span{transform:none}
   scn(1);
   function setX(v){ba.style.setProperty('--x',v+'%');bar.value=v}
   bar.addEventListener('input',function(){touched=true;ba.style.setProperty('--x',bar.value+'%')});
-  if(!rm){var bio=new IntersectionObserver(function(es){if(!es[0].isIntersecting)return;bio.disconnect();var st=null;requestAnimationFrame(function f(ts){if(touched)return;if(!st)st=ts;var p=(ts-st)/2600;if(p>=1){setX(50);return}setX(50+Math.sin(p*Math.PI*2)*22*(1-p));requestAnimationFrame(f)})},{threshold:.45});bio.observe(ba)}
-
-  // ideas + timeline observers (svg draw / line fill)
-  var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io2.unobserve(e.target)}})},{threshold:.3});
-  document.querySelectorAll('.idea,#tl,#score').forEach(function(el){io2.observe(el)});
+  if(!rm&&'IntersectionObserver' in window){var bio=new IntersectionObserver(function(es){if(!es[0].isIntersecting)return;bio.disconnect();var st=null;requestAnimationFrame(function f(ts){if(touched)return;if(!st)st=ts;var p=(ts-st)/2600;if(p>=1){setX(50);return}setX(50+Math.sin(p*Math.PI*2)*22*(1-p));requestAnimationFrame(f)})},{threshold:.45});bio.observe(ba)}
 
   // short lead form: optional chips -> hidden field, progress bar
   var need=document.getElementById('need'),needv=document.getElementById('needv'),tel=document.getElementById('tel'),qb=document.getElementById('qbar');
@@ -812,8 +829,6 @@ h2.in .w>span{transform:none}
   // forms
   document.querySelectorAll('.js-form').forEach(function(f){f.addEventListener('submit',function(){var o=f.querySelector('.ok');if(o)o.classList.add('show')})});
 
-  // tilt
-  if(!rm&&matchMedia('(hover:hover)').matches){document.querySelectorAll('.sv,.rev,.idea').forEach(function(c){c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(900px) rotateY('+(x*6)+'deg) rotateX('+(-y*6)+'deg) translateY(-6px)'});c.addEventListener('mouseleave',function(){c.style.transform=''})})}
 })();
 </script>
 </body>
