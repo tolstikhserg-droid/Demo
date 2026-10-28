@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/room.jpg">
+<link rel="preload" as="image" href="img/room.jpg?v=3">
 <style>
 :root{
   --k:#16181d; --g:#1d2027; --g2:#262a33; --g3:#353a46;
@@ -183,7 +183,7 @@ section{padding:130px 0}
 
 /* mood / black friday */
 .mood{position:relative;min-height:88vh;padding:0!important;display:flex;align-items:center;color:#fff;overflow:hidden;padding:0}
-.mood-bg{position:absolute;inset:-12% 0;background:url(img/cozy.jpg) 30% center/cover no-repeat;will-change:transform}
+.mood-bg{position:absolute;inset:-12% 0;background:url(img/cozy.jpg?v=3) 30% center/cover no-repeat;will-change:transform}
 .mood::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(14,15,19,.15) 0%,rgba(14,15,19,.3) 45%,rgba(14,15,19,.88) 100%)}
 .mood .wrap{position:relative;z-index:2;display:flex;justify-content:flex-end}
 .bf{width:min(520px,100%);background:rgba(22,24,29,.62);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:48px}
@@ -249,7 +249,7 @@ select.inp option{color:#111}
 
 /* lead */
 .lead{position:relative;overflow:hidden}
-.lead-bg{position:absolute;inset:-8% 0;background:url(img/brut-showroom.jpg) 75% 60%/cover;opacity:.55;animation:kb 24s ease-in-out infinite alternate}@keyframes kb{from{transform:scale(1)}to{transform:scale(1.08) translateX(-1.5%)}}
+.lead-bg{position:absolute;inset:-8% 0;background:url(img/brut-showroom.jpg?v=3) 75% 60%/cover;opacity:.7;animation:kb 24s ease-in-out infinite alternate}@keyframes kb{from{transform:scale(1)}to{transform:scale(1.08) translateX(-1.5%)}}
 .lead::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--k) 28%,rgba(22,24,29,.55) 70%,rgba(22,24,29,.35));z-index:1}
 .lead .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
 .lead h2{font-weight:800;font-size:clamp(36px,4.4vw,64px);margin:22px 0}
@@ -389,7 +389,7 @@ h2.in .w>span{transform:none}
 
 <main id="top">
 <section class="hero">
-  <div class="hero-bg"><img src="img/room.jpg" alt="Графитовая гостиная с серым диваном и горчичными подушками"><video id="hv" muted playsinline webkit-playsinline autoplay preload="auto" poster="img/room.jpg"><source src="https://d8j0ntlcm91z4.cloudfront.net/user_3IxpHVEWJ4RJpwDORiGu1IS5EvU/hf_20261028_070035_8528665c-a351-48b7-84ec-9ccb6e0f7adb.mp4" type="video/mp4"></video></div>
+  <div class="hero-bg"><img src="img/room.jpg?v=3" alt="Графитовая гостиная с серым диваном и горчичными подушками"><video id="hv" muted playsinline webkit-playsinline autoplay preload="auto" poster="img/room.jpg?v=3"><source src="https://d8j0ntlcm91z4.cloudfront.net/user_3IxpHVEWJ4RJpwDORiGu1IS5EvU/hf_20261028_070035_8528665c-a351-48b7-84ec-9ccb6e0f7adb.mp4" type="video/mp4"></video></div>
   <div class="wrap">
     <div class="hero-kicker"><span class="stars">★★★★★</span>5,0 в 2ГИС · 141 оценка в Волгограде</div>
     <h1><span class="ln"><span>Диван,</span></span><span class="ln"><span>с которого</span></span><span class="ln"><span>не <em>хочется</em> вставать</span></span></h1>
@@ -415,7 +415,7 @@ h2.in .w>span{transform:none}
 </div></div>
 
 <section class="show" id="hit">
-  <img class="show-bg" src="img/brut-showroom.jpg" alt="Угловой диван Brut King в графитовом шоуруме" loading="lazy">
+  <img class="show-bg" src="img/brut-showroom.jpg?v=3" alt="Угловой диван Brut King в графитовом шоуруме" loading="lazy">
   <div class="wrap">
     <div class="show-card rv">
       <span class="eyebrow">Хит салона · угловые</span>
@@ -437,16 +437,16 @@ h2.in .w>span{transform:none}
 
 
     <div class="models">
-      <article class="m rv"><div class="ph"><img src="img/c-bambi.jpg" alt="Диван Bambi 160" loading="lazy"><small>02</small></div>
+      <article class="m rv"><div class="ph"><img src="img/c-bambi.jpg?v=3" alt="Диван Bambi 160" loading="lazy"><small>02</small></div>
         <div class="bd"><h3>Bambi 160</h3><p>Компактный прямой диван со спальным местом 160 см. Мягкая фактурная ткань.</p>
         <div class="row"><div class="pr">83 200 ₽</div><a class="go" href="#lead" data-model="Bambi 160" aria-label="Узнать про Bambi 160"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></article>
-      <article class="m rv d1"><div class="ph"><img src="img/c-parker.jpg" alt="Диван PARKER" loading="lazy"><small>03</small></div>
+      <article class="m rv d1"><div class="ph"><img src="img/c-parker.jpg?v=3" alt="Диван PARKER" loading="lazy"><small>03</small></div>
         <div class="bd"><h3>PARKER</h3><p>Большой модульный диван: прямой или угловой, с вместительным бельевым коробом.</p>
         <div class="row"><div class="pr">99 500 ₽</div><a class="go" href="#lead" data-model="PARKER" aria-label="Узнать про PARKER"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></article>
-      <article class="m rv d2"><div class="ph"><img src="img/c-london.jpg" alt="Диван London" loading="lazy"><small>04</small></div>
+      <article class="m rv d2"><div class="ph"><img src="img/c-london.jpg?v=3" alt="Диван London" loading="lazy"><small>04</small></div>
         <div class="bd"><h3>London</h3><p>Наше «облачко»: очень мягкая посадка, проверено годами. Есть деревянные накладки на подлокотники.</p>
         <div class="row"><div class="pr">95 800 ₽</div><a class="go" href="#lead" data-model="London" aria-label="Узнать про London"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></article>
-      <article class="m rv d3"><div class="ph"><img src="img/c-marta.jpg" alt="Диван Marta 120" loading="lazy"><small>05</small></div>
+      <article class="m rv d3"><div class="ph"><img src="img/c-marta.jpg?v=3" alt="Диван Marta 120" loading="lazy"><small>05</small></div>
         <div class="bd"><h3>Marta 120</h3><p>Малогабаритный диван 137×107 см с полноценным спальным местом 120×190 и коробом.</p>
         <div class="row"><div class="pr">42 300 ₽</div><a class="go" href="#lead" data-model="Marta 120" aria-label="Узнать про Marta 120"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></article>
     </div>
@@ -457,7 +457,7 @@ h2.in .w>span{transform:none}
 
 <section class="dark" id="size" style="padding:0">
   <div class="split">
-    <div class="split-ph"><img src="img/swatches.jpg" alt="Образцы тканей, сантиметровая лента и эскиз дивана" loading="lazy"></div>
+    <div class="split-ph"><img src="img/swatches.jpg?v=3" alt="Образцы тканей, сантиметровая лента и эскиз дивана" loading="lazy"></div>
     <div class="split-bd">
       <span class="eyebrow rv">Под заказ</span>
       <h2 class="rv d1">Сделаем диван <em>точно под вашу</em> комнату</h2>
@@ -498,8 +498,8 @@ h2.in .w>span{transform:none}
     </div>
     <div class="rooms">
       <div class="room-big rv">
-        <img src="img/dining.jpg" alt="Угловой диван Brut King в гостиной с кухней" loading="lazy">
-        <div class="inset"><img src="img/table.jpg" alt="Стол Лекко" loading="lazy"><div><b>Стол Лекко 90×60</b><span>18 200 ₽</span></div></div>
+        <img src="img/dining.jpg?v=3" alt="Угловой диван Brut King в гостиной с кухней" loading="lazy">
+        <div class="inset"><img src="img/table.jpg?v=3" alt="Стол Лекко" loading="lazy"><div><b>Стол Лекко 90×60</b><span>18 200 ₽</span></div></div>
         <div class="cap"><div><h3>Гостиная с кухней</h3><p>Диван, стол и стулья в одном стиле. Покажем сочетания в салоне.</p></div><a class="btn btn-y btn-sm" href="#lead" data-model="Стол и стулья">Подобрать</a></div>
       </div>
       <div class="cats">
