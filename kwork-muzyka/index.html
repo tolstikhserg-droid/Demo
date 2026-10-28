@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Музыка в роликах кворка</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0c10;--card:#14161c;--line:#262a33;--text:#f4f5f7;--muted:#9aa1ad;--acc:#c86bff}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.glow{position:fixed;inset:-20vmax;pointer-events:none;z-index:0;background:radial-gradient(40vmax 30vmax at 15% 10%,rgba(200,107,255,.14),transparent 60%),radial-gradient(40vmax 30vmax at 90% 85%,rgba(255,120,170,.10),transparent 60%);animation:drift 18s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(4vmax,-3vmax) scale(1.08)}}
+main{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:48px 16px 80px}
+.kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);font-weight:800}
+h1{font-family:Unbounded,Manrope,sans-serif;font-weight:800;font-size:clamp(28px,5vw,50px);line-height:1.08;margin:12px 0 14px}
+.lead{font-size:clamp(16px,2.2vw,19px);color:#d7dbe2;line-height:1.55;max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;margin-top:44px}
+.item{opacity:0;transform:translateY(24px);animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+.item:nth-child(2){animation-delay:.15s}
+@keyframes up{to{opacity:1;transform:none}}
+.frame{position:relative;border-radius:22px;overflow:hidden;background:#000;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.55);max-width:380px;margin:0 auto}
+.frame video{display:block;width:100%;height:auto;background:#000}
+.tag{position:absolute;left:12px;top:12px;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:700;backdrop-filter:blur(6px)}
+h2{font-family:Unbounded,Manrope,sans-serif;font-weight:600;font-size:clamp(18px,2.6vw,24px);margin:18px 0 6px;text-align:center}
+.sub{color:var(--muted);margin:0 auto;line-height:1.5;text-align:center;max-width:380px}
+.how{margin-top:64px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px}
+.how h3{font-family:Unbounded,Manrope,sans-serif;font-weight:600;margin:0 0 12px;font-size:20px}
+.how ol{margin:0;padding-left:20px;line-height:1.7;color:#d7dbe2}
+.note{margin-top:28px;color:var(--muted);font-size:13px;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<main>
+<div class="kicker">Kwork · анимация карточек</div>
+<h1>У каждого ролика своя музыка</h1>
+<p class="lead">7 роликов из портфолио кворка. Нажмите на ролик, звук включится. Громкость везде одинаковая.</p>
+<div class="grid">
+  <div class="item">
+    <div class="frame"><span class="tag">1 из 7</span>
+      <video src="https://d2ol7oe51mr4n9.cloudfront.net/user_3LKEWp4nnCdpgWDCujeMO3zxB7J/2efe25ed-03b1-4f2a-807e-db9850dab7d0.mp4#t=0.3" controls playsinline loop preload="metadata"></video>
+    </div>
+    <h2>Аромадиффузор</h2>
+    <p class="sub">Loyalty Freak Music «Softly»</p>
+  </div>
+  <div class="item">
+    <div class="frame"><span class="tag">2 из 7</span>
+      <video src="https://d2ol7oe51mr4n9.cloudfront.net/user_3LKEWp4nnCdpgWDCujeMO3zxB7J/cf014309-e7f1-4ca5-a576-19e2fa81249b.mp4#t=0.3" controls playsinline loop preload="metadata"></video>
+    </div>
+    <h2>Полотенце</h2>
+    <p class="sub">Loyalty Freak Music «Beach»</p>
+  </div>
+  <div class="item">
+    <div class="frame"><span class="tag">3 из 7</span>
+      <video src="https://d2ol7oe51mr4n9.cloudfront.net/user_3LKEWp4nnCdpgWDCujeMO3zxB7J/7d396067-bfe2-4f7a-9d53-aa553c9a1014.mp4#t=0.3" controls playsinline loop preload="metadata"></video>
+    </div>
+    <h2>Термокружка</h2>
+    <p class="sub">Loyalty Freak Music «Sweet You»</p>
+  </div>
+  <div class="item">
+    <div class="frame"><span class="tag">4 из 7</span>
+      <video src="https://d2ol7oe51mr4n9.cloudfront.net/user_3LKEWp4nnCdpgWDCujeMO3zxB7J/c6d92be1-921b-4805-9b4c-06741ce2990f.mp4#t=0.3" controls playsinline loop preload="metadata"></video>
+    </div>
+    <h2>Детский набор</h2>
+    <p class="sub">Monplaisir «Welcome to Turbo Rallye Clicker»</p>
+  </div>
+  <div class="item">
+    <div class="frame"><span class="tag">5 из 7</span>
+      <video src="https://d2ol7oe51mr4n9.cloudfront.net/user_3LKEWp4nnCdpgWDCujeMO3zxB7J/98b2f608-ef8f-4255-bd4c-226944f668de.mp4#t=0.3" controls playsinline loop preload="metadata"></video>
+    </div>
+    <h2>Промо кворка</h2>
+    <p class="sub">Soft and Furious «Clash under the Big Bridge»</p>
+  </div>
+  <div class="item">
+    <div class="frame"><span class="tag">6 из 7</span>
+      <video src="https://d2ol7oe51mr4n9.cloudfront.net/user_3LKEWp4nnCdpgWDCujeMO3zxB7J/bb570d35-7984-4629-97a1-a3b5eb2f2935.mp4#t=0.3" controls playsinline loop preload="metadata"></video>
+    </div>
+    <h2>Соевая свеча</h2>
+    <p class="sub">«Lofi music 001» (трек прежний)</p>
+  </div>
+  <div class="item">
+    <div class="frame"><span class="tag">7 из 7</span>
+      <video src="https://d2ol7oe51mr4n9.cloudfront.net/user_3LKEWp4nnCdpgWDCujeMO3zxB7J/1769f0b2-1059-438f-95da-c821ff9db228.mp4#t=0.3" controls playsinline loop preload="metadata"></video>
+    </div>
+    <h2>Свитер на модели</h2>
+    <p class="sub">Soft and Furious «Post Yes»</p>
+  </div>
+</div>
+<p class="note">Вся музыка со свободной лицензией CC0 (Wikimedia Commons), без указания автора и без оплаты.</p>
+</main>
+</body>
+</html>
