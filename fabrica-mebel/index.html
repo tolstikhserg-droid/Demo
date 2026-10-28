@@ -4,344 +4,455 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Fabrica: диваны и мягкая мебель на заказ в Волгограде</title>
-<meta name="description" content="Студия мебели Fabrica в ТЦ Aura, Волгоград: диваны, кресла, столы и стулья. Модель, ткань и размер под ваш интерьер. Доставка.">
+<title>Fabrica — диваны и мягкая мебель на заказ в Волгограде</title>
+<meta name="description" content="Студия мебели Fabrica в ТЦ Aura, Волгоград. Диваны, кресла, столы и стулья в вашей ткани и вашем размере. 5,0 на 2ГИС, 141 оценка.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.jpg">
 <style>
-:root{--bg:#f6f2ec;--ink:#1d1a17;--muted:#6b625a;--card:#fffdf9;--line:rgba(29,26,23,.1);--acc:#b4532a;--acc2:#f0c7a8;--accInk:#ffffff;--wa:#1f9d55}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#16120f;--ink:#f1ede7;--muted:#b9b2a8;--card:#211c18;--line:rgba(255,255,255,.1)}}
-:root[data-theme="dark"]{--bg:#16120f;--ink:#f1ede7;--muted:#b9b2a8;--card:#211c18;--line:rgba(255,255,255,.1)}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--ink);font:16px/1.55 'Manrope',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding-bottom:76px;overflow-x:hidden}
-a{color:inherit}
-svg{width:1.1em;height:1.1em;flex:none}
-.demo-bar{background:#141414;color:#f4f1ec;font-size:12.5px;line-height:1.35;text-align:center;padding:7px 16px;letter-spacing:.01em}
-.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
-header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:12px}
-.logo{font-family:'Unbounded','Manrope',sans-serif;font-weight:700;font-size:18px;text-decoration:none;letter-spacing:-.01em}
-.logo small{display:block;font:500 11px/1.2 'Manrope',sans-serif;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
-.top nav{display:none;gap:22px;font-size:14.5px}
-.top nav a{text-decoration:none;color:var(--muted)}
-.top nav a:hover{color:var(--ink)}
-.top-call{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:14.5px;white-space:nowrap}
-.top-call svg{color:var(--acc)}
-.hero{position:relative;padding:44px 0 40px;overflow:hidden}
-.hero:before{content:"";position:absolute;inset:-40% -30% auto auto;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--acc2),transparent 65%);opacity:.55;pointer-events:none}
-.hero .wrap{position:relative;display:grid;gap:28px}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--muted);background:var(--card);border:1px solid var(--line);padding:6px 12px;border-radius:999px}
-.eyebrow svg{color:#e3a008}
-h1{font-family:'Unbounded','Manrope',sans-serif;font-weight:700;font-size:clamp(28px,7.4vw,52px);line-height:1.08;letter-spacing:-.02em;margin:16px 0 14px}
-h1 em{font-style:normal;color:var(--acc)}
-.lead{font-size:17.5px;color:var(--muted);max-width:580px}
-.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:0 22px;border-radius:14px;font-weight:700;font-size:16px;text-decoration:none;border:0;cursor:pointer;font-family:inherit;transition:transform .15s ease,box-shadow .15s ease}
-.btn:active{transform:scale(.98)}
-.btn-main{background:var(--acc);color:var(--accInk);box-shadow:0 10px 24px -10px var(--acc)}
-.btn-wa{background:var(--wa);color:#fff}
-.btn-ghost{background:var(--card);border:1px solid var(--line);color:var(--ink)}
-.hero-art{position:relative;height:230px;border-radius:24px;background:linear-gradient(135deg,var(--acc2),var(--card));border:1px solid var(--line);overflow:hidden}
-.hero-art .s1{position:absolute;left:10%;right:10%;bottom:22%;height:34%;border-radius:22px 22px 10px 10px;background:var(--acc);opacity:.9}
-.hero-art .s2{position:absolute;left:6%;width:16%;bottom:22%;height:46%;border-radius:18px;background:var(--acc);filter:brightness(.85)}
-.hero-art .s3{position:absolute;right:6%;width:16%;bottom:22%;height:46%;border-radius:18px;background:var(--acc);filter:brightness(.85)}
-.hero-art .s4{position:absolute;left:16%;right:16%;bottom:44%;height:26%;border-radius:18px;background:var(--acc);filter:brightness(1.12)}
-.hero-art .s5{position:absolute;left:0;right:0;bottom:0;height:22%;background:var(--line)}
-.hero-art .s6{position:absolute;right:9%;top:12%;width:64px;height:64px;border-radius:50%;border:10px solid var(--card);opacity:.7}
-.hero-art.kitchen .s1{left:6%;right:6%;bottom:16%;height:30%;border-radius:8px}
-.hero-art.kitchen .s2{left:6%;width:40%;top:10%;bottom:auto;height:30%;border-radius:8px}
-.hero-art.kitchen .s3{right:6%;width:46%;top:10%;bottom:auto;height:30%;border-radius:8px}
-.hero-art.kitchen .s4{left:6%;right:6%;bottom:46%;height:4%;border-radius:4px;filter:brightness(.7)}
-.hero-art.kitchen .s5{height:16%}
-.hero-art.kitchen .s6{display:none}
-.hero-art.bed .s1{left:8%;right:8%;bottom:20%;height:28%;border-radius:14px}
-.hero-art.bed .s2{left:8%;width:84%;bottom:46%;height:30%;border-radius:22px 22px 6px 6px;filter:brightness(.82)}
-.hero-art.bed .s3{display:none}
-.hero-art.bed .s4{left:14%;right:52%;bottom:44%;height:12%;border-radius:12px;filter:brightness(1.3)}
-.hero-art.bed .s6{right:auto;left:54%;top:auto;bottom:44%;width:32%;height:12%;border:0;border-radius:12px;background:var(--acc);filter:brightness(1.3);opacity:1}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-.chip{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;padding:7px 12px;border-radius:10px;background:var(--card);border:1px solid var(--line)}
-.chip svg{color:var(--acc)}
-section{padding:46px 0}
-h2{font-family:'Unbounded','Manrope',sans-serif;font-weight:700;font-size:clamp(23px,5.4vw,34px);line-height:1.15;letter-spacing:-.015em;margin-bottom:10px}
-.sub{color:var(--muted);margin-bottom:24px;max-width:620px}
-.grid{display:grid;gap:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
-.svc h3{font-size:17.5px;margin:12px 0 6px}
-.svc p{color:var(--muted);font-size:15px}
-.svc-mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--acc),var(--acc2))}
-.prices{padding:6px 20px}
-.price-row{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
-.price-row:last-child{border-bottom:0}
-.price-row span{display:block;color:var(--muted);font-size:13.5px;margin-top:3px}
-.pv{font-weight:800;white-space:nowrap;color:var(--acc)}
-.note{font-size:13px;color:var(--muted);margin-top:12px}
-.why{display:grid;gap:12px;grid-template-columns:1fr 1fr}
-.why-item{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
-.why-big{font-family:'Unbounded','Manrope',sans-serif;font-weight:700;font-size:24px;color:var(--acc);line-height:1.1;margin-bottom:6px}
-.why-txt{font-size:14px;color:var(--muted)}
-.steps{list-style:none;display:grid;gap:12px;counter-reset:s}
-.steps li{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
-.sn{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--acc);color:var(--accInk);font-weight:800}
-.steps h3{font-size:16.5px;margin-bottom:3px}
-.steps p{color:var(--muted);font-size:15px}
-.faq-i{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:10px;overflow:hidden}
-.faq-i summary{cursor:pointer;list-style:none;padding:17px 46px 17px 18px;font-weight:700;position:relative}
-.faq-i summary::-webkit-details-marker{display:none}
-.faq-i summary:after{content:"";position:absolute;right:20px;top:50%;width:10px;height:10px;border-right:2px solid var(--acc);border-bottom:2px solid var(--acc);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
-.faq-i[open] summary:after{transform:translateY(-30%) rotate(-135deg)}
-.faq-i p{padding:0 18px 18px;color:var(--muted)}
-.form-box{background:linear-gradient(150deg,var(--acc),color-mix(in srgb,var(--acc) 70%,#000));color:var(--accInk);border-radius:24px;padding:26px 20px}
-.form-box h2{color:inherit}
-.form-box .sub{color:inherit;opacity:.85}
-form{display:grid;gap:10px}
-label{font-size:13px;font-weight:600;opacity:.9}
-input,textarea,select{width:100%;font:inherit;font-size:16px;padding:14px 15px;border-radius:12px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.95);color:#1a1a1a}
-textarea{min-height:92px;resize:vertical}
-.form-box .btn{background:#141414;color:#fff;width:100%;margin-top:4px}
-.consent{font-size:12px;opacity:.8}
-.done{display:none;background:rgba(255,255,255,.95);color:#1a1a1a;border-radius:14px;padding:16px;font-weight:600}
-.done.show{display:block}
-.contacts{display:grid;gap:14px}
-.c-line{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:14px;background:var(--card);border:1px solid var(--line);text-decoration:none}
-.c-line svg{color:var(--acc);width:20px;height:20px}
-.map-art{height:180px;border-radius:18px;border:1px solid var(--line);background:
- linear-gradient(90deg,transparent 48%,var(--line) 48%,var(--line) 52%,transparent 52%),
- linear-gradient(0deg,transparent 30%,var(--line) 30%,var(--line) 34%,transparent 34%),
- linear-gradient(25deg,transparent 60%,var(--line) 60%,var(--line) 63%,transparent 63%),var(--card);position:relative}
-.map-art:after{content:"";position:absolute;left:50%;top:32%;width:22px;height:22px;border-radius:50% 50% 50% 0;transform:translate(-50%,-100%) rotate(-45deg);background:var(--acc);box-shadow:0 0 0 6px color-mix(in srgb,var(--acc) 25%,transparent)}
-footer{padding:28px 0 36px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
-.sticky .btn{min-height:50px;padding:0 10px;font-size:15px}
-@media (min-width:760px){
- body{padding-bottom:0}
- .sticky{display:none}
- .top nav{display:flex}
- .hero{padding:72px 0 64px}
- .hero .wrap{grid-template-columns:1.25fr 1fr;align-items:center}
- .hero-art{height:360px}
- .grid.g3{grid-template-columns:repeat(3,1fr)}
- .grid.g2{grid-template-columns:repeat(2,1fr)}
- .why{grid-template-columns:repeat(4,1fr)}
- .steps{grid-template-columns:repeat(2,1fr)}
- .two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
- .form-box{padding:36px}
- section{padding:64px 0}
+:root{
+  --ivory:#f6f1e9; --paper:#fbf8f3; --sand:#e9dfd0; --stone:#cdbfaa;
+  --ink:#1d1916; --ink-2:#4a423b; --muted:#857a6e;
+  --terra:#b4532a; --terra-d:#8f3f1e; --olive:#5e6345;
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Manrope",system-ui,-apple-system,sans-serif;
+  --r:22px; --ease:cubic-bezier(.2,.7,.2,1);
 }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--ivory);color:var(--ink);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,100% - 48px);margin-inline:auto}
+.demo{background:var(--ink);color:#d9cfc2;font-size:12.5px;text-align:center;padding:7px 16px;letter-spacing:.02em}
+
+header.nav{position:fixed;inset:34px 0 auto 0;z-index:50;transition:background .4s var(--ease),box-shadow .4s,inset .3s}
+header.nav.solid{inset:0 0 auto 0;background:rgba(246,241,233,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(29,25,22,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{font-family:var(--serif);font-size:32px;font-weight:600;letter-spacing:.01em;color:#fff;transition:color .4s;line-height:1}
+.logo small{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;font-weight:500;opacity:.8;margin-top:4px}
+.nav.solid .logo{color:var(--ink)}
+.menu{display:flex;gap:34px;font-size:14px;font-weight:500;color:rgba(255,255,255,.88)}
+.nav.solid .menu{color:var(--ink-2)}
+.menu a{position:relative}
+.menu a::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:1px;background:currentColor;transition:width .35s var(--ease)}
+.menu a:hover::after{width:100%}
+.nav-cta{display:flex;gap:18px;align-items:center}
+.phone{font-weight:600;font-size:15px;color:#fff;transition:color .4s}
+.nav.solid .phone{color:var(--ink)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:16px 28px;font-weight:600;font-size:15px;cursor:pointer;border:0;font-family:inherit;transition:transform .35s var(--ease),background .3s,color .3s,box-shadow .35s}
+.btn:hover{transform:translateY(-2px)}
+.btn-terra{background:var(--terra);color:#fff;box-shadow:0 10px 30px -10px rgba(180,83,42,.7)}
+.btn-terra:hover{background:var(--terra-d)}
+.btn-glass{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.btn-glass:hover{background:#fff;color:var(--ink)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-line{border:1px solid var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px}
+
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero-img{position:absolute;inset:-4% 0 0 0;background:url(img/hero.jpg) center 60%/cover no-repeat;transform:scale(1.12);animation:kb 18s var(--ease) forwards;will-change:transform}
+@keyframes kb{to{transform:scale(1)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(24,17,12,.78) 0%,rgba(24,17,12,.45) 42%,rgba(24,17,12,0) 70%),linear-gradient(0deg,rgba(24,17,12,.55) 0%,rgba(24,17,12,0) 45%)}
+.hero .wrap{position:relative;z-index:2;padding:180px 0 64px}
+.chip{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:9px 16px;border-radius:999px;font-size:13.5px;font-weight:500}
+.stars{color:#f3c178;letter-spacing:2px}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(50px,7.4vw,112px);line-height:.95;letter-spacing:-.015em;margin:26px 0 24px;max-width:11ch}
+.hero h1 em{font-style:italic;color:#f0c9a8}
+.hero p.lead{font-size:clamp(17px,1.5vw,20px);max-width:520px;color:rgba(255,255,255,.86);font-weight:300}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.hero-meta{display:flex;gap:38px;flex-wrap:wrap;margin-top:64px;padding-top:26px;border-top:1px solid rgba(255,255,255,.22);font-size:14px;color:rgba(255,255,255,.8)}
+.hero-meta b{display:block;font-family:var(--serif);font-size:30px;font-weight:500;color:#fff;line-height:1.1}
+.scroll-hint{position:absolute;right:32px;bottom:40px;z-index:2;writing-mode:vertical-rl;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+.scroll-hint::after{content:"";display:block;width:1px;height:60px;background:rgba(255,255,255,.6);margin:14px auto 0;animation:drop 2.2s infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+.marquee{background:var(--ink);color:var(--sand);overflow:hidden;padding:22px 0;white-space:nowrap}
+.marquee .track{display:inline-flex;gap:56px;animation:mq 38s linear infinite;font-family:var(--serif);font-size:30px;font-style:italic}
+.marquee span::after{content:"✦";font-style:normal;font-size:14px;color:var(--terra);margin-left:56px;vertical-align:middle}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+section{padding:130px 0}
+.eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--terra);font-weight:600;display:flex;align-items:center;gap:14px}
+.eyebrow::before{content:"";width:34px;height:1px;background:currentColor}
+h2{font-family:var(--serif);font-weight:500;font-size:clamp(40px,5vw,72px);line-height:1;letter-spacing:-.01em;margin:22px 0 20px}
+h2 em{font-style:italic;color:var(--terra)}
+.sub{color:var(--ink-2);max-width:560px;font-size:17px}
+
+.intro{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
+.intro-img{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5}
+.intro-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.intro-img:hover img{transform:scale(1.05)}
+.badge-round{position:absolute;right:-1px;bottom:-1px;background:var(--ivory);border-top-left-radius:var(--r);padding:22px 26px}
+.badge-round b{font-family:var(--serif);font-size:44px;line-height:1;font-weight:500}
+.badge-round span{display:block;font-size:13px;color:var(--muted)}
+.ticks{list-style:none;margin-top:34px;display:grid;gap:16px}
+.ticks li{display:flex;gap:14px;align-items:flex-start;font-size:16.5px}
+.ticks li::before{content:"";flex:0 0 22px;height:22px;border-radius:50%;background:var(--terra) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/12px no-repeat;margin-top:2px}
+
+.collection{background:var(--paper)}
+.col-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:56px}
+.cards{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}
+.card{position:relative;border-radius:var(--r);overflow:hidden;color:#fff;min-height:440px;display:flex;align-items:flex-end;isolation:isolate}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s var(--ease)}
+.card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(20,14,10,.78),rgba(20,14,10,0) 55%)}
+.card:hover img{transform:scale(1.06)}
+.card .in{padding:30px;width:100%}
+.card h3{font-family:var(--serif);font-weight:500;font-size:36px;line-height:1.05}
+.card p{color:rgba(255,255,255,.82);font-size:15px;margin-top:8px;max-width:360px}
+.card .more{display:inline-flex;margin-top:18px;font-size:14px;font-weight:600;gap:8px;align-items:center;opacity:.9}
+.card .more::after{content:"→";transition:transform .3s}
+.card:hover .more::after{transform:translateX(6px)}
+.c1{grid-column:span 7;min-height:560px}.c2{grid-column:span 5;min-height:560px}
+.c3{grid-column:span 4}.c4{grid-column:span 4}.c5{grid-column:span 4}
+.card.plain{background:var(--sand);color:var(--ink)}
+.card.plain::after,.card.terra::after{display:none}
+.card.plain p{color:var(--ink-2)}
+.card.terra{background:var(--terra)}
+.card .num{position:absolute;top:26px;left:30px;font-family:var(--serif);font-size:44px;font-style:italic;opacity:.55;line-height:1}
+
+.fabrics{background:var(--ink);color:var(--ivory);overflow:hidden}
+.fab-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:90px;align-items:center}
+.fabrics .sub{color:rgba(246,241,233,.72)}
+.swatches{display:flex;gap:12px;margin:34px 0 14px;flex-wrap:wrap}
+.sw{width:58px;height:58px;border-radius:50%;border:2px solid rgba(255,255,255,.18);cursor:pointer;transition:transform .35s var(--ease),border-color .3s}
+.sw:hover,.sw.on{transform:translateY(-6px);border-color:#fff}
+.sw-label{font-family:var(--serif);font-style:italic;font-size:24px;color:#f0c9a8;min-height:34px}
+.fab-img{border-radius:var(--r);overflow:hidden;aspect-ratio:3/4;position:relative}
+.fab-img img{width:100%;height:100%;object-fit:cover}
+.fab-img .tag{position:absolute;left:22px;top:22px;background:rgba(246,241,233,.92);color:var(--ink);font-size:13px;font-weight:600;padding:9px 16px;border-radius:999px}
+
+.proof{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--stone);border-bottom:1px solid var(--stone)}
+.proof div{padding:46px 28px;border-right:1px solid var(--stone)}
+.proof div:last-child{border-right:0}
+.proof b{font-family:var(--serif);font-size:clamp(48px,5vw,76px);font-weight:500;line-height:1;display:block}
+.proof span{color:var(--muted);font-size:14.5px;margin-top:10px;display:block}
+.proof-note{font-size:13px;color:var(--muted);margin-top:16px}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:60px;counter-reset:s}
+.step{background:var(--paper);border-radius:var(--r);padding:34px 28px 38px;position:relative;transition:transform .45s var(--ease),box-shadow .45s}
+.step:hover{transform:translateY(-8px);box-shadow:0 30px 60px -30px rgba(60,40,25,.35)}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:var(--serif);font-size:54px;color:var(--terra);line-height:1;display:block;margin-bottom:42px}
+.step h3{font-size:19px;font-weight:600;margin-bottom:10px}
+.step p{color:var(--ink-2);font-size:15px}
+
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+details{border-bottom:1px solid var(--stone);padding:26px 0}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;font-family:var(--serif);font-size:26px;font-weight:500;line-height:1.2}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--sans);font-weight:300;font-size:30px;line-height:1;transition:transform .35s var(--ease);color:var(--terra)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--ink-2);margin-top:14px;max-width:620px}
+
+.lead-sec{position:relative;color:#fff;overflow:hidden;padding:0}
+.lead-bg{position:absolute;inset:0;background:url(img/dining.jpg) center/cover}
+.lead-sec::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(24,17,12,.86),rgba(24,17,12,.5))}
+.lead-in{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;padding:130px 0}
+.lead-in h2 em{color:#f0c9a8}
+.form{background:rgba(251,248,243,.97);color:var(--ink);border-radius:28px;padding:40px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+.form h3{font-family:var(--serif);font-size:32px;font-weight:500;margin-bottom:6px}
+.form .hint{color:var(--muted);font-size:14px;margin-bottom:24px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.field input,.field select{width:100%;border:1px solid var(--stone);background:#fff;border-radius:14px;padding:15px 16px;font:inherit;font-size:16px;color:var(--ink);transition:border-color .2s,box-shadow .2s}
+.field input:focus,.field select:focus{outline:0;border-color:var(--terra);box-shadow:0 0 0 4px rgba(180,83,42,.12)}
+.form .btn{width:100%;justify-content:center;margin-top:10px}
+.legal{font-size:12px;color:var(--muted);margin-top:14px}
+.ok{display:none;margin-top:14px;background:#efe6d8;border-radius:14px;padding:14px 16px;font-size:14px}
+
+.contacts{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+.ct-card{background:var(--paper);border-radius:var(--r);padding:44px}
+.ct-row{display:flex;justify-content:space-between;gap:20px;padding:20px 0;border-bottom:1px solid var(--sand);font-size:16.5px}
+.ct-row:last-of-type{border-bottom:0}
+.ct-row span{color:var(--muted)}
+.ct-row b{font-weight:600;text-align:right}
+.ct-img{border-radius:var(--r);overflow:hidden;min-height:380px;position:relative}
+.ct-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.ct-img .pin{position:absolute;left:24px;bottom:24px;right:24px;background:rgba(251,248,243,.95);border-radius:18px;padding:18px 20px;font-size:15px}
+.ct-img .pin b{font-family:var(--serif);font-size:24px;font-weight:500;display:block}
+
+footer{padding:50px 0 120px;color:var(--muted);font-size:13px;text-align:center}
+
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:none;gap:8px;padding:7px;background:rgba(29,25,22,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:999px}
+.mbar a{flex:1;justify-content:center;padding:13px 10px;font-size:14px}
+
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,40px);opacity:0;pointer-events:none;z-index:80;background:var(--ink);color:#fff;padding:14px 22px;border-radius:14px;font-size:14px;transition:all .4s var(--ease);max-width:calc(100% - 32px);text-align:center}
+.toast.show{transform:translate(-50%,0);opacity:1}
+
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+.hero .rv{transition-duration:1.3s}
+
+@media (max-width:1000px){
+  .menu{display:none}
+  .intro,.fab-grid,.faq-grid,.lead-in,.contacts{grid-template-columns:1fr;gap:48px}
+  .c1,.c2,.c3,.c4,.c5{grid-column:span 12;min-height:420px}
+  .steps{grid-template-columns:1fr 1fr}
+  .proof{grid-template-columns:1fr 1fr}
+  .proof div:nth-child(2){border-right:0}
+  .proof div:nth-child(-n+2){border-bottom:1px solid var(--stone)}
+  section{padding:90px 0}
+  .lead-in{padding:90px 0}
+  .scroll-hint{display:none}
+}
+@media (max-width:640px){
+  .wrap{width:calc(100% - 32px)}
+  header.nav{inset:52px 0 auto 0}
+  .phone{display:none}
+  .nav-cta .btn{padding:11px 16px;font-size:13.5px}
+  .hero .wrap{padding:150px 0 110px}
+  .hero-meta{gap:24px}
+  .steps{grid-template-columns:1fr}
+  .form,.ct-card{padding:28px}
+  .ct-row{flex-direction:column;gap:4px}.ct-row b{text-align:left}
+  .mbar{display:flex}
+  .toast{bottom:84px}
+  summary{font-size:22px}
+  .card .in{padding:24px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
 <script type="application/ld+json">
-[
- {
-  "@context": "https://schema.org",
-  "@type": "FurnitureStore",
-  "name": "Fabrica",
-  "description": "Студия мебели Fabrica в ТЦ Aura. Подберём диван, кресло, стол и стулья под ваш интерьер: модель, ткань и размер выбираете вы, доставку берём на себя.",
-  "telephone": "+7 937 605-25-25",
-  "address": {
-   "@type": "PostalAddress",
-   "streetAddress": "проспект им. Маршала Советского Союза Г.К. Жукова, 94, ТЦ Aura, 3 этаж",
-   "addressLocality": "Волгоград",
-   "postalCode": "400010",
-   "addressCountry": "RU"
-  },
-  "aggregateRating": {
-   "@type": "AggregateRating",
-   "ratingValue": "5.0",
-   "ratingCount": "141",
-   "bestRating": "5"
-  },
-  "openingHours": "Mo-Su 10:00-20:00"
- },
- {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-   {
-    "@type": "Question",
-    "name": "Можно заказать диван в своём размере?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Да, многие модели можно заказать в нужном размере и в выбранной ткани. Какие варианты есть у конкретной модели, подскажет консультант."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Где посмотреть мебель вживую?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "В шоуруме Fabrica: ТЦ Aura, проспект Жукова, 94, 3 этаж. Мы работаем ежедневно с 10:00 до 20:00."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Сколько изготавливается диван на заказ?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Срок зависит от модели и ткани: [ваш срок изготовления]. Точный срок фиксируем при оформлении заказа."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Есть ли доставка?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Да, доставка есть. Стоимость и время доставки по вашему адресу подскажет консультант."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Какие ткани можно выбрать?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "В шоуруме есть каталоги тканей. Консультант поможет выбрать ткань под ваш интерьер и образ жизни."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Есть ли столы и стулья?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Да, кроме мягкой мебели у нас есть обеденные столы, в том числе раздвижные, и стулья."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Какая гарантия?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "[Условия гарантии]. Если что то пойдёт не так, напишите нам, разберёмся."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Как оплатить заказ?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "[Способы оплаты и размер предоплаты]."
-    }
-   }
-  ]
- }
-]
+[{"@context":"https://schema.org","@type":"FurnitureStore","name":"Fabrica","description":"Студия мебели Fabrica в ТЦ Aura. Диваны, кресла, столы и стулья в вашей ткани и вашем размере.","telephone":"+7 937 605-25-25","address":{"@type":"PostalAddress","streetAddress":"проспект им. Маршала Советского Союза Г.К. Жукова, 94, ТЦ Aura, 3 этаж","addressLocality":"Волгоград","postalCode":"400010","addressCountry":"RU"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"141","bestRating":"5"},"openingHours":"Mo-Su 10:00-20:00"},
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Можно заказать диван в своём размере?","acceptedAnswer":{"@type":"Answer","text":"Да, многие модели можно заказать в нужном размере и в выбранной ткани. Какие варианты есть у конкретной модели, подскажет консультант."}},
+{"@type":"Question","name":"Где посмотреть мебель вживую?","acceptedAnswer":{"@type":"Answer","text":"В шоуруме Fabrica: ТЦ Aura, проспект Жукова, 94, 3 этаж. Работаем ежедневно с 10:00 до 20:00."}},
+{"@type":"Question","name":"Какие ткани можно выбрать?","acceptedAnswer":{"@type":"Answer","text":"В шоуруме есть каталоги тканей. Консультант поможет выбрать ткань под ваш интерьер и образ жизни."}},
+{"@type":"Question","name":"Есть ли доставка?","acceptedAnswer":{"@type":"Answer","text":"Да, доставка есть. Стоимость и время доставки по вашему адресу подскажет консультант."}},
+{"@type":"Question","name":"Есть ли столы и стулья?","acceptedAnswer":{"@type":"Answer","text":"Да, кроме мягкой мебели есть обеденные столы, в том числе раздвижные, и стулья."}}]}]
 </script>
 </head>
 <body>
-<div class="demo-bar">Демо-концепт от AI Partner Group для «Fabrica». Не официальный сайт.</div>
-<header class="top"><div class="wrap">
- <a class="logo" href="#top">Fabrica<small>Студия мебели, ТЦ Aura</small></a>
- <nav aria-label="Разделы"><a href="#services">Что делаем</a><a href="#prices">Цены</a><a href="#steps">Как работаем</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a></nav>
- <a class="top-call" href="tel:+79376052525"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>+7 937 605-25-25</span></a>
-</div></header>
+<div class="demo">Демо-концепт от AI Partner Group для «Fabrica». Не официальный сайт. Фото интерьеров сгенерированы для примера.</div>
 
-<main id="top">
-<section class="hero"><div class="wrap">
- <div>
-  <span class="eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z" fill="currentColor"/></svg> 5,0 на 2ГИС, 141 оценок</span>
-  <h1>Диваны и мягкая мебель <em>на заказ</em> в Волгограде</h1>
-  <p class="lead">Студия мебели Fabrica в ТЦ Aura. Подберём диван, кресло, стол и стулья под ваш интерьер: модель, ткань и размер выбираете вы, доставку берём на себя.</p>
-  <div class="cta">
-   <a class="btn btn-main" href="tel:+79376052525"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg> Позвонить</a>
-   <a class="btn btn-wa" href="https://wa.me/79376052525" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 0 1 12 4zm-3.2 4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4l-.5-.3-1.8-.9c-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5z" fill="currentColor"/></svg> Написать в WhatsApp</a>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo">Fabrica<small>студия мебели</small></a>
+    <nav class="menu">
+      <a href="#collection">Коллекция</a>
+      <a href="#fabrics">Ткани</a>
+      <a href="#how">Как заказать</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Шоурум</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="phone" href="tel:+79376052525">+7 937 605-25-25</a>
+      <a class="btn btn-terra" href="#lead">Подобрать диван</a>
+    </div>
   </div>
-  <div class="chips"><span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.4z" fill="currentColor"/></svg>Шоурум в ТЦ Aura, 3 этаж</span><span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.4z" fill="currentColor"/></svg>Ежедневно 10:00–20:00</span><span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.4z" fill="currentColor"/></svg>Доставка</span></div>
- </div>
- <div class="hero-art sofa" role="img" aria-label="Иллюстрация"><i class="s1"></i><i class="s2"></i><i class="s3"></i><i class="s4"></i><i class="s5"></i><i class="s6"></i></div>
-</div></section>
+</header>
 
-<section id="services"><div class="wrap">
- <h2>Что можно заказать</h2>
- <p class="sub">Мебель, которую можно посмотреть и потрогать в шоуруме, а потом заказать в своей ткани и своём размере.</p>
- <div class="grid g3"><article class="card svc"><div class="svc-mark" aria-hidden="true"></div><h3>Диваны</h3><p>Разные модели для гостиной. Подбираем ткань и размер по каталогу под вашу комнату.</p></article><article class="card svc"><div class="svc-mark" aria-hidden="true"></div><h3>Кресла и кресла-кровати</h3><p>Для отдыха и для гостей, в одном стиле с диваном.</p></article><article class="card svc"><div class="svc-mark" aria-hidden="true"></div><h3>Обеденные столы</h3><p>В том числе раздвижные модели для кухни и гостиной.</p></article><article class="card svc"><div class="svc-mark" aria-hidden="true"></div><h3>Стулья</h3><p>Удобные стулья к обеденному столу.</p></article><article class="card svc"><div class="svc-mark" aria-hidden="true"></div><h3>Изготовление под заказ</h3><p>Выбираете модель, ткань и размер из каталога, мы оформляем заказ на изготовление.</p></article><article class="card svc"><div class="svc-mark" aria-hidden="true"></div><h3>Доставка</h3><p>Привезём заказ по Волгограду. Условия доставки подскажет консультант.</p></article></div>
-</div></section>
-
-<section id="prices"><div class="wrap two">
- <div>
-  <h2>Цены</h2>
-  <p class="sub">Цена зависит от модели, размера и категории ткани. Точную стоимость консультант назовёт в шоуруме или в WhatsApp.</p>
-  <a class="btn btn-ghost" href="#request">Узнать цену своего варианта</a>
- </div>
- <div>
-  <div class="card prices"><div class="price-row"><div><b>Диван</b><span>прямой, в ткани по выбору</span></div><div class="pv">от [ваша цена] ₽</div></div><div class="price-row"><div><b>Диван в вашем размере</b><span>размер под вашу комнату</span></div><div class="pv">от [ваша цена] ₽</div></div><div class="price-row"><div><b>Кресло</b></div><div class="pv">от [ваша цена] ₽</div></div><div class="price-row"><div><b>Обеденный стол</b></div><div class="pv">от [ваша цена] ₽</div></div></div>
-  <p class="note">[Добавьте ваши цены: в рабочей версии здесь будут реальные цены «от».]</p>
- </div>
-</div></section>
-
-<section id="why"><div class="wrap">
- <h2>Почему выбирают Fabrica</h2>
- <p class="sub">Рейтинг и число оценок по данным 2ГИС, октябрь 2026.</p>
- <div class="why"><div class="why-item"><div class="why-big">5,0</div><div class="why-txt">средняя оценка на 2ГИС</div></div><div class="why-item"><div class="why-big">141</div><div class="why-txt">оценка от покупателей на 2ГИС</div></div><div class="why-item"><div class="why-big">139</div><div class="why-txt">отзывов на 2ГИС</div></div><div class="why-item"><div class="why-big">10–20</div><div class="why-txt">открыты каждый день</div></div></div>
-</div></section>
-
-<section id="steps"><div class="wrap">
- <h2>Как проходит заказ</h2>
- <p class="sub">От выбора модели до дивана у вас дома.</p>
- <ol class="steps"><li><span class="sn">1</span><div><h3>Пишете или приезжаете</h3><p>Напишите в WhatsApp или приходите в шоурум в ТЦ Aura, 3 этаж.</p></div></li><li><span class="sn">2</span><div><h3>Выбираете модель и ткань</h3><p>Сидите на образцах, смотрите каталоги тканей, консультант помогает с размером.</p></div></li><li><span class="sn">3</span><div><h3>Оформляем заказ</h3><p>Фиксируем модель, ткань, размер, цену и срок изготовления [ваш срок].</p></div></li><li><span class="sn">4</span><div><h3>Привозим</h3><p>Доставляем заказ по Волгограду в согласованный день.</p></div></li></ol>
-</div></section>
-
-<section id="faq"><div class="wrap">
- <h2>Частые вопросы</h2>
- <p class="sub">Если не нашли ответ, напишите в WhatsApp, ответим.</p>
- <details class="faq-i"><summary>Можно заказать диван в своём размере?</summary><p>Да, многие модели можно заказать в нужном размере и в выбранной ткани. Какие варианты есть у конкретной модели, подскажет консультант.</p></details><details class="faq-i"><summary>Где посмотреть мебель вживую?</summary><p>В шоуруме Fabrica: ТЦ Aura, проспект Жукова, 94, 3 этаж. Мы работаем ежедневно с 10:00 до 20:00.</p></details><details class="faq-i"><summary>Сколько изготавливается диван на заказ?</summary><p>Срок зависит от модели и ткани: [ваш срок изготовления]. Точный срок фиксируем при оформлении заказа.</p></details><details class="faq-i"><summary>Есть ли доставка?</summary><p>Да, доставка есть. Стоимость и время доставки по вашему адресу подскажет консультант.</p></details><details class="faq-i"><summary>Какие ткани можно выбрать?</summary><p>В шоуруме есть каталоги тканей. Консультант поможет выбрать ткань под ваш интерьер и образ жизни.</p></details><details class="faq-i"><summary>Есть ли столы и стулья?</summary><p>Да, кроме мягкой мебели у нас есть обеденные столы, в том числе раздвижные, и стулья.</p></details><details class="faq-i"><summary>Какая гарантия?</summary><p>[Условия гарантии]. Если что то пойдёт не так, напишите нам, разберёмся.</p></details><details class="faq-i"><summary>Как оплатить заказ?</summary><p>[Способы оплаты и размер предоплаты].</p></details>
-</div></section>
-
-<section id="request"><div class="wrap">
- <div class="form-box two">
-  <div>
-   <h2>Подберём диван под вашу комнату</h2>
-   <p class="sub">Оставьте телефон и пару слов о том, что ищете. Консультант пришлёт варианты в WhatsApp.</p>
+<section class="hero" id="top">
+  <div class="hero-img" role="img" aria-label="Диван в терракотовой ткани в светлой гостиной"></div>
+  <div class="wrap">
+    <span class="chip rv"><span class="stars">★★★★★</span> 5,0 на 2ГИС · 141 оценка</span>
+    <h1 class="rv d1">Диван, который <em>сделан под вас</em></h1>
+    <p class="lead rv d2">Мягкая мебель на заказ в Волгограде. Выбираете модель, ткань и размер в шоуруме, мы делаем и привозим.</p>
+    <div class="hero-actions rv d3">
+      <a class="btn btn-terra" href="#lead">Подобрать диван
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-glass js-max" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Написать в MAX</a>
+    </div>
+    <div class="hero-meta rv d3">
+      <div><b>ТЦ Aura</b>шоурум на 3 этаже</div>
+      <div><b>10–20</b>ежедневно</div>
+      <div><b>Ваш размер</b>и ваша ткань</div>
+    </div>
   </div>
-  <div>
-   <form id="lead-form" novalidate>
-    <label for="f-name">Как к вам обращаться</label>
-    <input id="f-name" name="name" autocomplete="name" placeholder="Имя">
-    <label for="f-phone">Телефон или WhatsApp</label>
-    <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7">
-    <label for="f-what">Что ищете</label>
-    <textarea id="f-what" name="what" placeholder="Например: угловой диван до 2,6 м, светлая ткань"></textarea>
-    <button class="btn" type="submit">Отправить заявку</button>
-    <p class="consent">Нажимая кнопку, вы соглашаетесь на обработку контактных данных для ответа на заявку.</p>
-   </form>
-   <div id="lead-done" class="done" role="status">Это демо: в рабочей версии заявка придёт вам в WhatsApp или Telegram</div>
+  <div class="scroll-hint">Листайте</div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Диваны</span><span>Кресла</span><span>Кресла-кровати</span><span>Обеденные столы</span><span>Стулья</span><span>Ткани на выбор</span><span>Свой размер</span>
+  <span>Диваны</span><span>Кресла</span><span>Кресла-кровати</span><span>Обеденные столы</span><span>Стулья</span><span>Ткани на выбор</span><span>Свой размер</span>
+</div></div>
+
+<section>
+  <div class="wrap intro">
+    <div class="intro-img rv">
+      <img src="img/armchair.jpg" alt="Кресло в светлой ткани букле в спальне" loading="lazy">
+      <div class="badge-round"><b>5,0</b><span>средняя оценка на 2ГИС</span></div>
+    </div>
+    <div>
+      <div class="eyebrow rv">Студия Fabrica</div>
+      <h2 class="rv d1">Сначала посидите. <em>Потом выбирайте</em></h2>
+      <p class="sub rv d2">В шоуруме можно сесть на каждую модель, потрогать ткани и подобрать размер под свою комнату. Консультант поможет сочетать диван, кресло и стол в одном стиле.</p>
+      <ul class="ticks rv d3">
+        <li>Модель, ткань и размер выбираете вы</li>
+        <li>Диваны, кресла, столы и стулья в одном месте</li>
+        <li>Доставка по Волгограду</li>
+        <li>Открыты каждый день с 10:00 до 20:00</li>
+      </ul>
+    </div>
   </div>
- </div>
-</div></section>
+</section>
 
-<section id="contacts"><div class="wrap two">
- <div>
-  <h2>Контакты</h2>
-  <p class="sub">Приезжайте в шоурум или напишите, ответим в рабочее время.</p>
-  <div class="contacts">
-   <a class="c-line" href="tel:+79376052525"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>+7 937 605-25-25</span></a>
-   <a class="c-line" href="https://wa.me/79376052525" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 0 1 12 4zm-3.2 4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4l-.5-.3-1.8-.9c-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5z" fill="currentColor"/></svg><span>WhatsApp +7 937 605-25-25</span></a>
-   <a class="c-line" href="https://wa.me/79379052525" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 0 1 12 4zm-3.2 4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4l-.5-.3-1.8-.9c-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5z" fill="currentColor"/></svg><span>WhatsApp +7 937 905-25-25</span></a>
-   <div class="c-line"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg><span>Волгоград, проспект Жукова, 94, ТЦ Aura, 3 этаж (Дзержинский район)</span></div>
-   <div class="c-line"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4l3.5 2.1-.8 1.3L11 13V7h2z" fill="currentColor"/></svg><span>Ежедневно с 10:00 до 20:00</span></div>
+<section class="collection" id="collection">
+  <div class="wrap">
+    <div class="col-head">
+      <div>
+        <div class="eyebrow rv">Коллекция</div>
+        <h2 class="rv d1">Что можно <em>заказать</em></h2>
+      </div>
+      <p class="sub rv d2">Каждую позицию можно посмотреть в шоуруме, а заказать в своей ткани и своём размере.</p>
+    </div>
+    <div class="cards">
+      <a href="#lead" class="card c1 rv"><img src="img/hero.jpg" alt="Модульный диван" loading="lazy"><div class="in"><h3>Диваны</h3><p>Разные модели для гостиной. Подбираем ткань и размер под вашу комнату.</p><span class="more">Узнать цену</span></div></a>
+      <a href="#lead" class="card c2 rv d1"><img src="img/armchair.jpg" alt="Кресло" loading="lazy"><div class="in"><h3>Кресла и кресла-кровати</h3><p>Для отдыха и для гостей, в одном стиле с диваном.</p><span class="more">Узнать цену</span></div></a>
+      <a href="#lead" class="card c3 rv"><img src="img/dining.jpg" alt="Обеденный стол и стулья" loading="lazy"><div class="in"><h3>Столы и стулья</h3><p>В том числе раздвижные столы для кухни и гостиной.</p><span class="more">Узнать цену</span></div></a>
+      <a href="#fabrics" class="card c4 plain rv d1"><span class="num">i.</span><div class="in"><h3>Ткани на выбор</h3><p>Каталоги тканей в шоуруме: подберём под интерьер и образ жизни.</p><span class="more">Смотреть ткани</span></div></a>
+      <a href="#lead" class="card c5 terra rv d2"><span class="num">ii.</span><div class="in"><h3>Под ваш размер</h3><p>Пришлите размеры комнаты, подскажем, какая модель встанет лучше.</p><span class="more">Отправить размеры</span></div></a>
+    </div>
   </div>
- </div>
- <div class="map-art" role="img" aria-label="Схема проезда"></div>
-</div></section>
-</main>
+</section>
 
-<footer><div class="wrap">Fabrica, Волгоград. Демо-концепт от AI Partner Group, данные взяты из открытой карточки компании в 2ГИС. Не официальный сайт.</div></footer>
+<section class="fabrics" id="fabrics">
+  <div class="wrap fab-grid">
+    <div>
+      <div class="eyebrow rv">Ткани</div>
+      <h2 class="rv d1">Одна модель. <em>Разный</em> характер</h2>
+      <p class="sub rv d2">Тот же диван в букле выглядит уютно, в велюре дорого, в рогожке спокойно. Нажмите на цвет и представьте его у себя дома.</p>
+      <div class="swatches rv d3" id="sw">
+        <div class="sw on" style="background:#efe8dc" data-n="молочный"></div>
+        <div class="sw" style="background:#d8c9b1" data-n="песочный"></div>
+        <div class="sw" style="background:#b4532a" data-n="терракота"></div>
+        <div class="sw" style="background:#5e6345" data-n="олива"></div>
+        <div class="sw" style="background:#33302d" data-n="графит"></div>
+      </div>
+      <div class="sw-label rv d3" id="swl">молочный</div>
+      <a class="btn btn-terra rv d3" href="#lead" style="margin-top:28px">Подобрать ткань с консультантом</a>
+    </div>
+    <div class="fab-img rv d1">
+      <img src="img/fabrics.jpg" alt="Образцы мебельных тканей" loading="lazy">
+      <span class="tag">Каталоги тканей в шоуруме</span>
+    </div>
+  </div>
+</section>
 
-<div class="sticky">
- <a class="btn btn-main" href="tel:+79376052525"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg> Позвонить</a>
- <a class="btn btn-wa" href="https://wa.me/79376052525" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 0 1 12 4zm-3.2 4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4l-.5-.3-1.8-.9c-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5z" fill="currentColor"/></svg> WhatsApp</a>
+<section>
+  <div class="wrap">
+    <div class="eyebrow rv">Покупатели о нас</div>
+    <h2 class="rv d1">Цифры, которые <em>говорят сами</em></h2>
+    <div class="proof rv d2" style="margin-top:50px">
+      <div><b>5,0</b><span>средняя оценка на 2ГИС</span></div>
+      <div><b>141</b><span>оценка покупателей</span></div>
+      <div><b>139</b><span>отзывов на 2ГИС</span></div>
+      <div><b>7/7</b><span>шоурум открыт каждый день</span></div>
+    </div>
+    <p class="proof-note">По данным карточки Fabrica в 2ГИС, октябрь 2026.</p>
+  </div>
+</section>
+
+<section style="padding-top:0" id="how">
+  <div class="wrap">
+    <div class="eyebrow rv">Как заказать</div>
+    <h2 class="rv d1">От идеи до дивана <em>у вас дома</em></h2>
+    <div class="steps">
+      <div class="step rv"><h3>Пишете или приходите</h3><p>Напишите в MAX или приезжайте в шоурум в ТЦ Aura, 3 этаж.</p></div>
+      <div class="step rv d1"><h3>Выбираете модель и ткань</h3><p>Сидите на образцах, листаете каталоги тканей, подбираем размер.</p></div>
+      <div class="step rv d2"><h3>Оформляем заказ</h3><p>Фиксируем модель, ткань, размер, цену и срок изготовления.</p></div>
+      <div class="step rv d3"><h3>Привозим</h3><p>Доставляем по Волгограду в согласованный день.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="lead-sec" id="lead">
+  <div class="lead-bg" aria-hidden="true"></div>
+  <div class="wrap lead-in">
+    <div>
+      <div class="eyebrow rv" style="color:#f0c9a8">Подбор под вашу комнату</div>
+      <h2 class="rv d1">Подберём диван <em>под вашу комнату</em></h2>
+      <p class="rv d2" style="color:rgba(255,255,255,.82);max-width:480px;font-size:17px">Оставьте телефон и пару слов о том, что ищете. Консультант пришлёт варианты с ценами в MAX.</p>
+    </div>
+    <form class="form rv d2" id="form" novalidate>
+      <h3>Заявка на подбор</h3>
+      <p class="hint">Ответим в рабочее время, ежедневно с 10 до 20</p>
+      <div class="field"><label for="n">Как к вам обращаться</label><input id="n" placeholder="Анна"></div>
+      <div class="field"><label for="p">Телефон</label><input id="p" type="tel" placeholder="+7 ___ ___-__-__"></div>
+      <div class="field"><label for="w">Что ищете</label>
+        <select id="w"><option>Диван</option><option>Угловой или модульный диван</option><option>Кресло или кресло-кровать</option><option>Стол и стулья</option><option>Пока не знаю, нужен совет</option></select></div>
+      <button class="btn btn-terra" type="submit">Получить подборку</button>
+      <p class="legal">Нажимая кнопку, вы соглашаетесь на обработку контактных данных для ответа на заявку.</p>
+      <div class="ok" id="ok">Это демо: в рабочей версии заявка сразу придёт вам в MAX или Telegram.</div>
+    </form>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap faq-grid">
+    <div>
+      <div class="eyebrow rv">Вопросы</div>
+      <h2 class="rv d1">Частые <em>вопросы</em></h2>
+      <p class="sub rv d2">Не нашли ответ? Напишите в MAX, ответим.</p>
+    </div>
+    <div class="rv d1">
+      <details open><summary>Можно заказать диван в своём размере?</summary><p>Да, многие модели можно заказать в нужном размере и в выбранной ткани. Какие варианты есть у конкретной модели, подскажет консультант.</p></details>
+      <details><summary>Где посмотреть мебель вживую?</summary><p>В шоуруме Fabrica: ТЦ Aura, проспект Жукова, 94, 3 этаж. Работаем ежедневно с 10:00 до 20:00.</p></details>
+      <details><summary>Какие ткани можно выбрать?</summary><p>В шоуруме есть каталоги тканей. Консультант поможет выбрать ткань под ваш интерьер и образ жизни.</p></details>
+      <details><summary>Есть ли доставка?</summary><p>Да, доставка есть. Стоимость и время доставки по вашему адресу подскажет консультант.</p></details>
+      <details><summary>Есть ли столы и стулья?</summary><p>Да, кроме мягкой мебели есть обеденные столы, в том числе раздвижные, и стулья.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow rv">Шоурум</div>
+    <h2 class="rv d1">Приезжайте <em>посидеть</em></h2>
+    <div class="contacts" style="margin-top:44px">
+      <div class="ct-card rv">
+        <div class="ct-row"><span>Адрес</span><b>Волгоград, проспект Жукова, 94,<br>ТЦ Aura, 3 этаж</b></div>
+        <div class="ct-row"><span>Режим</span><b>Ежедневно 10:00–20:00</b></div>
+        <div class="ct-row"><span>Телефон</span><b><a href="tel:+79376052525">+7 937 605-25-25</a></b></div>
+        <div class="ct-row"><span>Мессенджер</span><b><a href="#" class="js-max">MAX</a></b></div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
+          <a class="btn btn-ink" href="tel:+79376052525">Позвонить</a>
+          <a class="btn btn-line js-max" href="#">Написать в MAX</a>
+        </div>
+      </div>
+      <div class="ct-img rv d1">
+        <img src="img/dining.jpg" alt="Интерьер с обеденным столом" loading="lazy">
+        <div class="pin"><b>ТЦ Aura, 3 этаж</b>Дзержинский район, проспект Жукова, 94</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Fabrica, Волгоград. Демо-концепт от AI Partner Group. Данные из открытой карточки компании в 2ГИС, фото интерьеров сгенерированы для примера. Не официальный сайт.</div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-terra" href="tel:+79376052525">Позвонить</a>
+  <a class="btn btn-glass js-max" href="#">Написать в MAX</a>
 </div>
+<div class="toast" id="toast">Это демо: в рабочей версии кнопка откроет чат с Fabrica в MAX.</div>
+
 <script>
 (function(){
-  var f=document.getElementById('lead-form');
-  var done=document.getElementById('lead-done');
-  if(!f){return;}
-  f.addEventListener('submit',function(ev){
-    ev.preventDefault();
-    f.style.display='none';
-    done.classList.add('show');
-    done.setAttribute('tabindex','-1');
-    done.focus();
-  });
+  var nav=document.getElementById('nav');
+  function onS(){nav.classList.toggle('solid',window.scrollY>60)}
+  onS();window.addEventListener('scroll',onS,{passive:true});
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  setTimeout(function(){document.querySelectorAll('.hero .rv').forEach(function(el){el.classList.add('in')})},150);
+
+  var t=document.getElementById('toast'),tt;
+  function toast(){t.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){t.classList.remove('show')},3200)}
+  document.querySelectorAll('.js-max').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();toast()})});
+
+  var sws=document.querySelectorAll('.sw'),lbl=document.getElementById('swl');
+  sws.forEach(function(s){s.addEventListener('click',function(){sws.forEach(function(x){x.classList.remove('on')});s.classList.add('on');lbl.textContent=s.dataset.n})});
+
+  document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').style.display='block'});
+
+  var heroImg=document.querySelector('.hero-img');
+  window.addEventListener('scroll',function(){var y=window.scrollY;if(y<window.innerHeight){heroImg.style.translate='0 '+(y*0.25)+'px'}},{passive:true});
 })();
 </script>
 </body>
