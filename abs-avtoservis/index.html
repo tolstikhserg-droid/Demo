@@ -137,19 +137,17 @@ section{padding:130px 0}
 .carbox .hint{position:absolute;left:30px;top:22px;font-size:13px;color:rgba(255,255,255,.5);display:flex;align-items:center;gap:8px}
 .carbox .hint i{width:8px;height:8px;border-radius:50%;background:var(--a);animation:ping 2s infinite}
 @keyframes ping{0%{box-shadow:0 0 0 0 rgba(176,144,95,.7)}70%{box-shadow:0 0 0 10px rgba(176,144,95,0)}100%{box-shadow:0 0 0 0 rgba(176,144,95,0)}}
-.car{width:100%;height:auto;display:block;margin-top:16px;overflow:visible}
-.car .z{fill:#3a3d44;stroke:#141518;stroke-width:2.5;stroke-linejoin:round;cursor:pointer;transition:fill .3s,filter .3s}
-.car .z:hover{fill:#555962}
-.car .z.on{fill:var(--a);filter:drop-shadow(0 0 10px rgba(176,144,95,.65));animation:zon .5s var(--ease)}
-@keyframes zon{0%{fill:#fff}100%{fill:var(--a)}}
-.car .glass{fill:url(#gl);pointer-events:none}
-.car .tire{fill:#0b0b0c;pointer-events:none}
-.car .rim{fill:none;stroke:#6d7078;stroke-width:3;pointer-events:none}
-.car .hub{fill:#8a8d94;pointer-events:none}
-.car .deco{fill:none;stroke:#141518;stroke-width:2.5;pointer-events:none;stroke-linecap:round}
-.car .wheel{transform-box:fill-box;transform-origin:center}
-.carbox:hover .car .wheel{animation:spin 1.6s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
+.car{position:relative;margin-top:22px;border-radius:18px;overflow:hidden}
+.car .carimg{width:100%;height:auto;display:block;transform:scale(1.04);transition:transform 6s var(--ease)}
+.carbox.in .car .carimg,.carbox:hover .car .carimg{transform:scale(1)}
+.car .z{position:absolute;transform:translate(-50%,-50%);display:flex;align-items:center;gap:8px;cursor:pointer;padding:0;background:none;border:0;color:#fff;font:600 12.5px/1 var(--b,inherit)}
+.car .z i{position:relative;width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,.18);border:2px solid #fff;box-shadow:0 2px 10px rgba(0,0,0,.5);flex:none;transition:background .3s,border-color .3s,transform .3s var(--ease)}
+.car .z i::after{content:"";position:absolute;inset:-2px;border-radius:50%;animation:ping 2.4s infinite}
+.car .z span{background:rgba(12,12,13,.72);backdrop-filter:blur(6px);padding:6px 10px;border-radius:999px;white-space:nowrap;opacity:0;transform:translateX(-6px);transition:opacity .25s,transform .25s var(--ease);pointer-events:none}
+.car .z:hover span,.car .z:focus-visible span,.car .z.on span{opacity:1;transform:none}
+.car .z:hover i{transform:scale(1.2)}
+.car .z.on i{background:var(--a);border-color:var(--a);transform:scale(1.25);box-shadow:0 0 0 6px rgba(176,144,95,.25),0 0 22px rgba(176,144,95,.8)}
+.car .z.on span{background:var(--a);color:var(--k)}
 .zchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
 .zc{height:36px;padding:0 14px;border-radius:999px;border:1px solid rgba(255,255,255,.16);font-size:13px;font-weight:600;color:rgba(255,255,255,.75);transition:background .25s,color .25s,border-color .25s,transform .25s var(--ease)}
 .zc:hover{border-color:var(--a);color:#fff;transform:translateY(-2px)}
@@ -195,21 +193,16 @@ section{padding:130px 0}
 .works{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .wk{position:relative;background:#fff;border-radius:24px;padding:26px 24px 24px;display:flex;flex-direction:column;min-width:0;overflow:hidden;transition:transform .45s var(--ease),box-shadow .45s var(--ease),background .4s,color .4s}
 .wk:hover{transform:translateY(-8px);box-shadow:0 30px 60px -30px rgba(17,18,20,.45);background:var(--k);color:#fff}
-.wk .mini{width:100%;height:auto;margin:6px 0 18px}
-.wk .mini .z{fill:#d9d7d2;stroke:#fff;stroke-width:3;transition:fill .6s}
-.wk:hover .mini .z{fill:#3a3d44;stroke:var(--k)}
-.wk .mini .z.hit{fill:#d9d7d2}
-.wk.in .mini .z.hit,.wk:hover .mini .z.hit{fill:var(--a)}
-.wk .mini .tire{fill:#2a2b2f}
-.wk .mini .glass,.wk .mini .rim,.wk .mini .hub,.wk .mini .deco{display:none}
+.wph{margin:-26px -24px 18px;aspect-ratio:4/3;overflow:hidden;background:#1b1c1f}
+.wph img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.08);transition:transform 1.4s var(--ease),filter .6s}
+.wk.in .wph img{transform:scale(1)}
+.wk:hover .wph img{transform:scale(1.07);filter:saturate(1.1)}
 .wk .src{font-family:var(--h);font-weight:800;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 .wk h3{font-weight:800;font-size:24px;margin:8px 0 8px}
 .wk p{font-size:14.5px;color:var(--ink2);flex:1;transition:color .4s}
 .wk:hover p{color:rgba(255,255,255,.65)}
 .wk.feat{background:var(--ad);color:#fff}
 .wk.feat p,.wk.feat .src{color:rgba(255,255,255,.85)}
-.wk.feat .mini .z{fill:rgba(255,255,255,.35);stroke:var(--ad)}
-.wk.feat.in .mini .z.hit{fill:#fff}
 .brands{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:34px}
 .brands span{font-family:var(--h);font-weight:800;font-size:15px;padding:10px 18px;border:1.5px solid var(--ink);border-radius:999px;transition:background .25s,color .25s,transform .25s var(--ease)}
 .brands span:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}
@@ -584,27 +577,7 @@ html{font-synthesis:none}
     <div class="est">
       <div class="carbox rv">
         <span class="hint"><i></i>Нажмите на деталь</span>
-        <svg class="car" id="car" viewBox="0 0 600 230" role="group" aria-label="Схема автомобиля: выберите повреждённые детали">
-          <defs><linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6f7f8f" stop-opacity=".55"/><stop offset="1" stop-color="#1b1f25" stop-opacity=".9"/></linearGradient></defs>
-          <ellipse cx="300" cy="212" rx="270" ry="10" fill="#000" opacity=".45"/>
-          <g id="carz">
-            <path class="z" data-z="roof" d="M208,84 L254,40 L394,40 L432,78 L432,84 Z"/>
-            <path class="z" data-z="bumperF" d="M18,150 L18,120 Q20,106 36,101 L56,98 L56,166 L30,166 Q18,162 18,150 Z"/>
-            <path class="z" data-z="hood" d="M56,98 L208,82 L208,104 L56,112 Z"/>
-            <path class="z" data-z="fenderF" d="M56,112 L208,104 L208,166 L186,166 A46,46 0 0 0 94,166 L56,166 Z"/>
-            <path class="z" data-z="doorF" d="M208,84 L320,84 L320,168 L208,168 Z"/>
-            <path class="z" data-z="doorR" d="M320,84 L414,84 L414,168 L320,168 Z"/>
-            <path class="z" data-z="fenderR" d="M414,84 L432,84 L432,94 L556,94 L564,114 L564,166 L508,166 A46,46 0 0 0 416,166 L414,166 Z"/>
-            <path class="z" data-z="trunk" d="M432,94 L432,78 L540,72 L570,86 L556,94 Z"/>
-            <path class="z" data-z="bumperR" d="M564,114 L578,116 Q586,120 586,138 L586,154 Q584,166 570,166 L564,166 Z"/>
-            <path class="z" data-z="light" d="M22,116 Q26,104 40,101 L74,96 L72,108 L28,118 Z"/>
-          </g>
-          <path class="glass" d="M222,82 L258,48 L314,48 L314,82 Z"/>
-          <path class="glass" d="M326,82 L326,48 L390,48 L418,82 Z"/>
-          <path class="deco" d="M296,112 h16 M392,112 h16"/>
-          <g class="wheel"><circle class="tire" cx="140" cy="166" r="38"/><circle class="rim" cx="140" cy="166" r="22"/><circle class="hub" cx="140" cy="166" r="6"/><path class="rim" d="M140,144 V188 M118,166 H162"/></g>
-          <g class="wheel"><circle class="tire" cx="462" cy="166" r="38"/><circle class="rim" cx="462" cy="166" r="22"/><circle class="hub" cx="462" cy="166" r="6"/><path class="rim" d="M462,144 V188 M440,166 H484"/></g>
-        </svg>
+        <div class="car" id="car" role="group" aria-label="Автомобиль: нажмите на повреждённые детали"><img class="carimg" src="img/car.jpg?v=1" alt="Легковой автомобиль сбоку: выберите детали для оценки ремонта" width="1456" height="819"><button type="button" class="z" data-z="bumperF" style="left:8.1%;top:62%" aria-label="Передний бампер"><i></i><span>Передний бампер</span></button><button type="button" class="z" data-z="light" style="left:11%;top:53.7%" aria-label="Фара"><i></i><span>Фара</span></button><button type="button" class="z" data-z="hood" style="left:20.6%;top:47%" aria-label="Капот"><i></i><span>Капот</span></button><button type="button" class="z" data-z="fenderF" style="left:27.5%;top:55.5%" aria-label="Переднее крыло"><i></i><span>Переднее крыло</span></button><button type="button" class="z" data-z="doorF" style="left:41.9%;top:57.4%" aria-label="Передняя дверь"><i></i><span>Передняя дверь</span></button><button type="button" class="z" data-z="doorR" style="left:61.8%;top:57.4%" aria-label="Задняя дверь"><i></i><span>Задняя дверь</span></button><button type="button" class="z" data-z="roof" style="left:55%;top:35.4%" aria-label="Крыша и стойки"><i></i><span>Крыша и стойки</span></button><button type="button" class="z" data-z="fenderR" style="left:79%;top:51.3%" aria-label="Заднее крыло"><i></i><span>Заднее крыло</span></button><button type="button" class="z" data-z="trunk" style="left:87.2%;top:45.8%" aria-label="Крышка багажника"><i></i><span>Крышка багажника</span></button><button type="button" class="z" data-z="bumperR" style="left:90.7%;top:63.5%" aria-label="Задний бампер"><i></i><span>Задний бампер</span></button></div>
         <div class="zchips" id="zchips"></div>
       </div>
       <form class="estp js-form rv d1" onsubmit="return false">
@@ -648,17 +621,17 @@ html{font-synthesis:none}
   <div class="wrap">
     <div class="sec-h">
       <div><span class="eyebrow rv">Наши работы</span><h2 class="rv d1">Кузовной ремонт: реальные машины, <em>реальные детали</em></h2></div>
-      <p class="rv d2">Покраска, ремонт деталей и удаление вмятин без покраски: работы из нашей группы в Одноклассниках и из отзывов клиентов. Красным отмечены детали, которые ремонтировали. Схемы условные.</p>
+      <p class="rv d2">Покраска, ремонт деталей и удаление вмятин без покраски: работы из нашей группы в Одноклассниках и из отзывов клиентов. Фото на демо сгенерированы для примера, на сайте встанут ваши.</p>
     </div>
     <div class="works">
-      <article class="wk rv" data-hit="bumperF,hood,fenderF,light"><span class="src">OK · 2021</span><h3>Nissan Tiana</h3><p>Передняя часть: ремонт, покраска и замена фары.</p></article>
-      <article class="wk rv d1" data-hit="fenderR,doorR"><span class="src">OK · 2021</span><h3>Subaru Impreza</h3><p>Заднее крыло и дверь.</p></article>
-      <article class="wk rv d2" data-hit="bumperF"><span class="src">OK · 2021</span><h3>Opel Mokka</h3><p>Локальный ремонт бампера, без замены детали целиком.</p></article>
-      <article class="wk rv d3" data-hit="fenderF,bumperF"><span class="src">OK · 2021</span><h3>SsangYong</h3><p>Крыло и бампер.</p></article>
-      <article class="wk feat rv" data-hit="fenderR"><span class="src">Отзыв в 2ГИС</span><h3>Lada Largus</h3><p>Заднее правое крыло за 2 дня, цвет подобрали точно. Так пишет Егор в отзыве.</p></article>
-      <article class="wk rv d1" data-hit="fenderR"><span class="src">Отзыв в 2ГИС</span><h3>Ford Focus 3</h3><p>Заднее крыло, покраска.</p></article>
-      <article class="wk rv d2" data-hit="trunk"><span class="src">Отзыв в Яндексе</span><h3>Крышка багажника</h3><p>Выправили контур вокруг фары и покрасили.</p></article>
-      <article class="wk rv d3" data-hit="doorF"><span class="src">OK</span><h3>Вмятины без покраски</h3><p>Убираем вмятины, когда лакокрасочное покрытие цело.</p></article>
+      <article class="wk rv" data-hit="bumperF,hood,fenderF,light"><figure class="wph"><img src="img/w1.jpg?v=1" alt="Nissan Teana после кузовного ремонта передней части и покраски" loading="lazy"></figure><span class="src">OK · 2021</span><h3>Nissan Tiana</h3><p>Передняя часть: ремонт, покраска и замена фары.</p></article>
+      <article class="wk rv d1" data-hit="fenderR,doorR"><figure class="wph"><img src="img/w2.jpg?v=1" alt="Subaru Impreza: заднее крыло и дверь после ремонта и покраски" loading="lazy"></figure><span class="src">OK · 2021</span><h3>Subaru Impreza</h3><p>Заднее крыло и дверь.</p></article>
+      <article class="wk rv d2" data-hit="bumperF"><figure class="wph"><img src="img/w3.jpg?v=1" alt="Opel Mokka: передний бампер после локального ремонта" loading="lazy"></figure><span class="src">OK · 2021</span><h3>Opel Mokka</h3><p>Локальный ремонт бампера, без замены детали целиком.</p></article>
+      <article class="wk rv d3" data-hit="fenderF,bumperF"><figure class="wph"><img src="img/w4.jpg?v=1" alt="SsangYong: крыло и бампер после покраски" loading="lazy"></figure><span class="src">OK · 2021</span><h3>SsangYong</h3><p>Крыло и бампер.</p></article>
+      <article class="wk feat rv" data-hit="fenderR"><figure class="wph"><img src="img/w5.jpg?v=1" alt="Lada Largus: заднее правое крыло в работе" loading="lazy"></figure><span class="src">Отзыв в 2ГИС</span><h3>Lada Largus</h3><p>Заднее правое крыло за 2 дня, цвет подобрали точно. Так пишет Егор в отзыве.</p></article>
+      <article class="wk rv d1" data-hit="fenderR"><figure class="wph"><img src="img/w6.jpg?v=1" alt="Ford Focus 3: заднее крыло после покраски" loading="lazy"></figure><span class="src">Отзыв в 2ГИС</span><h3>Ford Focus 3</h3><p>Заднее крыло, покраска.</p></article>
+      <article class="wk rv d2" data-hit="trunk"><figure class="wph"><img src="img/w7.jpg?v=1" alt="Крышка багажника после правки, под покраску" loading="lazy"></figure><span class="src">Отзыв в Яндексе</span><h3>Крышка багажника</h3><p>Выправили контур вокруг фары и покрасили.</p></article>
+      <article class="wk rv d3" data-hit="doorF"><figure class="wph"><img src="img/w8.jpg?v=1" alt="Удаление вмятин без покраски на двери автомобиля" loading="lazy"></figure><span class="src">OK</span><h3>Вмятины без покраски</h3><p>Убираем вмятины, когда лакокрасочное покрытие цело.</p></article>
     </div>
     <div class="brands rv"><span>Toyota</span><span>BMW</span><span>Lada</span><span>Mercedes-Benz</span><span class="more">и ещё около 70 марок</span></div>
     <div class="cta rv"><div class="cta-t"><b>Похожее повреждение? Пришлите фото, оценим без приезда.</b><span><span class="stars">★★★★★</span>4,8 в Яндексе · 502 оценки · <a href="https://2gis.ru/volgograd/firm/70000001019159391" target="_blank" rel="noopener">Приехать: Полоненко, 15Б</a></span></div><div class="cta-b"><a class="btn btn-a pl" href="#photo">Узнать цену ремонта <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-gl ph" href="tel:+79370854888"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>Позвонить</a></div></div>
@@ -850,15 +823,6 @@ html{font-synthesis:none}
     if(c.nodeType===3){var f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(function(t){if(!t)return;if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(t));return}var w=document.createElement('span');w.className='w';var s=document.createElement('span');s.textContent=t;s.style.transitionDelay=(.07*i++)+'s';w.appendChild(s);f.appendChild(w)});n.replaceChild(f,c)}
     else if(c.nodeType===1&&c.tagName!=='BR')walk(c)})})(h)});
 
-  // mini car schemes for works (cloned from the main car)
-  var src=document.getElementById('car');
-  document.querySelectorAll('.wk[data-hit]').forEach(function(card){
-    var s=src.cloneNode(true);s.removeAttribute('id');s.setAttribute('class','mini');s.setAttribute('aria-hidden','true');s.removeAttribute('role');s.removeAttribute('aria-label');
-    [].slice.call(s.querySelectorAll('[id]')).forEach(function(n){n.removeAttribute('id')});
-    var hits=card.dataset.hit.split(',');
-    [].slice.call(s.querySelectorAll('.z')).forEach(function(z){z.classList.remove('on');if(hits.indexOf(z.dataset.z)>-1)z.classList.add('hit')});
-    var src2=card.querySelector('.src');card.insertBefore(s,src2)});
-
   // reveal on scroll
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
   document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
@@ -888,6 +852,7 @@ html{font-synthesis:none}
   var t=document.getElementById('toast'),tm;function toast(m){t.textContent=m;t.classList.add('show');clearTimeout(tm);tm=setTimeout(function(){t.classList.remove('show')},3200)}
 
   // car damage picker
+  var src=document.getElementById('car');
   var NAMES={bumperF:'Передний бампер',light:'Фара',hood:'Капот',fenderF:'Переднее крыло',doorF:'Передняя дверь',doorR:'Задняя дверь',roof:'Крыша и стойки',fenderR:'Заднее крыло',trunk:'Крышка багажника',bumperR:'Задний бампер'};
   var ORDER=['bumperF','light','hood','fenderF','doorF','doorR','roof','fenderR','trunk','bumperR'];
   var picked={},zchips=document.getElementById('zchips'),sel=document.getElementById('sel');
