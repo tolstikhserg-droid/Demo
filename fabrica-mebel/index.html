@@ -133,8 +133,8 @@ h2 em{font-style:normal;background:linear-gradient(transparent 62%,rgba(245,183,
 .bf p{color:var(--g);font-size:17px;max-width:560px;opacity:.85}
 .bf .eyebrow{color:var(--g)}.bf .eyebrow::before{background:var(--g)}
 .bf form{display:flex;flex-direction:column;gap:12px}
-.in{width:100%;border:0;border-radius:14px;padding:17px 18px;font:inherit;font-size:16px;background:#fff;color:var(--ink);outline:2px solid transparent;transition:outline-color .2s}
-.in:focus{outline-color:var(--g)}
+.inp{width:100%;border:0;border-radius:14px;padding:17px 18px;font:inherit;font-size:16px;background:#fff;color:var(--ink);outline:2px solid transparent;transition:outline-color .2s}
+.inp:focus{outline-color:var(--g)}
 
 /* steps */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
@@ -152,8 +152,8 @@ h2 em{font-style:normal;background:linear-gradient(transparent 62%,rgba(245,183,
 .form h3{font-family:var(--h);font-size:24px;font-weight:800;margin-bottom:4px}
 .form .hint{font-size:14px;color:var(--muted);margin-bottom:20px}
 .form label{display:block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:14px 0 6px}
-.form .in{background:var(--paper);outline:1.5px solid var(--line)}
-.form .in:focus{outline-color:var(--y)}
+.form .inp{background:var(--paper);outline:1.5px solid var(--line)}
+.form .inp:focus{outline-color:var(--y)}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .form .btn{width:100%;margin-top:22px}
 .ok{display:none;margin-top:14px;background:#fff6d6;border-radius:12px;padding:14px;font-size:14px;color:var(--g)}
@@ -345,8 +345,8 @@ footer .logo b{color:#fff}
         <p>Оставьте телефон, и мы напишем в MAX в день старта акции.</p>
       </div>
       <form class="js-form">
-        <input class="in" type="text" placeholder="Как к вам обращаться" required>
-        <input class="in" type="tel" placeholder="+7 ___ ___-__-__" required>
+        <input class="inp" type="text" placeholder="Как к вам обращаться" required>
+        <input class="inp" type="tel" placeholder="+7 ___ ___-__-__" required>
         <button class="btn btn-d" type="submit">Напомнить о скидках</button>
         <div class="ok">Это демо: в рабочей версии контакт сразу попадёт к вам в MAX или Telegram.</div>
       </form>
@@ -380,14 +380,14 @@ footer .logo b{color:#fff}
       <h3>Заявка на подбор</h3>
       <p class="hint">Ответим в рабочее время салона</p>
       <div class="two">
-        <div><label for="n">Имя</label><input class="in" id="n" type="text" placeholder="Анна" required></div>
-        <div><label for="p">Телефон</label><input class="in" id="p" type="tel" placeholder="+7 ___ ___-__-__" required></div>
+        <div><label for="n">Имя</label><input class="inp" id="n" type="text" placeholder="Анна" required></div>
+        <div><label for="p">Телефон</label><input class="inp" id="p" type="tel" placeholder="+7 ___ ___-__-__" required></div>
       </div>
       <div class="two">
-        <div><label for="w">Что ищете</label><select class="in" id="w"><option>Диван прямой</option><option>Диван угловой</option><option>Кресло</option><option>Стол и стулья</option><option>Матрас</option><option>Пока не знаю</option></select></div>
-        <div><label for="c">Город</label><select class="in" id="c"><option>Волгоград</option><option>Астрахань</option></select></div>
+        <div><label for="w">Что ищете</label><select class="inp" id="w"><option>Диван прямой</option><option>Диван угловой</option><option>Кресло</option><option>Стол и стулья</option><option>Матрас</option><option>Пока не знаю</option></select></div>
+        <div><label for="c">Город</label><select class="inp" id="c"><option>Волгоград</option><option>Астрахань</option></select></div>
       </div>
-      <label for="mdl">Модель или размеры</label><input class="in" id="mdl" type="text" placeholder="Например, угловой до 3 м, или London">
+      <label for="mdl">Модель или размеры</label><input class="inp" id="mdl" type="text" placeholder="Например, угловой до 3 м, или London">
       <button class="btn btn-y" type="submit">Получить подборку</button>
       <div class="ok">Это демо: в рабочей версии заявка сразу придёт вам в MAX или Telegram.</div>
       <p class="small">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
