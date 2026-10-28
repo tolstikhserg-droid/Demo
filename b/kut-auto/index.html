@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Заставка и превью для вашего канала</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0c10;--card:#14161c;--line:#262a33;--text:#f4f5f7;--muted:#9aa1ad;--acc:#ffd23c}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.glow{position:fixed;inset:-20vmax;pointer-events:none;z-index:0;background:radial-gradient(40vmax 30vmax at 20% 10%,rgba(255,210,60,.10),transparent 60%),radial-gradient(40vmax 30vmax at 90% 80%,rgba(80,140,255,.10),transparent 60%);animation:drift 18s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(4vmax,-3vmax) scale(1.08)}}
+main{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:48px 16px 80px}
+.kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);font-weight:800}
+h1{font-family:Unbounded,Manrope,sans-serif;font-weight:800;font-size:clamp(28px,5vw,52px);line-height:1.05;margin:12px 0 14px}
+.lead{font-size:clamp(16px,2.2vw,19px);color:#d7dbe2;line-height:1.55;max-width:720px}
+section{margin-top:56px}
+h2{font-family:Unbounded,Manrope,sans-serif;font-weight:600;font-size:clamp(20px,3vw,28px);margin:0 0 6px}
+.sub{color:var(--muted);margin:0 0 18px;line-height:1.5}
+.frame{position:relative;border-radius:18px;overflow:hidden;background:#000;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.frame video{display:block;width:100%;height:auto;aspect-ratio:16/9}
+.sound{position:absolute;right:14px;bottom:14px;background:rgba(0,0,0,.6);color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:10px 16px;font:700 14px Manrope,sans-serif;cursor:pointer;backdrop-filter:blur(6px)}
+.cmp{position:relative;aspect-ratio:16/9;user-select:none;touch-action:none}
+.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.cmp .after{clip-path:inset(0 0 0 var(--p,50%))}
+.cmp .bar{position:absolute;top:0;bottom:0;left:var(--p,50%);width:3px;background:#fff;transform:translateX(-50%);box-shadow:0 0 18px rgba(0,0,0,.6)}
+.cmp .knob{position:absolute;top:50%;left:var(--p,50%);width:46px;height:46px;border-radius:50%;background:#fff;transform:translate(-50%,-50%);display:grid;place-items:center;color:#111;font-weight:800;box-shadow:0 6px 24px rgba(0,0,0,.5)}
+.tag{position:absolute;top:12px;padding:6px 12px;border-radius:999px;font-weight:800;font-size:13px;background:rgba(0,0,0,.65)}
+.tag.l{left:12px}.tag.r{right:12px;background:var(--acc);color:#111}
+.hint{color:var(--muted);font-size:14px;margin-top:10px}
+.mini{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.mini figure{margin:0}.mini img{width:100%;border-radius:12px;display:block;border:1px solid var(--line)}
+.mini figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+ul.why{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px}
+ul.why li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px 14px 44px;position:relative;line-height:1.5}
+ul.why li:before{content:"";position:absolute;left:16px;top:20px;width:12px;height:12px;border-radius:3px;background:var(--acc);transform:rotate(45deg)}
+ul.offer{list-style:none;padding:0;margin:0;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+ul.offer li{display:flex;justify-content:space-between;gap:16px;padding:16px 18px;border-top:1px solid var(--line);background:var(--card)}
+ul.offer li:first-child{border-top:0}
+ul.offer b{white-space:nowrap;color:var(--acc)}
+.cta{margin-top:22px;padding:20px;border-radius:16px;background:linear-gradient(135deg,rgba(255,210,60,.16),rgba(255,210,60,.04));border:1px solid rgba(255,210,60,.35);font-size:17px;line-height:1.55}
+footer{margin-top:48px;color:var(--muted);font-size:14px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:640px){.mini{grid-template-columns:1fr}main{padding-top:32px}}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.glow{animation:none}}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<main>
+  <div class="kicker reveal">Для канала «Автоподбор КУТ»</div>
+  <h1 class="reveal">Заставка и превью для вашего канала</h1>
+  <p class="lead reveal">Я сделал это без заказа, на кадрах из вашего обзора цен на авто из Кореи. Посмотрите, как это выглядит вживую.</p>
+
+  <section class="reveal">
+    <h2>Заставка</h2>
+    <p class="sub">6 секунд, название и ваши машины. Включите звук кнопкой справа внизу.</p>
+    <div class="frame">
+      <video id="v" src="intro.mp4" poster="poster.jpg" autoplay muted loop playsinline preload="auto"></video>
+      <button class="sound" id="snd">🔊</button>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <h2>Превью</h2>
+    <p class="sub">Новое превью для ролика <i>«Реальные цены на авто из Кореи! Без накруток, без посредников»</i></p>
+    <div class="frame cmp" id="cmp">
+      <img class="before" src="https://i.ytimg.com/vi/GJzGlLMiR4o/maxresdefault.jpg" alt="">
+      <img class="after" src="thumb.jpg" alt="">
+      <div class="bar"></div><div class="knob">⇆</div>
+      <span class="tag l">Сейчас</span><span class="tag r">Новый вариант</span>
+    </div>
+    <div class="hint">Потяните ползунок, чтобы сравнить</div>
+    <div class="mini">
+      <figure><img src="https://i.ytimg.com/vi/GJzGlLMiR4o/maxresdefault.jpg" alt=""><figcaption>Сейчас</figcaption></figure>
+      <figure><img src="thumb.jpg" alt=""><figcaption>Новый вариант</figcaption></figure>
+    </div>
+    <ul class="why"><li>На нынешнем превью опечатка: «СКРУЕННЫЕ ПРОБЕГИ». Зритель это замечает, и доверие к подбору падает ещё до клика.</li><li>Тонкий белый текст сливается с серой парковкой. В новом варианте три крупных слова и жёлтый акцент, их видно даже в маленькой ленте на телефоне.</li><li>На превью теперь обещание из заголовка: реальные цены Кореи и «без накруток». Машины в цвете, зелёный Porsche цепляет глаз.</li></ul>
+  </section>
+
+  <section class="reveal">
+    <h2>Что могу сделать</h2>
+    <ul class="offer"><li><span>Заставка в финале: ваш логотип, 4K, звук, 2 правки</span><b>4 000 ₽</b></li><li><span>5 превью под ваши следующие ролики</span><b>3 500 ₽</b></li><li><span>Всё вместе</span><b>6 500 ₽</b></li></ul>
+    <div class="cta">Срок: сегодня или завтра. Чтобы начать, ответьте на письмо одним словом «да».</div>
+  </section>
+  <footer>Сергей · AI Partner Group · Telegram и MAX: +7 999 765-75-89</footer>
+</main>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const v=document.getElementById('v'),b=document.getElementById('snd');
+b.onclick=()=>{v.muted=!v.muted;if(!v.muted){v.currentTime=0;v.play()}b.textContent=v.muted?'🔊':'🔇'};
+const c=document.getElementById('cmp');let drag=false;
+function setP(x){const r=c.getBoundingClientRect();const p=Math.max(0,Math.min(100,(x-r.left)/r.width*100));c.style.setProperty('--p',p+'%')}
+c.addEventListener('pointerdown',e=>{drag=true;c.setPointerCapture(e.pointerId);setP(e.clientX)});
+c.addEventListener('pointermove',e=>{if(drag)setP(e.clientX)});
+c.addEventListener('pointerup',()=>drag=false);
+let t0=null;function intro(ts){if(!t0)t0=ts;const k=(ts-t0)/2200;if(k<1&&!drag){c.style.setProperty('--p',(50+30*Math.sin(k*Math.PI*2))+'%');requestAnimationFrame(intro)}else if(!drag)c.style.setProperty('--p','50%')}
+new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){requestAnimationFrame(intro);o.disconnect()}},{threshold:.5}).observe(c);
+</script>
+</body>
+</html>
