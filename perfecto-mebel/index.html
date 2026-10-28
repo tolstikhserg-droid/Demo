@@ -2,346 +2,831 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<title>Перфекто: кровати и мягкая мебель на заказ в Волгограде</title>
-<meta name="description" content="Перфекто, Волгоград: кровати, диваны, банкетки, стулья и матрасы под заказ. Своё производство. Кровать «Ариана» от 42 900 ₽.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Перфекто — кровати и мягкая мебель на заказ в Волгограде</title>
+<meta name="description" content="Перфекто: кровати с мягким изголовьем, диваны, банкетки и мягкие зеркала на заказ со своего производства в Волгограде. Кровать «Ариана» от 42 900 ₽. 5,0 в 2ГИС, 4,9 в Яндексе.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#171216">
+<script>document.documentElement.className+=' js'</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.jpg?v=1">
 <style>
-:root{--bg:#f4f1f6;--ink:#1e1a22;--muted:#665e6e;--card:#ffffff;--line:rgba(30,26,34,.1);--acc:#6b3f8f;--acc2:#dccbea;--accInk:#ffffff;--wa:#1f9d55}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141017;--ink:#f1ede7;--muted:#b9b2a8;--card:#1e1922;--line:rgba(255,255,255,.1)}}
-:root[data-theme="dark"]{--bg:#141017;--ink:#f1ede7;--muted:#b9b2a8;--card:#1e1922;--line:rgba(255,255,255,.1)}
+:root{
+  --k:#171216; --g:#1f181d; --g2:#2a2027; --g3:#3b2e37;
+  --y:#e3a587; --y2:#f0bea4; --yd:#a3543a;
+  --paper:#f6f0ea; --paper2:#ece2d8; --ink:#171216; --ink2:#5a4e55; --muted:#8f838a; --line:rgba(23,18,22,.12);
+  --h:"Montserrat",system-ui,sans-serif; --b:"Manrope",system-ui,-apple-system,sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --dh:37px;
+}
+
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--ink);font:16px/1.55 'Manrope',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding-bottom:76px;overflow-x:hidden}
-a{color:inherit}
-svg{width:1.1em;height:1.1em;flex:none}
-.demo-bar{background:#141414;color:#f4f1ec;font-size:12.5px;line-height:1.35;text-align:center;padding:7px 16px;letter-spacing:.01em}
-.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
-header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:12px}
-.logo{font-family:'Unbounded','Manrope',sans-serif;font-weight:700;font-size:18px;text-decoration:none;letter-spacing:-.01em}
-.logo small{display:block;font:500 11px/1.2 'Manrope',sans-serif;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
-.top nav{display:none;gap:22px;font-size:14.5px}
-.top nav a{text-decoration:none;color:var(--muted)}
-.top nav a:hover{color:var(--ink)}
-.top-call{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:14.5px;white-space:nowrap}
-.top-call svg{color:var(--acc)}
-.hero{position:relative;padding:44px 0 40px;overflow:hidden}
-.hero:before{content:"";position:absolute;inset:-40% -30% auto auto;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--acc2),transparent 65%);opacity:.55;pointer-events:none}
-.hero .wrap{position:relative;display:grid;gap:28px}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--muted);background:var(--card);border:1px solid var(--line);padding:6px 12px;border-radius:999px}
-.eyebrow svg{color:#e3a008}
-h1{font-family:'Unbounded','Manrope',sans-serif;font-weight:700;font-size:clamp(28px,7.4vw,52px);line-height:1.08;letter-spacing:-.02em;margin:16px 0 14px}
-h1 em{font-style:normal;color:var(--acc)}
-.lead{font-size:17.5px;color:var(--muted);max-width:580px}
-.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:0 22px;border-radius:14px;font-weight:700;font-size:16px;text-decoration:none;border:0;cursor:pointer;font-family:inherit;transition:transform .15s ease,box-shadow .15s ease}
-.btn:active{transform:scale(.98)}
-.btn-main{background:var(--acc);color:var(--accInk);box-shadow:0 10px 24px -10px var(--acc)}
-.btn-wa{background:var(--wa);color:#fff}
-.btn-ghost{background:var(--card);border:1px solid var(--line);color:var(--ink)}
-.hero-art{position:relative;height:230px;border-radius:24px;background:linear-gradient(135deg,var(--acc2),var(--card));border:1px solid var(--line);overflow:hidden}
-.hero-art .s1{position:absolute;left:10%;right:10%;bottom:22%;height:34%;border-radius:22px 22px 10px 10px;background:var(--acc);opacity:.9}
-.hero-art .s2{position:absolute;left:6%;width:16%;bottom:22%;height:46%;border-radius:18px;background:var(--acc);filter:brightness(.85)}
-.hero-art .s3{position:absolute;right:6%;width:16%;bottom:22%;height:46%;border-radius:18px;background:var(--acc);filter:brightness(.85)}
-.hero-art .s4{position:absolute;left:16%;right:16%;bottom:44%;height:26%;border-radius:18px;background:var(--acc);filter:brightness(1.12)}
-.hero-art .s5{position:absolute;left:0;right:0;bottom:0;height:22%;background:var(--line)}
-.hero-art .s6{position:absolute;right:9%;top:12%;width:64px;height:64px;border-radius:50%;border:10px solid var(--card);opacity:.7}
-.hero-art.kitchen .s1{left:6%;right:6%;bottom:16%;height:30%;border-radius:8px}
-.hero-art.kitchen .s2{left:6%;width:40%;top:10%;bottom:auto;height:30%;border-radius:8px}
-.hero-art.kitchen .s3{right:6%;width:46%;top:10%;bottom:auto;height:30%;border-radius:8px}
-.hero-art.kitchen .s4{left:6%;right:6%;bottom:46%;height:4%;border-radius:4px;filter:brightness(.7)}
-.hero-art.kitchen .s5{height:16%}
-.hero-art.kitchen .s6{display:none}
-.hero-art.bed .s1{left:8%;right:8%;bottom:20%;height:28%;border-radius:14px}
-.hero-art.bed .s2{left:8%;width:84%;bottom:46%;height:30%;border-radius:22px 22px 6px 6px;filter:brightness(.82)}
-.hero-art.bed .s3{display:none}
-.hero-art.bed .s4{left:14%;right:52%;bottom:44%;height:12%;border-radius:12px;filter:brightness(1.3)}
-.hero-art.bed .s6{right:auto;left:54%;top:auto;bottom:44%;width:32%;height:12%;border:0;border-radius:12px;background:var(--acc);filter:brightness(1.3);opacity:1}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-.chip{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;padding:7px 12px;border-radius:10px;background:var(--card);border:1px solid var(--line)}
-.chip svg{color:var(--acc)}
-section{padding:46px 0}
-h2{font-family:'Unbounded','Manrope',sans-serif;font-weight:700;font-size:clamp(23px,5.4vw,34px);line-height:1.15;letter-spacing:-.015em;margin-bottom:10px}
-.sub{color:var(--muted);margin-bottom:24px;max-width:620px}
-.grid{display:grid;gap:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
-.svc h3{font-size:17.5px;margin:12px 0 6px}
-.svc p{color:var(--muted);font-size:15px}
-.svc-mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--acc),var(--acc2))}
-.prices{padding:6px 20px}
-.price-row{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
-.price-row:last-child{border-bottom:0}
-.price-row span{display:block;color:var(--muted);font-size:13.5px;margin-top:3px}
-.pv{font-weight:800;white-space:nowrap;color:var(--acc)}
-.note{font-size:13px;color:var(--muted);margin-top:12px}
-.why{display:grid;gap:12px;grid-template-columns:1fr 1fr}
-.why-item{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
-.why-big{font-family:'Unbounded','Manrope',sans-serif;font-weight:700;font-size:24px;color:var(--acc);line-height:1.1;margin-bottom:6px}
-.why-txt{font-size:14px;color:var(--muted)}
-.steps{list-style:none;display:grid;gap:12px;counter-reset:s}
-.steps li{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
-.sn{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--acc);color:var(--accInk);font-weight:800}
-.steps h3{font-size:16.5px;margin-bottom:3px}
-.steps p{color:var(--muted);font-size:15px}
-.faq-i{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:10px;overflow:hidden}
-.faq-i summary{cursor:pointer;list-style:none;padding:17px 46px 17px 18px;font-weight:700;position:relative}
-.faq-i summary::-webkit-details-marker{display:none}
-.faq-i summary:after{content:"";position:absolute;right:20px;top:50%;width:10px;height:10px;border-right:2px solid var(--acc);border-bottom:2px solid var(--acc);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
-.faq-i[open] summary:after{transform:translateY(-30%) rotate(-135deg)}
-.faq-i p{padding:0 18px 18px;color:var(--muted)}
-.form-box{background:linear-gradient(150deg,var(--acc),color-mix(in srgb,var(--acc) 70%,#000));color:var(--accInk);border-radius:24px;padding:26px 20px}
-.form-box h2{color:inherit}
-.form-box .sub{color:inherit;opacity:.85}
-form{display:grid;gap:10px}
-label{font-size:13px;font-weight:600;opacity:.9}
-input,textarea,select{width:100%;font:inherit;font-size:16px;padding:14px 15px;border-radius:12px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.95);color:#1a1a1a}
-textarea{min-height:92px;resize:vertical}
-.form-box .btn{background:#141414;color:#fff;width:100%;margin-top:4px}
-.consent{font-size:12px;opacity:.8}
-.done{display:none;background:rgba(255,255,255,.95);color:#1a1a1a;border-radius:14px;padding:16px;font-weight:600}
-.done.show{display:block}
-.contacts{display:grid;gap:14px}
-.c-line{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:14px;background:var(--card);border:1px solid var(--line);text-decoration:none}
-.c-line svg{color:var(--acc);width:20px;height:20px}
-.map-art{height:180px;border-radius:18px;border:1px solid var(--line);background:
- linear-gradient(90deg,transparent 48%,var(--line) 48%,var(--line) 52%,transparent 52%),
- linear-gradient(0deg,transparent 30%,var(--line) 30%,var(--line) 34%,transparent 34%),
- linear-gradient(25deg,transparent 60%,var(--line) 60%,var(--line) 63%,transparent 63%),var(--card);position:relative}
-.map-art:after{content:"";position:absolute;left:50%;top:32%;width:22px;height:22px;border-radius:50% 50% 50% 0;transform:translate(-50%,-100%) rotate(-45deg);background:var(--acc);box-shadow:0 0 0 6px color-mix(in srgb,var(--acc) 25%,transparent)}
-footer{padding:28px 0 36px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
-.sticky .btn{min-height:50px;padding:0 10px;font-size:15px}
-@media (min-width:760px){
- body{padding-bottom:0}
- .sticky{display:none}
- .top nav{display:flex}
- .hero{padding:72px 0 64px}
- .hero .wrap{grid-template-columns:1.25fr 1fr;align-items:center}
- .hero-art{height:360px}
- .grid.g3{grid-template-columns:repeat(3,1fr)}
- .grid.g2{grid-template-columns:repeat(2,1fr)}
- .why{grid-template-columns:repeat(4,1fr)}
- .steps{grid-template-columns:repeat(2,1fr)}
- .two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
- .form-box{padding:36px}
- section{padding:64px 0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:var(--b);background:var(--paper);color:var(--ink);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{width:min(1280px,100% - 48px);margin-inline:auto}
+h1,h2,h3{font-family:var(--h);line-height:1.04;letter-spacing:-.02em;overflow-wrap:break-word}
+em{font-style:normal;color:var(--y)}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--h);font-weight:700;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--yd)}
+.eyebrow::before{content:"";width:34px;height:2px;background:currentColor}
+.dark .eyebrow{color:var(--y)}
+.sec-h em,.faq h2 em{color:var(--yd)}
+.dark .sec-h em{color:var(--y)}
+
+/* demo strip */
+.demo{background:#0e0a0d;color:rgba(255,255,255,.72);font-size:12.5px;line-height:1.45;text-align:center;padding:8px 16px;position:relative;z-index:70;border-bottom:1px solid rgba(227,165,135,.25)}
+.demo b{color:var(--y);font-weight:700}
+
+/* nav */
+.nav{position:fixed;left:0;right:0;top:var(--dh);z-index:60;transition:background .35s,top .35s,box-shadow .35s}
+.nav.solid{top:0;background:rgba(23,18,22,.88);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(255,255,255,.06)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:84px}
+.logo{display:flex;align-items:center;gap:12px;color:#fff;min-width:0}
+.logo svg{width:42px;height:42px;flex:none}
+.logo b{font-family:var(--h);font-weight:800;font-size:20px;letter-spacing:.12em}
+.logo small{display:block;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:-3px}
+.menu{display:flex;gap:30px;font-size:14px;font-weight:600;color:rgba(255,255,255,.78)}
+.menu a{position:relative;padding:6px 0}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--y);transition:width .3s var(--ease)}
+.menu a:hover{color:#fff}.menu a:hover::after{width:100%}
+.nav-r{display:flex;align-items:center;gap:18px;color:#fff}
+.nav-tel{font-family:var(--h);font-weight:700;font-size:15px;text-align:right;line-height:1.2}
+.nav-tel small{display:block;font-family:var(--b);font-weight:500;font-size:11px;color:rgba(255,255,255,.55)}
+.nav-ic{display:none;width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.3);place-items:center;color:#fff;flex:none}
+.nav-ic svg{width:18px;height:18px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 28px;border-radius:999px;font-family:var(--h);font-weight:700;font-size:15px;line-height:1.2;text-align:center;transition:transform .25s var(--ease),background .25s,box-shadow .25s,color .25s,border-color .25s}
+.btn svg{width:18px;height:18px;flex:none;transition:transform .25s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-y{background:var(--y);color:var(--k);box-shadow:0 14px 40px -12px rgba(227,165,135,.6);position:relative;overflow:hidden}
+.btn-y:hover{background:var(--y2);transform:translateY(-2px)}
+.btn-y::after{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);animation:shine 4.5s 1.5s infinite}
+@keyframes shine{0%{left:-60%}22%,100%{left:130%}}
+.btn-gl{color:#fff;border:1.5px solid rgba(255,255,255,.35);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.btn-gl:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-gl:hover svg,.btn-k:hover svg,.btn-o:hover svg{transform:none}
+.btn-k{background:var(--k);color:#fff}
+.btn-k:hover{background:var(--g3);transform:translateY(-2px)}
+.btn-sm{min-height:46px;padding:0 22px;font-size:14px}
+.btn-o{border:1.5px solid var(--k);color:var(--k)}
+.btn-o:hover{background:var(--k);color:#fff}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;color:#fff;display:flex;align-items:flex-end;overflow:hidden;background:var(--k);padding:0 0 10px}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:55% 40%;transform:scale(1.1);animation:kb 20s var(--ease) forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero-bg img.kb2{animation:kb2 16s ease-in-out infinite alternate}
+@keyframes kb2{from{transform:scale(1)}to{transform:scale(1.1) translateX(-2.5%)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(14,10,13,.94) 0%,rgba(14,10,13,.76) 36%,rgba(14,10,13,.2) 68%,rgba(14,10,13,.08) 100%),linear-gradient(0deg,rgba(14,10,13,.92) 0%,rgba(14,10,13,0) 40%)}
+.hero-sweep{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(105deg,transparent 35%,rgba(255,205,180,.14) 48%,transparent 60%);background-size:250% 100%;mix-blend-mode:screen;animation:sweep 8s ease-in-out infinite}
+@keyframes sweep{0%{background-position:120% 0}60%,100%{background-position:-60% 0}}
+.hero-fx{position:absolute;inset:0;z-index:1;pointer-events:none;width:100%;height:100%}
+.hero .wrap{position:relative;z-index:2;padding:160px 0 0}
+.hero-kicker{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;font-size:13.5px;font-weight:600;color:rgba(255,255,255,.82);margin-bottom:26px}
+.stars{color:var(--y);letter-spacing:3px;font-size:14px}
+.hero h1{font-weight:800;font-size:clamp(44px,6.4vw,100px);letter-spacing:-.035em;line-height:.96;max-width:12ch}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.05em}
+.hero h1 .ln span{display:block;transform:translateY(105%);animation:up 1.1s var(--ease) forwards}
+.hero h1 .ln:nth-child(2) span{animation-delay:.12s}.hero h1 .ln:nth-child(3) span{animation-delay:.24s}
+@keyframes up{to{transform:none}}
+.hero-lead{max-width:500px;font-size:18px;color:rgba(255,255,255,.8);margin:28px 0 36px;opacity:0;animation:fade 1s .5s forwards}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fade 1s .65s forwards}
+@keyframes fade{to{opacity:1}}
+.hero-bar{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.14);opacity:0;animation:fade 1s .85s forwards}
+.hero-bar div{padding:26px 24px 34px 0;min-width:0}
+.hero-bar b{display:block;font-family:var(--h);font-weight:800;font-size:clamp(28px,3vw,42px);letter-spacing:-.02em;line-height:1}
+.hero-bar b i{font-style:normal;color:var(--y)}
+.hero-bar span{display:block;font-size:13.5px;color:rgba(255,255,255,.62);margin-top:8px}
+.scroll{position:absolute;right:24px;bottom:40px;z-index:2;writing-mode:vertical-rl;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.55);display:flex;align-items:center;gap:14px}
+.scroll::after{content:"";width:1px;height:60px;background:linear-gradient(var(--y),transparent);animation:drip 2.4s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* marquee */
+.mq{background:var(--y);color:var(--k);overflow:hidden;padding:20px 0;font-family:var(--h);font-weight:800;font-size:clamp(18px,2.4vw,30px);text-transform:uppercase;letter-spacing:.02em}
+.mq-t{display:flex;gap:42px;width:max-content;animation:mq 40s linear infinite}
+.mq-t span{display:flex;align-items:center;gap:42px;white-space:nowrap}
+.mq-t span::after{content:"";width:14px;height:14px;background:var(--k);transform:rotate(45deg)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+section{padding:130px 0}
+.sec-h{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:60px}
+.sec-h>*{min-width:0}
+.sec-h h2{font-weight:800;font-size:clamp(34px,4.6vw,66px);margin-top:20px}
+.sec-h p{font-size:17px;color:var(--ink2);max-width:470px;justify-self:end}
+.dark .sec-h p{color:rgba(255,255,255,.68)}
+.dark{background:var(--k);color:#fff}
+
+/* services */
+.svc{background:var(--paper2)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.sv{background:#fff;border-radius:22px;padding:30px 28px;transition:transform .45s var(--ease),box-shadow .45s var(--ease),background .35s,color .35s;position:relative;overflow:hidden}
+.sv:hover{transform:translateY(-8px);box-shadow:0 30px 60px -30px rgba(23,18,22,.45);background:var(--k);color:#fff}
+.sv svg{width:38px;height:38px;color:var(--yd);transition:color .35s,transform .5s var(--ease)}
+.sv:hover svg{color:var(--y);transform:rotate(-8deg) scale(1.1)}
+.sv h3{font-weight:800;font-size:21px;margin:18px 0 8px}
+.sv p{font-size:15px;color:var(--ink2);transition:color .35s}
+.sv:hover p{color:rgba(255,255,255,.7)}
+.sv .tag{position:absolute;right:20px;top:22px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.price-note{margin-top:34px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;background:var(--k);color:#fff;border-radius:22px;padding:24px 28px}
+.price-note b{font-family:var(--h);font-weight:800;font-size:20px}
+.price-note span{color:rgba(255,255,255,.65);font-size:15px;flex:1;min-width:200px}
+
+/* reviews */
+.rev-top{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;margin-bottom:46px}
+.score{display:flex;align-items:baseline;gap:16px}
+.score b{font-family:var(--h);font-weight:900;font-size:clamp(70px,9vw,140px);letter-spacing:-.05em;line-height:.9;font-variant-numeric:tabular-nums}
+.score span{font-size:15px;color:var(--ink2);line-height:1.4}
+.score span .stars{display:block;font-size:18px;color:var(--yd)}
+.rv-mq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.rv-t{display:flex;gap:22px;width:max-content;animation:mq 70s linear infinite;padding:10px 0 20px}
+.rv-mq:hover .rv-t{animation-play-state:paused}
+.q{width:360px;flex:none;background:#fff;border-radius:22px;padding:28px 26px;display:flex;flex-direction:column;gap:14px;transition:transform .4s var(--ease),box-shadow .4s}
+.q:hover{transform:translateY(-6px);box-shadow:0 26px 50px -30px rgba(23,18,22,.45)}
+.q .stars{color:var(--yd);font-size:13px}
+.q p{font-family:var(--h);font-weight:600;font-size:18px;line-height:1.35;flex:1}
+.q cite{font-style:normal;font-size:13.5px;color:var(--muted)}
+.q cite b{color:var(--ink);font-weight:700}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.st{position:relative;padding:34px 26px 30px;border-radius:22px;background:#fff;overflow:hidden;transition:transform .45s var(--ease)}
+.st:hover{transform:translateY(-6px)}
+.st::before{counter-increment:s;content:"0" counter(s);position:absolute;right:-4px;top:-22px;font-family:var(--h);font-weight:900;font-size:120px;color:rgba(227,165,135,.22);line-height:1;transition:transform .6s var(--ease)}
+.st:hover::before{transform:translateY(8px)}
+.st h3{font-weight:800;font-size:21px;margin-bottom:10px;position:relative}
+.st p{font-size:15px;color:var(--ink2);position:relative}
+
+/* lead */
+.lead{position:relative;overflow:hidden}
+.lead-bg{position:absolute;inset:-8% 0;background:url(img/hero.jpg?v=1) 60% 40%/cover;opacity:.45;animation:kb3 26s ease-in-out infinite alternate}
+@keyframes kb3{from{transform:scale(1)}to{transform:scale(1.08) translateX(-1.5%)}}
+.lead::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--k) 30%,rgba(23,18,22,.6) 70%,rgba(23,18,22,.4));z-index:1}
+.lead .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.lead .wrap>*{min-width:0}
+.lead h2{font-weight:800;font-size:clamp(34px,4.4vw,62px);margin:22px 0}
+.lead p.sub{color:rgba(255,255,255,.72);font-size:17px;max-width:460px}
+.lead ul{list-style:none;margin-top:30px;display:grid;gap:14px}
+.lead li{display:flex;gap:14px;align-items:center;color:rgba(255,255,255,.86)}
+.lead li::before{content:"";width:22px;height:22px;flex:none;border-radius:50%;background:var(--y) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23171216' stroke-width='3.4'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/12px no-repeat}
+.lead-form{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:40px;display:grid;gap:14px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.lead-form .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.lead-form .btn{width:100%;margin-top:6px}
+.lead-form small{color:rgba(255,255,255,.5);font-size:12.5px;text-align:center}
+.inp{height:56px;border-radius:999px;border:1.5px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#fff;padding:0 22px;font:inherit;font-size:15px;outline:none;transition:border-color .2s,background .2s;width:100%;min-width:0}
+.inp::placeholder{color:rgba(255,255,255,.45)}
+.inp:focus{border-color:var(--y);background:rgba(255,255,255,.1)}
+select.inp{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e3a587' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 20px center;background-size:18px;padding-right:50px}
+select.inp option{color:#111}
+.demo-note{display:flex;gap:10px;align-items:flex-start;background:rgba(227,165,135,.1);border:1px dashed rgba(227,165,135,.45);border-radius:16px;padding:12px 14px;font-size:13px;color:rgba(255,255,255,.78)}
+.ok{display:none;font-weight:600;color:var(--y);text-align:center}
+.ok.show{display:block;animation:swap .5s var(--ease)}
+
+/* contacts */
+.salons{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px}
+.sl{border-radius:24px;padding:34px 30px;background:#fff;display:flex;flex-direction:column;transition:transform .45s var(--ease),box-shadow .45s}
+.sl:hover{transform:translateY(-6px);box-shadow:0 30px 60px -34px rgba(23,18,22,.45)}
+.sl.main{background:var(--k);color:#fff}
+.sl .city{font-family:var(--h);font-weight:800;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.sl.main .city{color:var(--y)}
+.sl h3{font-weight:800;font-size:24px;margin:14px 0 10px}
+.sl p{color:var(--ink2);font-size:15px;flex:1}
+.sl.main p{color:rgba(255,255,255,.7)}
+.sl .tel{display:block;font-family:var(--h);font-weight:800;font-size:22px;margin:22px 0 18px}
+.sl .acts{display:flex;gap:10px;flex-wrap:wrap}
+.sl.main .btn-o{border-color:rgba(255,255,255,.4);color:#fff}
+.sl.main .btn-o:hover{background:#fff;color:var(--k)}
+
+/* faq */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.faq>*{min-width:0}
+.faq h2{font-weight:800;font-size:clamp(34px,4.2vw,58px);margin:22px 0 18px}
+.faq .sub{color:var(--ink2)}
+details{border-bottom:1px solid var(--line);padding:24px 0}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;font-family:var(--h);font-weight:700;font-size:19px;transition:color .25s}
+summary:hover{color:var(--yd)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:28px;line-height:.8;color:var(--yd);transition:transform .3s var(--ease);flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--ink2);margin-top:12px;max-width:620px}
+details[open] p{animation:swap .45s var(--ease)}
+
+/* footer */
+footer{background:var(--k);color:rgba(255,255,255,.6);padding:80px 0 120px;font-size:14px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;align-items:start}
+.ft>*{min-width:0}
+.ft-big{font-family:var(--h);font-weight:900;font-size:clamp(46px,11vw,170px);letter-spacing:-.04em;line-height:.85;color:#fff;margin-bottom:60px;overflow-wrap:anywhere}
+.ft-big i{font-style:normal;color:var(--y)}
+.ft b{display:block;color:#fff;font-family:var(--h);margin-bottom:12px}
+.ft a:hover{color:var(--y)}
+.ft-note{margin-top:60px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:12.5px;color:rgba(255,255,255,.42)}
+
+.mbar{display:none}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+.lamp.hint{animation:hint 1.1s ease-in-out 3}
+@keyframes hint{50%{box-shadow:0 0 0 8px rgba(227,165,135,.35)}}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.w>span{display:inline-block;transform:translateY(105%);transition:transform 1s var(--ease)}
+h2.in .w>span{transform:none}
+.rv-img{clip-path:inset(18% 0 0 0 round 22px);transition:clip-path 1.3s var(--ease)}
+.rv-img.in{clip-path:inset(0 0 0 0 round 0)}
+.px{will-change:transform}
+
+@media (max-width:1100px){
+  .menu{display:none}
+  .sim,.split,.lead .wrap,.faq,.ft{grid-template-columns:1fr}
+  .split-ph{min-height:460px}.split-ph::after{background:linear-gradient(0deg,rgba(23,18,22,1) 0%,rgba(23,18,22,0) 40%)}
+  .split-bd{padding:60px 24px 90px}
+  .salons,.fast{grid-template-columns:1fr}
+  .svc-grid,.steps{grid-template-columns:repeat(2,1fr)}
+  .tabs{grid-template-columns:repeat(3,1fr)}
+  .lead .wrap{gap:50px}
+}
+@media (max-width:720px){
+  .wrap{width:calc(100% - 32px)}
+  .demo{font-size:11.5px;padding:7px 12px}
+  .nav .wrap{height:68px;gap:12px}
+  .nav-tel,.nav .btn{display:none}
+  .nav-ic{display:grid}
+  .hero .wrap{padding-top:140px}
+  .hero::before{background:linear-gradient(0deg,rgba(14,10,13,.96) 0%,rgba(14,10,13,.82) 48%,rgba(14,10,13,.3) 100%)}
+  .hero h1{font-size:clamp(36px,10.4vw,56px)}
+  .hero-lead{font-size:16px}
+  .hero-cta .btn{flex:1 1 100%}
+  .hero-bar{grid-template-columns:1fr 1fr;margin-top:40px}
+  .hero-bar div{padding:18px 10px 20px 0}
+  .scroll{display:none}
+  section{padding:86px 0}
+  .sec-h{grid-template-columns:1fr;gap:18px;margin-bottom:36px}.sec-h p{justify-self:start}
+  .tabs{grid-template-columns:1fr 1fr}
+  .sim-stage{border-radius:20px}
+  .sim-ctl{position:static;padding:12px;background:var(--g)}
+  .sim-info{padding:22px 20px}
+  .feats{grid-template-columns:1fr}
+  .win{grid-template-columns:1fr;justify-items:start}
+  .win svg{max-width:160px}
+  .svc-grid,.steps{grid-template-columns:1fr}
+  .rev-top{grid-template-columns:1fr;gap:16px}
+  .q{width:280px;padding:22px 20px}
+  .q p{font-size:16px}
+  .lead-form{padding:24px 18px}.lead-form .two{grid-template-columns:1fr}
+  .salons{grid-template-columns:1fr}
+  .sl{padding:28px 22px}
+  .split-ph{min-height:300px}
+  footer{padding-bottom:110px}
+  .mbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:80;gap:8px;background:rgba(23,18,22,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:8px;border-radius:999px;transform:translateY(140%);transition:transform .5s var(--ease)}
+  .mbar.show{transform:none}
+  .mbar a{flex:1;height:48px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:700;font-size:14px;color:#fff;min-width:0}
+  .mbar a svg{width:16px;height:16px;flex:none}
+  .mbar a.y{background:var(--y);color:var(--k)}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv{opacity:1;transform:none}
+  .hero h1 .ln span,.w>span{transform:none}
+  .hero-lead,.hero-cta,.hero-bar{opacity:1}
+  .rv-img{clip-path:none}
+  .btn-y::after{display:none}
+  .rv-t{flex-wrap:wrap;width:auto}
+  .rv-t .dup{display:none}
+}
+
+
+/* configurator */
+.cfg{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:stretch}
+.cfg>*{min-width:0}
+.cfg-stage{position:relative;background:radial-gradient(120% 90% at 50% 20%,#3a2a33 0%,var(--k) 70%);border-radius:28px;overflow:hidden;box-shadow:0 40px 90px -50px rgba(23,18,22,.6);display:flex;flex-direction:column;justify-content:center;min-height:440px}
+.cfg-stage svg{display:block;width:100%;height:auto}
+.cfg-tag{position:absolute;left:22px;top:22px;font-family:var(--h);font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--y);border:1px solid rgba(227,165,135,.4);padding:8px 14px;border-radius:999px}
+.cfg-cap{position:absolute;right:22px;top:24px;color:rgba(255,255,255,.5);font-size:12px}
+#bed{transform-box:fill-box;transform-origin:50% 100%;transition:transform .9s var(--ease)}
+#bedsvg.w180 #bed{transform:scaleX(1.12)}
+#lid{transform-box:fill-box;transform-origin:100% 100%;transition:transform 1s var(--ease)}
+#bedsvg.up #lid{transform:translateY(-54px) rotate(-5deg)}
+#bedsvg .vel{fill:var(--vel,#c99a8f);transition:fill .7s var(--ease)}
+#bedsvg .box{opacity:0;transition:opacity .5s}
+#bedsvg.lift .box{opacity:1}
+#bedsvg .badge{opacity:0;transform:translateY(8px);transition:opacity .5s,transform .5s var(--ease)}
+#bedsvg.lift .badge{opacity:1;transform:none}
+#bedsvg .dimtxt{font-family:var(--h);font-weight:800;font-size:18px;fill:#fff}
+#bedsvg .sheen{animation:sheen 6s ease-in-out infinite}
+@keyframes sheen{0%,100%{opacity:.55}50%{opacity:.95}}
+.cfg-side{background:#fff;border-radius:28px;padding:30px 28px;display:flex;flex-direction:column;gap:20px}
+.opt h4{font-family:var(--h);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.seg button{border:1.5px solid var(--line);border-radius:14px;padding:12px 14px;text-align:left;font-weight:700;font-size:14.5px;line-height:1.25;transition:border-color .25s,background .25s,color .25s,transform .25s var(--ease)}
+.seg button small{display:block;font-weight:500;font-size:12px;color:var(--muted);margin-top:2px}
+.seg button:hover{transform:translateY(-2px);border-color:var(--y)}
+.seg button[aria-pressed="true"]{background:var(--k);color:#fff;border-color:var(--k)}
+.seg button[aria-pressed="true"] small{color:var(--y)}
+.sw{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.sw button{width:34px;height:34px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1.5px var(--line);transition:transform .25s var(--ease),box-shadow .25s}
+.sw button:hover{transform:scale(1.12)}
+.sw button[aria-pressed="true"]{box-shadow:0 0 0 2.5px var(--yd);transform:scale(1.12)}
+.sw span{font-size:12px;color:var(--muted)}
+.total{border-top:1px solid var(--line);padding-top:18px;margin-top:auto}
+.total .pr{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;font-family:var(--h);font-weight:800}
+.total .pr small{font-size:16px;color:var(--muted);font-weight:700}
+.total .pr b{font-size:clamp(36px,4vw,50px);letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
+.total .pr i{font-style:normal;font-size:15px;color:var(--yd)}
+.total p{font-size:13.5px;color:var(--ink2);margin:10px 0 16px}
+.total .btn{width:100%}
+.incl{display:flex;flex-wrap:wrap;gap:8px}
+.incl span{font-size:12.5px;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--paper2)}
+
+/* catalog */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.m{background:#fff;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .45s var(--ease),box-shadow .45s var(--ease);will-change:transform}
+.m:hover{transform:translateY(-8px);box-shadow:0 30px 60px -30px rgba(23,18,22,.45)}
+.m .ph{aspect-ratio:4/3;background:linear-gradient(160deg,#efe5dc,#e2d3c6);display:grid;place-items:center;position:relative;overflow:hidden}
+.m .ph svg{width:72%;height:auto;transition:transform .8s var(--ease)}
+.m:hover .ph svg{transform:scale(1.06) translateY(-4px)}
+.m .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.4) 48%,transparent 62%);transform:translateX(-120%);transition:transform 1.1s var(--ease);pointer-events:none}
+.m:hover .ph::after{transform:translateX(120%)}
+.m .ph small{position:absolute;left:14px;top:14px;font-family:var(--h);font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--k);background:rgba(255,255,255,.7);padding:6px 10px;border-radius:999px}
+.m .bd{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.m h3{font-weight:800;font-size:21px}
+.m p{font-size:14px;color:var(--ink2);margin:8px 0 18px;flex:1}
+.m .row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.m .pr{font-family:var(--h);font-weight:800;font-size:21px}
+.go{width:46px;height:46px;flex:none;border-radius:50%;background:var(--k);color:var(--y);display:grid;place-items:center;transition:background .25s,color .25s,transform .25s var(--ease)}
+.go svg{width:18px;height:18px}
+.m:hover .go{background:var(--y);color:var(--k);transform:rotate(-45deg)}
+.more{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:30px}
+.more span{font-size:14px;font-weight:600;padding:9px 16px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.55);transition:background .25s,color .25s}
+.more span:hover{background:var(--k);color:#fff}
+.more span.y{background:var(--k);color:#fff;border-color:var(--k)}
+.note{font-size:13px;color:var(--muted);margin-top:18px}
+
+/* split */
+.split{display:grid;grid-template-columns:1.15fr 1fr;min-height:720px}
+.split>*{min-width:0}
+.split-ph{position:relative;overflow:hidden;min-height:420px}
+.split-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.split-ph::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,18,22,0) 60%,rgba(23,18,22,1) 100%)}
+.split-bd{padding:110px 7vw 110px 64px;display:flex;flex-direction:column;justify-content:center}
+.split-bd h2{font-weight:800;font-size:clamp(34px,4.2vw,60px);margin:22px 0}
+.split-bd>p{font-size:17px;color:rgba(255,255,255,.7);max-width:480px;margin-bottom:34px}
+.feats{display:grid;grid-template-columns:1fr 1fr;gap:28px 30px;margin-bottom:34px}
+.feats div{border-top:1px solid rgba(255,255,255,.14);padding-top:18px;min-width:0}
+.feats b{display:block;font-family:var(--h);font-weight:700;font-size:17px;margin-bottom:6px}
+.feats b::before{content:"";display:inline-block;width:8px;height:8px;background:var(--y);transform:rotate(45deg);margin-right:12px;vertical-align:2px}
+.feats span{font-size:14.5px;color:rgba(255,255,255,.62)}
+.sq{border-left:3px solid var(--y);padding:4px 0 4px 18px;margin-bottom:30px}
+.sq q{display:block;font-family:var(--h);font-weight:600;font-size:18px;line-height:1.4;quotes:"«" "»"}
+.sq cite{display:block;font-style:normal;font-size:13px;color:rgba(255,255,255,.5);margin-top:6px}
+
+/* big quote */
+.bq{background:var(--paper2);text-align:center}
+.bq .mark{font-family:var(--h);font-weight:900;font-size:160px;line-height:.6;color:var(--y);display:block;height:70px}
+.bq h2{font-weight:800;font-size:clamp(30px,4.6vw,64px);max-width:18ch;margin:0 auto}
+.bq h2 em{color:var(--yd)}
+.bq cite{display:block;font-style:normal;color:var(--ink2);margin-top:26px;font-size:15px}
+.bq p{max-width:560px;margin:14px auto 0;color:var(--muted);font-size:14px}
+
+/* timeline */
+.tl{background:var(--g);border:1px solid rgba(255,255,255,.08);border-radius:28px;padding:70px 48px 96px}
+.tl-bar{position:relative;height:14px;border-radius:999px;background:rgba(255,255,255,.1)}
+.tl-fill{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:999px;background:linear-gradient(90deg,var(--y2),var(--y));transition:width 2.2s var(--ease)}
+.tl.in .tl-fill{width:100%}
+.mk{position:absolute;top:50%;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:var(--k);border:4px solid var(--y);transform:scale(0);transition:transform .6s var(--ease)}
+.tl.in .mk{transform:scale(1)}
+.tl.in .mk.m1{transition-delay:.5s}.tl.in .mk.m2{transition-delay:1.7s}.tl.in .mk.m3{transition-delay:2.1s}
+.mk .lb{position:absolute;top:34px;left:-2px;width:max-content;max-width:220px;font-size:13.5px;color:rgba(255,255,255,.72);line-height:1.4}
+.mk .lb b{display:block;font-family:var(--h);font-weight:800;font-size:22px;color:#fff}
+.mk.m2 .lb{left:auto;right:-2px;text-align:right}
+.mk.m3 .lb{top:auto;bottom:34px;left:auto;right:-2px;text-align:right}
+.mk.m3{border-color:#fff}
+.tl-start{position:absolute;left:0;bottom:34px;font-size:13px;color:rgba(255,255,255,.5)}
+
+/* proof */
+.big-proof{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-bottom:50px}
+.big-proof div{background:var(--k);color:#fff;border-radius:22px;padding:28px 24px;transition:transform .45s var(--ease)}
+.big-proof div:hover{transform:translateY(-6px)}
+.big-proof b{display:block;font-family:var(--h);font-weight:900;font-size:clamp(40px,4.4vw,62px);letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.big-proof b i{font-style:normal;color:var(--y);font-size:.5em;letter-spacing:0;margin-left:6px}
+.big-proof span{display:block;margin-top:12px;color:rgba(255,255,255,.62);font-size:14px}
+
+@media (max-width:1100px){
+  .cfg,.split{grid-template-columns:1fr}
+  .cat-grid,.big-proof{grid-template-columns:repeat(2,1fr)}
+  .split-ph{min-height:460px}.split-ph::after{background:linear-gradient(0deg,rgba(23,18,22,1) 0%,rgba(23,18,22,0) 40%)}
+  .split-bd{padding:60px 24px 90px}
+}
+@media (max-width:720px){
+  .cfg-stage{min-height:0;padding:56px 0 10px;border-radius:20px}
+  .cfg-cap{display:none}
+  .cfg-side{padding:24px 18px;border-radius:20px}
+  .cat-grid{grid-template-columns:1fr}
+  .feats{grid-template-columns:1fr}
+  .split-ph{min-height:300px}
+  .bq .mark{font-size:110px;height:50px}
+  .tl{padding:70px 20px 100px}
+  .mk .lb{max-width:150px;font-size:12.5px}
+  .mk .lb b{font-size:18px}
+  .tl{padding-bottom:210px}
+  .mk.m2 .lb{top:122px}
+  .big-proof{grid-template-columns:1fr 1fr;gap:12px}
+  .big-proof div{padding:22px 16px}
 }
 </style>
-<script type="application/ld+json">
-[
- {
-  "@context": "https://schema.org",
-  "@type": "FurnitureStore",
-  "name": "Перфекто",
-  "description": "Перфекто делает мягкую мебель под заказ на своём производстве: кровати с мягким изголовьем, диваны, банкетки, стулья и матрасы. Ткань и размер выбираете вы.",
-  "telephone": "+7 917 334-88-95",
-  "address": {
-   "@type": "PostalAddress",
-   "streetAddress": "Кузнецкая улица, 67, цокольный этаж",
-   "addressLocality": "Волгоград",
-   "postalCode": "400120",
-   "addressCountry": "RU"
-  },
-  "aggregateRating": {
-   "@type": "AggregateRating",
-   "ratingValue": "5.0",
-   "ratingCount": "25",
-   "bestRating": "5"
-  },
-  "priceRange": "от 42 900 ₽"
- },
- {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-   {
-    "@type": "Question",
-    "name": "Сколько стоит кровать на заказ?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Кровать «Ариана» 160×200 стоит от 42 900 ₽: с ортопедическим основанием, тканью 1 категории, мягким изголовьем и царгами. Подъёмный механизм плюс 7 000 ₽."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Можно сделать кровать нестандартного размера?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Да, мебель делаем под заказ. Напишите нужный размер, и мы посчитаем стоимость."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Какие ткани есть?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Ткани разных категорий, цена зависит от категории. Образцы можно посмотреть у нас."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Сколько ждать заказ?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "[Ваш срок изготовления]. Точный срок фиксируем при оформлении заказа."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Вы доставляете?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Да, доставка есть. Стоимость по вашему адресу подскажем."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Можно подобрать матрас?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Да, подберём матрас к кровати."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Можно перетянуть старую мебель?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "[Уточните, делаете ли перетяжку]."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Как с вами связаться?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Позвоните или напишите в WhatsApp по номеру +7 917 334-88-95."
-    }
-   }
-  ]
- }
-]
-</script>
 </head>
 <body>
-<div class="demo-bar">Демо-концепт от AI Partner Group для «Перфекто». Не официальный сайт.</div>
-<header class="top"><div class="wrap">
- <a class="logo" href="#top">Перфекто<small>Мягкая мебель под заказ</small></a>
- <nav aria-label="Разделы"><a href="#services">Что делаем</a><a href="#prices">Цены</a><a href="#steps">Как работаем</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a></nav>
- <a class="top-call" href="tel:+79173348895"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>+7 917 334-88-95</span></a>
-</div></header>
+
+<div class="demo" id="demo">Демо-концепт от AI Partner Group для <b>«Перфекто»</b>. Не официальный сайт. Цены и отзывы из ваших карточек 2ГИС и Яндекса и Telegram-канала. Фото сгенерированы для примера.</div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Перфекто">
+      <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="6" y="8" width="36" height="22" rx="9" stroke="#e3a587" stroke-width="3"/><path d="M15 12v14M24 12v14M33 12v14" stroke="#e3a587" stroke-width="2" opacity=".6"/><rect x="3" y="28" width="42" height="10" rx="4" stroke="#fff" stroke-width="2.6"/><path d="M9 38v4M39 38v4" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg>
+      <span><b>PERFECTO</b><small>мебель на заказ</small></span>
+    </a>
+    <nav class="menu"><a href="#ariana">Кровать «Ариана»</a><a href="#catalog">Цены</a><a href="#production">Производство</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a><a href="#faq">Вопросы</a></nav>
+    <div class="nav-r">
+      <a class="nav-tel" href="tel:+79173348895">+7 917 334-88-95<small>Иван · ежедневно 10:00–18:00</small></a>
+      <a class="nav-ic" href="tel:+79173348895" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg></a>
+      <a class="btn btn-y btn-sm" href="#ariana">Собрать кровать</a>
+    </div>
+  </div>
+</header>
 
 <main id="top">
-<section class="hero"><div class="wrap">
- <div>
-  <span class="eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z" fill="currentColor"/></svg> 5,0 на 2ГИС, 25 оценок</span>
-  <h1>Кровати, диваны и мягкая мебель <em>на заказ</em> в Волгограде</h1>
-  <p class="lead">Перфекто делает мягкую мебель под заказ на своём производстве: кровати с мягким изголовьем, диваны, банкетки, стулья и матрасы. Ткань и размер выбираете вы.</p>
-  <div class="cta">
-   <a class="btn btn-main" href="tel:+79173348895"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg> Позвонить</a>
-   <a class="btn btn-wa" href="https://wa.me/79173348895" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 0 1 12 4zm-3.2 4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4l-.5-.3-1.8-.9c-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5z" fill="currentColor"/></svg> Написать в WhatsApp</a>
+<section class="hero">
+  <div class="hero-bg"><img src="img/hero.jpg?v=1" alt="Спальня с мягкой кроватью с высоким изголовьем в велюре"></div>
+  <canvas class="hero-fx" id="fx" aria-hidden="true"></canvas><div class="hero-sweep" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-kicker"><span class="stars">★★★★★</span><span>5,0 в 2ГИС · 4,9 в Яндексе</span></div>
+    <h1><span class="ln"><span>Кровать</span></span><span class="ln"><span>с мягким</span></span><span class="ln"><span><em>изголовьем</em></span></span></h1>
+    <p class="hero-lead">Шьём кровати, диваны и банкетки на своём производстве в Волгограде. Вы выбираете модель, размер и ткань, а мы привозим, поднимаем и собираем.</p>
+    <div class="hero-cta">
+      <a class="btn btn-y" href="#ariana">Собрать свою кровать <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-gl" href="#catalog">Смотреть цены</a>
+    </div>
+    <div class="hero-bar">
+      <div><b>5,0</b><span>в 2ГИС, 25 оценок</span></div>
+      <div><b>4,9</b><span>в Яндексе, 30 оценок</span></div>
+      <div><b class="nc">42 900 <i>₽</i></b><span>кровать «Ариана», от</span></div>
+      <div><b>30</b><span>рабочих дней максимум по договору</span></div>
+    </div>
   </div>
-  <div class="chips"><span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.4z" fill="currentColor"/></svg>Своё производство</span><span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.4z" fill="currentColor"/></svg>Доставка</span><span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.4z" fill="currentColor"/></svg>Кровать «Ариана» от 42 900 ₽</span></div>
- </div>
- <div class="hero-art bed" role="img" aria-label="Иллюстрация"><i class="s1"></i><i class="s2"></i><i class="s3"></i><i class="s4"></i><i class="s5"></i><i class="s6"></i></div>
-</div></section>
+  <div class="scroll">листайте</div>
+</section>
 
-<section id="services"><div class="wrap">
- <h2>Что изготавливаем</h2>
- <p class="sub">Мягкая мебель под ваш интерьер и ваш размер.</p>
- <div class="grid g3"><article class="card svc"><div class="svc-mark" aria-hidden="true"></div><h3>Кровати</h3><p>С мягким изголовьем и царгами, с подъёмным механизмом или без. Спальное место 160×200 или 180×200.</p></article><article class="card svc"><div class="svc-mark" aria-hidden="true"></div><h3>Диваны</h3><p>Модели для гостиной в ткани по выбору.</p></article><article class="card svc"><div class="svc-mark" aria-hidden="true"></div><h3>Банкетки и пуфы</h3><p>В том числе банкетки на металлокаркасе.</p></article><article class="card svc"><div class="svc-mark" aria-hidden="true"></div><h3>Стулья</h3><p>Мягкие стулья для кухни и гостиной.</p></article><article class="card svc"><div class="svc-mark" aria-hidden="true"></div><h3>Матрасы</h3><p>Подберём матрас к кровати.</p></article><article class="card svc"><div class="svc-mark" aria-hidden="true"></div><h3>Мягкие зеркала и изголовья</h3><p>Декор в одной ткани с кроватью.</p></article></div>
-</div></section>
+<div class="mq" aria-hidden="true"><div class="mq-t">
+  <span>Кровати</span><span>Диваны</span><span>Банкетки</span><span>Стулья</span><span>Мягкие зеркала</span><span>Матрасы</span><span>Перетяжка</span>
+  <span>Кровати</span><span>Диваны</span><span>Банкетки</span><span>Стулья</span><span>Мягкие зеркала</span><span>Матрасы</span><span>Перетяжка</span>
+</div></div>
 
-<section id="prices"><div class="wrap two">
- <div>
-  <h2>Цены</h2>
-  <p class="sub">Цена зависит от модели, размера и категории ткани.</p>
-  <a class="btn btn-ghost" href="#request">Узнать цену своего варианта</a>
- </div>
- <div>
-  <div class="card prices"><div class="price-row"><div><b>Кровать «Ариана», 160×200</b><span>ортопедическое основание, ткань 1 категории, мягкое изголовье и царги</span></div><div class="pv">от 42 900 ₽</div></div><div class="price-row"><div><b>Подъёмный механизм</b><span>к кровати «Ариана»</span></div><div class="pv">+7 000 ₽</div></div><div class="price-row"><div><b>Диван «Билл»</b></div><div class="pv">[ваша цена] ₽</div></div><div class="price-row"><div><b>Банкетка на металлокаркасе</b></div><div class="pv">[ваша цена] ₽</div></div></div>
-  <p class="note">Цены из Telegram-канала Перфекто. Стоимость ткани зависит от категории. Не является публичной офертой.</p>
- </div>
-</div></section>
-
-<section id="why"><div class="wrap">
- <h2>Почему выбирают Перфекто</h2>
- <p class="sub">Рейтинг и число оценок по данным 2ГИС, октябрь 2026.</p>
- <div class="why"><div class="why-item"><div class="why-big">5,0</div><div class="why-txt">средняя оценка на 2ГИС</div></div><div class="why-item"><div class="why-big">25</div><div class="why-txt">оценок покупателей на 2ГИС</div></div><div class="why-item"><div class="why-big">23</div><div class="why-txt">отзыва на 2ГИС</div></div><div class="why-item"><div class="why-big">своё</div><div class="why-txt">производство мебели</div></div></div>
-</div></section>
-
-<section id="steps"><div class="wrap">
- <h2>Как проходит заказ</h2>
- <p class="sub">Понятно с первого сообщения: модель, ткань, размер, цена.</p>
- <ol class="steps"><li><span class="sn">1</span><div><h3>Пишете или звоните</h3><p>Расскажите, что нужно: кровать, диван, банкетка. Можно прислать фото интерьера.</p></div></li><li><span class="sn">2</span><div><h3>Выбираете ткань и размер</h3><p>Подбираем ткань по образцам и размер под вашу комнату.</p></div></li><li><span class="sn">3</span><div><h3>Изготавливаем</h3><p>Делаем мебель на своём производстве, срок фиксируем при заказе [ваш срок].</p></div></li><li><span class="sn">4</span><div><h3>Доставляем</h3><p>Привозим заказ по Волгограду и области [условия доставки].</p></div></li></ol>
-</div></section>
-
-<section id="faq"><div class="wrap">
- <h2>Частые вопросы</h2>
- <p class="sub">Если не нашли ответ, напишите в WhatsApp, ответим.</p>
- <details class="faq-i"><summary>Сколько стоит кровать на заказ?</summary><p>Кровать «Ариана» 160×200 стоит от 42 900 ₽: с ортопедическим основанием, тканью 1 категории, мягким изголовьем и царгами. Подъёмный механизм плюс 7 000 ₽.</p></details><details class="faq-i"><summary>Можно сделать кровать нестандартного размера?</summary><p>Да, мебель делаем под заказ. Напишите нужный размер, и мы посчитаем стоимость.</p></details><details class="faq-i"><summary>Какие ткани есть?</summary><p>Ткани разных категорий, цена зависит от категории. Образцы можно посмотреть у нас.</p></details><details class="faq-i"><summary>Сколько ждать заказ?</summary><p>[Ваш срок изготовления]. Точный срок фиксируем при оформлении заказа.</p></details><details class="faq-i"><summary>Вы доставляете?</summary><p>Да, доставка есть. Стоимость по вашему адресу подскажем.</p></details><details class="faq-i"><summary>Можно подобрать матрас?</summary><p>Да, подберём матрас к кровати.</p></details><details class="faq-i"><summary>Можно перетянуть старую мебель?</summary><p>[Уточните, делаете ли перетяжку].</p></details><details class="faq-i"><summary>Как с вами связаться?</summary><p>Позвоните или напишите в WhatsApp по номеру +7 917 334-88-95.</p></details>
-</div></section>
-
-<section id="request"><div class="wrap">
- <div class="form-box two">
-  <div>
-   <h2>Посчитаем вашу кровать или диван</h2>
-   <p class="sub">Оставьте телефон и напишите, что хотите. Пришлём цену и варианты тканей в WhatsApp.</p>
+<section id="ariana">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="eyebrow rv">Конструктор</span><h2 class="rv d1">Соберите кровать <em>«Ариана»</em></h2></div>
+      <p class="rv d2">Выберите размер, подъёмный механизм и ткань. Цена считается по прайсу из Telegram-канала Перфекто.</p>
+    </div>
+    <div class="cfg">
+      <div class="cfg-stage rv">
+        <span class="cfg-tag">Ариана</span><span class="cfg-cap">цвет ткани для примера</span>
+        <svg id="bedsvg" viewBox="0 0 600 400" role="img" aria-label="Схема кровати «Ариана»">
+          <defs>
+            <linearGradient id="gSheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".28"/><stop offset=".45" stop-color="#fff" stop-opacity=".04"/><stop offset=".7" stop-color="#000" stop-opacity=".06"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient>
+            <linearGradient id="gMat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbf8f4"/><stop offset="1" stop-color="#e7ded4"/></linearGradient>
+            <radialGradient id="gShadow"><stop offset="0" stop-color="#000" stop-opacity=".55"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+          </defs>
+          <ellipse cx="300" cy="330" rx="270" ry="22" fill="url(#gShadow)"/>
+          <g id="bed">
+            <rect x="140" y="304" width="16" height="22" rx="3" fill="#2b2026"/><rect x="444" y="304" width="16" height="22" rx="3" fill="#2b2026"/>
+            <rect class="vel" x="150" y="40" width="300" height="236" rx="28"/>
+            <g stroke="#000" stroke-opacity=".16" stroke-width="3" stroke-linecap="round"><path d="M200 66v186M250 66v186M300 66v186M350 66v186M400 66v186"/></g>
+            <rect class="sheen" x="150" y="40" width="300" height="236" rx="28" fill="url(#gSheen)"/>
+            <g class="box"><rect x="124" y="222" width="352" height="34" rx="6" fill="#1a1216"/><rect x="146" y="230" width="120" height="16" rx="5" fill="#d9cfc5"/><rect x="276" y="232" width="96" height="14" rx="5" fill="#b9a99c"/><rect x="380" y="230" width="80" height="16" rx="5" fill="#e9e1d8"/></g>
+            <g id="lid">
+              <rect x="120" y="222" width="360" height="34" rx="12" fill="url(#gMat)" stroke="#d8ccc0"/>
+              <rect x="162" y="190" width="124" height="40" rx="16" fill="#f7f2ec" stroke="#e1d6ca"/>
+              <rect x="314" y="190" width="124" height="40" rx="16" fill="#f7f2ec" stroke="#e1d6ca"/>
+              <path d="M330 226 h138 a12 12 0 0 1 12 12 v6 h-150z" class="vel" opacity=".9"/>
+            </g>
+            <rect class="vel" x="106" y="250" width="388" height="62" rx="18"/>
+            <rect class="sheen" x="106" y="250" width="388" height="62" rx="18" fill="url(#gSheen)"/>
+            <path d="M126 281h348" stroke="#000" stroke-opacity=".14" stroke-width="2" stroke-dasharray="4 5"/>
+          </g>
+          <g class="badge"><rect x="196" y="118" width="208" height="40" rx="20" fill="#e3a587"/><text x="300" y="144" text-anchor="middle" font-family="Montserrat,sans-serif" font-weight="800" font-size="15" fill="#171216">+ ящик для белья</text></g>
+          <g stroke="#e3a587" stroke-width="2" fill="none" opacity=".8"><path d="M110 362 H490"/><path d="M110 354v16M490 354v16"/></g>
+          <rect x="248" y="348" width="104" height="28" rx="14" fill="#171216"/>
+          <text class="dimtxt" id="dim" x="300" y="368" text-anchor="middle">160 × 200</text>
+        </svg>
+      </div>
+      <div class="cfg-side rv d1">
+        <div class="opt"><h4>Спальное место</h4><div class="seg" data-k="size"><button type="button" data-v="160" aria-pressed="true">160 × 200<small>цена из прайса</small></button><button type="button" data-v="180" aria-pressed="false">180 × 200<small>доплату назовёт Иван</small></button></div></div>
+        <div class="opt"><h4>Подъёмный механизм</h4><div class="seg" data-k="lift"><button type="button" data-v="0" aria-pressed="true">Без механизма<small>ортопедическое основание</small></button><button type="button" data-v="1" aria-pressed="false">С механизмом<small>+7 000 ₽, ящик для белья</small></button></div></div>
+        <div class="opt"><h4>Ткань</h4><div class="seg" data-k="fab"><button type="button" data-v="1" aria-pressed="true">1 категория<small>входит в цену</small></button><button type="button" data-v="2" aria-pressed="false">Выше 1-й<small>цена зависит от ткани</small></button></div></div>
+        <div class="opt"><h4>Цвет, для примера</h4><div class="sw" id="sw">
+          <button type="button" data-c="#c99a8f" style="background:#c99a8f" aria-label="Пудровый" aria-pressed="true"></button>
+          <button type="button" data-c="#2f5d55" style="background:#2f5d55" aria-label="Изумрудный" aria-pressed="false"></button>
+          <button type="button" data-c="#4b4a53" style="background:#4b4a53" aria-label="Графитовый" aria-pressed="false"></button>
+          <button type="button" data-c="#b98d3e" style="background:#b98d3e" aria-label="Горчичный" aria-pressed="false"></button>
+          <button type="button" data-c="#34467a" style="background:#34467a" aria-label="Синий" aria-pressed="false"></button>
+          <span>Живые образцы покажем на производстве</span></div></div>
+        <div class="total" aria-live="polite">
+          <div class="pr"><small>от</small><b id="price">42 900</b><small>₽</small><i id="extra"></i></div>
+          <p id="pnote">Цена для 160×200 в ткани 1 категории.</p>
+          <div class="incl"><span>Ортопедическое основание</span><span>Мягкое изголовье</span><span>Царги</span></div>
+          <a class="btn btn-y" href="#lead" id="cfgbtn" style="margin-top:16px">Хочу такую кровать <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
   </div>
-  <div>
-   <form id="lead-form" novalidate>
-    <label for="f-name">Как к вам обращаться</label>
-    <input id="f-name" name="name" autocomplete="name" placeholder="Имя">
-    <label for="f-phone">Телефон или WhatsApp</label>
-    <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7">
-    <label for="f-what">Что хотите заказать</label>
-    <textarea id="f-what" name="what" placeholder="Например: кровать 180×200 с подъёмным механизмом, серый велюр"></textarea>
-    <button class="btn" type="submit">Отправить заявку</button>
-    <p class="consent">Нажимая кнопку, вы соглашаетесь на обработку контактных данных для ответа на заявку.</p>
-   </form>
-   <div id="lead-done" class="done" role="status">Это демо: в рабочей версии заявка придёт вам в WhatsApp или Telegram</div>
-  </div>
- </div>
-</div></section>
+</section>
 
-<section id="contacts"><div class="wrap two">
- <div>
-  <h2>Контакты</h2>
-  <p class="sub">Перед визитом лучше позвонить: работаем по предварительному звонку.</p>
-  <div class="contacts">
-   <a class="c-line" href="tel:+79173348895"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>+7 917 334-88-95</span></a>
-   <a class="c-line" href="https://wa.me/79173348895" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 0 1 12 4zm-3.2 4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4l-.5-.3-1.8-.9c-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5z" fill="currentColor"/></svg><span>WhatsApp +7 917 334-88-95</span></a>
-   <a class="c-line" href="https://t.me/perfecto034" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.4 3.6L2.9 10.7c-1.3.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.4l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.4-1.5zM9.3 13.4l8.6-5.4c.4-.3.8-.1.5.2l-7.1 6.4-.3 3.1z" fill="currentColor"/></svg><span>Telegram-канал @perfecto034</span></a>
-   <div class="c-line"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg><span>Волгоград, Кузнецкая улица, 67, цокольный этаж (Ворошиловский район)</span></div>
-   <div class="c-line"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4l3.5 2.1-.8 1.3L11 13V7h2z" fill="currentColor"/></svg><span>С 10:00, по предварительному звонку [график по дням уточнить]</span></div>
+<section class="svc" id="catalog" style="padding-top:110px">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="eyebrow rv">Цены</span><h2 class="rv d1">Модели с <em>реальными</em> ценами</h2></div>
+      <p class="rv d2">Каждую модель шьём под заказ в ткани, которую вы выберете. Цены из Telegram-канала и карточки Перфекто в Яндексе.</p>
+    </div>
+    <div class="cat-grid">
+      <article class="m rv"><div class="ph"><small>Telegram</small><svg viewBox="0 0 200 120" fill="none"><rect x="40" y="10" width="120" height="70" rx="14" fill="#c99a8f"/><path d="M64 18v56M88 18v56M112 18v56M136 18v56" stroke="#000" stroke-opacity=".15" stroke-width="2"/><rect x="30" y="70" width="140" height="30" rx="9" fill="#b9877b"/><rect x="38" y="62" width="124" height="12" rx="5" fill="#f6f1eb"/><path d="M40 100v10M160 100v10" stroke="#2b2026" stroke-width="5" stroke-linecap="round"/></svg></div>
+        <div class="bd"><h3>Кровать «Ариана»</h3><p>160×200 или 180×200. Ортопедическое основание, мягкое изголовье и царги. Подъёмный механизм +7 000 ₽.</p>
+        <div class="row"><div class="pr">от 42 900 ₽</div><a class="go" href="#ariana" aria-label="Собрать «Ариану»"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></article>
+      <article class="m rv d1"><div class="ph"><small>Яндекс</small><svg viewBox="0 0 200 120" fill="none"><rect x="36" y="16" width="128" height="62" rx="8" fill="#6d7d8c"/><rect x="26" y="70" width="148" height="30" rx="8" fill="#5e6e7d"/><rect x="34" y="62" width="132" height="12" rx="5" fill="#f6f1eb"/><path d="M38 100v10M162 100v10" stroke="#2b2026" stroke-width="5" stroke-linecap="round"/></svg></div>
+        <div class="bd"><h3>Кровать «Руди»</h3><p>Спальное место 180×200.</p>
+        <div class="row"><div class="pr">41 000 ₽</div><a class="go" href="#lead" data-model="Кровать «Руди» 180×200" aria-label="Узнать про «Руди»"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></article>
+      <article class="m rv d2"><div class="ph"><small>Яндекс</small><svg viewBox="0 0 200 120" fill="none"><rect x="22" y="34" width="156" height="44" rx="10" fill="#8a6a55"/><rect x="14" y="58" width="26" height="40" rx="8" fill="#7a5c49"/><rect x="160" y="58" width="26" height="40" rx="8" fill="#7a5c49"/><rect x="36" y="66" width="128" height="30" rx="7" fill="#9b7a63"/><path d="M100 68v26" stroke="#000" stroke-opacity=".15" stroke-width="2"/><path d="M26 98l-4 12M174 98l4 12" stroke="#2b2026" stroke-width="5" stroke-linecap="round"/></svg></div>
+        <div class="bd"><h3>Диван лофт «Каллисто»</h3><p>Диван в стиле лофт.</p>
+        <div class="row"><div class="pr">103 000 ₽</div><a class="go" href="#lead" data-model="Диван лофт «Каллисто»" aria-label="Узнать про «Каллисто»"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></article>
+      <article class="m rv d3"><div class="ph"><small>Яндекс</small><svg viewBox="0 0 200 120" fill="none"><rect x="72" y="8" width="56" height="56" rx="16" fill="#5f7a5c"/><rect x="64" y="58" width="72" height="20" rx="8" fill="#55704f"/><path d="M76 78l-8 34M124 78l8 34" stroke="#2b2026" stroke-width="5" stroke-linecap="round"/></svg></div>
+        <div class="bd"><h3>Стул Glori</h3><p>Стул, цвет зелёный.</p>
+        <div class="row"><div class="pr">4 600 ₽</div><a class="go" href="#lead" data-model="Стул Glori" aria-label="Узнать про стул Glori"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></article>
+    </div>
+    <div class="more rv"><span>Кровать «Бровер»</span><span>Диван «Билл»</span><span>Банкетка на металлокаркасе</span><span>Мягкие зеркала</span><span>Кровати с матрасами</span><span class="y">цену назовёт Иван</span></div>
+    <p class="note">Цена «Арианы» из Telegram-канала @perfecto034. Цены «Руди», «Каллисто» и Glori из карточки в Яндексе, где вкладка цен помечена как давно не обновлявшаяся. Актуальную цену уточняйте у Ивана.</p>
   </div>
- </div>
- <div class="map-art" role="img" aria-label="Схема проезда"></div>
-</div></section>
+</section>
+
+<section class="dark" id="production" style="padding:0">
+  <div class="split">
+    <div class="split-ph"><img src="img/work.jpg?v=1" alt="Образцы мебельных тканей на столе мастера" loading="lazy"></div>
+    <div class="split-bd">
+      <span class="eyebrow rv">Своё производство</span>
+      <h2 class="rv d1">Приезжайте и <em>потрогайте ткань</em></h2>
+      <p class="rv d2">Мебель шьём сами, в Волгограде. На производство можно приехать, посмотреть, как всё устроено, и выбрать ткань. Образцы можно взять домой и примерить к интерьеру.</p>
+      <div class="sq rv d2"><q>производство находится в Волгограде, можно приехать, все посмотреть</q><cite>Любовь Воробьева, 2ГИС</cite></div>
+      <div class="feats rv d3">
+        <div><b>Ткани домой</b><span>Берите образцы и смотрите при своём свете</span></div>
+        <div><b>Помощь с выбором</b><span>Иван подскажет модель и ткань</span></div>
+        <div><b>Бесплатный замер</b><span>По данным карточки в Яндексе</span></div>
+        <div><b>Рассрочка</b><span>И оплата картой, по Яндексу</span></div>
+      </div>
+      <div class="rv d3"><a class="btn btn-y" href="tel:+79173348895">Договориться о визите <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="bq">
+  <div class="wrap">
+    <span class="mark rv" aria-hidden="true">“</span>
+    <h2 class="rv d1">Качество как у фабрик Аскона, цена <em>намного приятнее.</em></h2>
+    <cite class="rv d2">Andrei Redkin, отзыв в 2ГИС</cite>
+    <p class="rv d3">А ещё про аккуратность: «Шовчик к шовчику, аккуратно сшито изголовье кровати» — Елена Кожухова, 2ГИС.</p>
+  </div>
+</section>
+
+<section class="dark" id="time">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="eyebrow rv">Сроки</span><h2 class="rv d1">По договору до 30 дней, <em>часто быстрее</em></h2></div>
+      <p class="rv d2">В договоре срок до 30 рабочих дней. В отзывах клиенты пишут, что мебель часто готова раньше срока.</p>
+    </div>
+    <div class="tl rv" id="tl">
+      <div class="tl-bar">
+        <i class="tl-fill"></i>
+        <span class="tl-start">старт</span>
+        <span class="mk m1" style="left:16.67%"><span class="lb"><b>5 дней</b>«Итого пять рабочих дней!»<br>Юлия Трофименко, 2ГИС</span></span>
+        <span class="mk m2" style="left:83.33%"><span class="lb"><b>до 25 дней</b>«не более 25 дней»<br>Елена Менжунова</span></span>
+        <span class="mk m3" style="left:100%"><span class="lb"><b>30 рабочих дней</b>максимум по договору</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="svc" id="services">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="eyebrow rv">Услуги</span><h2 class="rv d1">Сошьём, перетянем <em>и привезём</em></h2></div>
+      <p class="rv d2">Только то, что подтверждают клиенты в отзывах и карточки Перфекто.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="sv rv"><span class="tag">на заказ</span><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="6" width="24" height="18" rx="5"/><rect x="4" y="22" width="32" height="10" rx="3"/><path d="M8 32v3M32 32v3"/></svg><h3>Кровати и мягкая мебель</h3><p>Кровати с мягким изголовьем, диваны, банкетки, стулья, мягкие зеркала. По вашим пожеланиям.</p></div>
+      <div class="sv rv d1"><span class="tag">да, делаем</span><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 30l20-20 4 4-20 20H6z"/><path d="M22 14l4 4"/><path d="M6 8c6 0 6 6 12 6" stroke-dasharray="3 3"/></svg><h3>Перетяжка</h3><p>Да, делаем перетяжку. В отзыве: «диван, банкетка и перетяжка кровати» — Вера Стадник.</p></div>
+      <div class="sv rv d2"><span class="tag">под ключ</span><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h20v16H3zM23 18h8l5 5v5H23z"/><circle cx="10" cy="30" r="3"/><circle cx="29" cy="30" r="3"/></svg><h3>Доставка и сборка</h3><p>По Волгограду и области, с подъёмом и сборкой. Упаковку забираем с собой.</p></div>
+      <div class="sv rv"><span class="tag">ткани</span><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="14" height="28" rx="2"/><rect x="20" y="10" width="14" height="24" rx="2"/><path d="M6 14h14M20 18h14"/></svg><h3>Ткани разных категорий</h3><p>Цена зависит от категории ткани. Образцы можно взять домой.</p></div>
+      <div class="sv rv d1"><span class="tag">Яндекс</span><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 30L30 6l4 4-24 24H6z"/><path d="M12 24l3 3M17 19l3 3M22 14l3 3"/></svg><h3>Бесплатный замер</h3><p>Замер бесплатно, так указано в карточке Перфекто в Яндексе.</p></div>
+      <div class="sv rv d2"><span class="tag">Яндекс</span><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="32" height="22" rx="3"/><path d="M4 16h32M10 26h8"/></svg><h3>Рассрочка и карта</h3><p>Можно оплатить картой или в рассрочку. Условия расскажет Иван.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" style="padding-bottom:100px">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1">Клиенты пишут <em>сами</em></h2></div>
+      <p class="rv d2">Цитаты дословно из 2ГИС и Яндекса. Первые отзывы в 2ГИС с 2020 года, негативных там нет.</p>
+    </div>
+    <div class="big-proof">
+      <div class="rv"><b>5,0</b><span>рейтинг в 2ГИС</span></div>
+      <div class="rv d1"><b>25</b><span>оценок и 23 отзыва в 2ГИС</span></div>
+      <div class="rv d2"><b>4,9</b><span>рейтинг в Яндексе</span></div>
+      <div class="rv d3"><b>30</b><span>оценок и 21 отзыв в Яндексе</span></div>
+    </div>
+  </div>
+  <div class="rv-mq rv">
+    <div class="rv-t">
+      <div class="q"><span class="stars">★★★★★</span><p>«Клиентоориентированность 1000%. Иван помогал при выборе ткани, модели дивана.»</p><cite><b>Александра К.</b> · Яндекс, 31.01.2025</cite></div>
+      <div class="q"><span class="stars">★★★★★</span><p>«изготовили под заказ красивейшую кровать со всеми моими дизайнерскими пожеланиями»</p><cite><b>Александра Кр</b> · Яндекс, 12.04.2024</cite></div>
+      <div class="q"><span class="stars">★★★★★</span><p>«Качество как у фабрик Аскона, цена намного приятнее.»</p><cite><b>Andrei Redkin</b> · 2ГИС</cite></div>
+      <div class="q"><span class="stars">★★★★★</span><p>«Итого пять рабочих дней!»</p><cite><b>Юлия Трофименко</b> · 2ГИС</cite></div>
+      <div class="q"><span class="stars">★★★★★</span><p>«производство находится в Волгограде, можно приехать, все посмотреть»</p><cite><b>Любовь Воробьева</b> · 2ГИС</cite></div>
+      <div class="q"><span class="stars">★★★★★</span><p>«Шовчик к шовчику, аккуратно сшито изголовье кровати»</p><cite><b>Елена Кожухова</b> · 2ГИС</cite></div>
+      <div class="q dup" aria-hidden="true"><span class="stars">★★★★★</span><p>«Клиентоориентированность 1000%. Иван помогал при выборе ткани, модели дивана.»</p><cite><b>Александра К.</b> · Яндекс, 31.01.2025</cite></div>
+      <div class="q dup" aria-hidden="true"><span class="stars">★★★★★</span><p>«изготовили под заказ красивейшую кровать со всеми моими дизайнерскими пожеланиями»</p><cite><b>Александра Кр</b> · Яндекс, 12.04.2024</cite></div>
+      <div class="q dup" aria-hidden="true"><span class="stars">★★★★★</span><p>«Качество как у фабрик Аскона, цена намного приятнее.»</p><cite><b>Andrei Redkin</b> · 2ГИС</cite></div>
+      <div class="q dup" aria-hidden="true"><span class="stars">★★★★★</span><p>«Итого пять рабочих дней!»</p><cite><b>Юлия Трофименко</b> · 2ГИС</cite></div>
+      <div class="q dup" aria-hidden="true"><span class="stars">★★★★★</span><p>«производство находится в Волгограде, можно приехать, все посмотреть»</p><cite><b>Любовь Воробьева</b> · 2ГИС</cite></div>
+      <div class="q dup" aria-hidden="true"><span class="stars">★★★★★</span><p>«Шовчик к шовчику, аккуратно сшито изголовье кровати»</p><cite><b>Елена Кожухова</b> · 2ГИС</cite></div>
+    </div>
+  </div>
+</section>
+
+<section id="how" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="eyebrow rv">Как заказать</span><h2 class="rv d1">От звонка до кровати <em>в спальне</em></h2></div>
+      <p class="rv d2">Работаем ежедневно с 10:00 до 18:00, по предварительному звонку.</p>
+    </div>
+    <div class="steps">
+      <div class="st rv"><h3>Звонок</h3><p>Звоните Ивану или пишите в Telegram. Можно прислать фото спальни.</p></div>
+      <div class="st rv d1"><h3>Модель и ткань</h3><p>Выбираете модель, размер и ткань. Можно приехать на производство.</p></div>
+      <div class="st rv d2"><h3>Договор</h3><p>Фиксируем цену и срок: до 30 рабочих дней, часто быстрее.</p></div>
+      <div class="st rv d3"><h3>Доставка</h3><p>Привозим, поднимаем, собираем и забираем упаковку.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark lead" id="lead">
+  <div class="lead-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow rv">Расчёт</span>
+      <h2 class="rv d1">Посчитаем <em>вашу</em> кровать или диван</h2>
+      <p class="sub rv d2">Оставьте телефон и напишите, что хотите. Иван перезвонит, подскажет ткань и назовёт цену.</p>
+      <ul class="rv d3"><li>Своё производство в Волгограде</li><li>Ткани можно взять домой</li><li>Доставка с подъёмом и сборкой</li></ul>
+    </div>
+    <form class="lead-form rv d1" id="form" onsubmit="return false">
+      <div class="two"><input class="inp" placeholder="Ваше имя" aria-label="Имя" autocomplete="name"><input class="inp" type="tel" placeholder="Телефон" aria-label="Телефон" autocomplete="tel" required></div>
+      <select class="inp" id="what" aria-label="Что хотите заказать"><option>Кровать «Ариана»</option><option>Другая кровать</option><option>Диван</option><option>Банкетка</option><option>Стулья</option><option>Мягкое зеркало</option><option>Перетяжка мебели</option></select>
+      <input class="inp" id="mdl" placeholder="Размер, ткань, пожелания" aria-label="Пожелания">
+      <button class="btn btn-y" type="submit">Узнать цену <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <div class="demo-note">Это демо: в рабочей версии заявка придёт вам в MAX или Telegram.</div>
+      <small>Нажимая кнопку, вы соглашаетесь на обработку персональных данных</small>
+      <div class="ok">Спасибо! В демо заявка никуда не отправляется.</div>
+    </form>
+  </div>
+</section>
+
+<section id="contacts">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="eyebrow rv">Контакты</span><h2 class="rv d1">Позвоните <em>Ивану</em></h2></div>
+      <p class="rv d2">Перед визитом лучше позвонить: работаем по предварительному звонку.</p>
+    </div>
+    <div class="salons">
+      <div class="sl main rv"><span class="city">Иван</span><h3>Телефон и Telegram</h3><p>Ответим, подскажем модель и ткань. По этому номеру Иван есть и в Viber.</p>
+        <a class="tel" href="tel:+79173348895">+7 917 334-88-95</a>
+        <div class="acts"><a class="btn btn-y btn-sm" href="tel:+79173348895">Позвонить</a><a class="btn btn-o btn-sm" href="https://t.me/+79173348895" target="_blank" rel="noopener">Telegram</a></div></div>
+      <div class="sl rv d1"><span class="city">Адрес</span><h3>Кузнецкая ул., 67</h3><p>Цокольный этаж, 208-й мкр, Ворошиловский район<br>Ежедневно 10:00–18:00, по предварительному звонку</p>
+        <div class="acts" style="margin-top:22px"><a class="btn btn-o btn-sm" href="tel:+79173348895">Договориться о визите</a></div></div>
+      <div class="sl rv d2"><span class="city">Работы и новинки</span><h3>Канал @perfecto034</h3><p>Фото мебели в Telegram-канале. Есть и группа ВКонтакте.</p>
+        <div class="acts" style="margin-top:22px"><a class="btn btn-o btn-sm" href="https://t.me/perfecto034" target="_blank" rel="noopener">Telegram-канал</a><a class="btn btn-o btn-sm" href="https://vk.com/perfecto034" target="_blank" rel="noopener">ВКонтакте</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap faq">
+    <div><span class="eyebrow rv">Вопросы</span><h2 class="rv d1">Частые <em>вопросы</em></h2><p class="sub rv d2">Не нашли ответ? Позвоните Ивану или напишите в Telegram.</p></div>
+    <div>
+      <details class="rv"><summary>Сколько стоит кровать на заказ?</summary><p>Кровать «Ариана» 160×200 стоит от 42 900 ₽: ортопедическое основание, ткань 1 категории, мягкое изголовье и царги. Подъёмный механизм с ящиком для белья +7 000 ₽. Цена зависит от категории ткани.</p></details>
+      <details class="rv"><summary>Сколько ждать заказ?</summary><p>По договору до 30 рабочих дней. В отзывах клиенты пишут, что часто выходит быстрее: у кого-то за 5 рабочих дней, у кого-то не более 25 дней.</p></details>
+      <details class="rv"><summary>Можно выбрать ткань вживую?</summary><p>Да. Приезжайте на производство в Волгограде, посмотрите ткани и возьмите образцы домой, чтобы примерить к интерьеру.</p></details>
+      <details class="rv"><summary>Вы делаете перетяжку?</summary><p>Да, делаем перетяжку мебели. Расскажите, что нужно перетянуть, и Иван подскажет по ткани и цене.</p></details>
+      <details class="rv"><summary>Есть доставка и сборка?</summary><p>Да, по Волгограду и области, с подъёмом и сборкой. Упаковку забираем с собой.</p></details>
+      <details class="rv"><summary>Можно в рассрочку?</summary><p>В карточке Перфекто в Яндексе указаны рассрочка и оплата картой. Условия уточните у Ивана.</p></details>
+      <details class="rv"><summary>Когда вы работаете?</summary><p>Ежедневно с 10:00 до 18:00, по предварительному звонку. Адрес: Кузнецкая улица, 67, цокольный этаж.</p></details>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer><div class="wrap">Перфекто, Волгоград. Демо-концепт от AI Partner Group, данные взяты из открытой карточки компании в 2ГИС и Telegram-канала Перфекто. Не официальный сайт.</div></footer>
+<footer>
+  <div class="wrap">
+    <div class="ft-big">PERFECTO<i>.</i></div>
+    <div class="ft">
+      <div><b>Перфекто</b>Кровати, диваны, банкетки и мягкие зеркала на заказ со своего производства в Волгограде.</div>
+      <div><b>Адрес</b>Кузнецкая ул., 67, цокольный этаж<br>208-й мкр, Ворошиловский район<br>Ежедневно 10:00–18:00, по звонку</div>
+      <div><b>Связь</b><a href="tel:+79173348895">+7 917 334-88-95</a>, Иван<br><a href="https://t.me/+79173348895" target="_blank" rel="noopener">Telegram</a> · <a href="https://t.me/perfecto034" target="_blank" rel="noopener">канал</a> · <a href="https://vk.com/perfecto034" target="_blank" rel="noopener">ВКонтакте</a></div>
+    </div>
+    <div class="ft-note">Демо-концепт от AI Partner Group для «Перфекто», 28.10.2026. Не официальный сайт. Цены и отзывы из карточек 2ГИС и Яндекса и Telegram-канала @perfecto034 на 28.10.2026. Фото сгенерированы для примера.</div>
+  </div>
+</footer>
 
-<div class="sticky">
- <a class="btn btn-main" href="tel:+79173348895"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg> Позвонить</a>
- <a class="btn btn-wa" href="https://wa.me/79173348895" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 0 1 12 4zm-3.2 4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4l-.5-.3-1.8-.9c-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5z" fill="currentColor"/></svg> WhatsApp</a>
-</div>
+<div class="mbar" id="mbar"><a href="tel:+79173348895"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>Позвонить</a><a class="y" href="#ariana">Собрать кровать</a></div>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FurnitureStore","name":"Перфекто","description":"Кровати, диваны, банкетки и мягкие зеркала на заказ со своего производства в Волгограде","telephone":"+7 917 334-88-95","address":{"@type":"PostalAddress","streetAddress":"Кузнецкая улица, 67, цокольный этаж","addressLocality":"Волгоград","addressCountry":"RU"},"openingHours":"Mo-Su 10:00-18:00","priceRange":"4 600 – 103 000 ₽","sameAs":["https://t.me/perfecto034","https://vk.com/perfecto034"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"25","reviewCount":"23","bestRating":"5"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Сколько стоит кровать на заказ?","acceptedAnswer":{"@type":"Answer","text":"Кровать «Ариана» 160×200 стоит от 42 900 ₽: ортопедическое основание, ткань 1 категории, мягкое изголовье и царги. Подъёмный механизм +7 000 ₽."}},
+{"@type":"Question","name":"Сколько ждать заказ?","acceptedAnswer":{"@type":"Answer","text":"По договору до 30 рабочих дней, часто быстрее."}},
+{"@type":"Question","name":"Вы делаете перетяжку?","acceptedAnswer":{"@type":"Answer","text":"Да, делаем перетяжку мебели."}},
+{"@type":"Question","name":"Есть доставка и сборка?","acceptedAnswer":{"@type":"Answer","text":"Да, по Волгограду и области, с подъёмом и сборкой."}}]}
+</script>
 <script>
 (function(){
-  var f=document.getElementById('lead-form');
-  var done=document.getElementById('lead-done');
-  if(!f){return;}
-  f.addEventListener('submit',function(ev){
-    ev.preventDefault();
-    f.style.display='none';
-    done.classList.add('show');
-    done.setAttribute('tabindex','-1');
-    done.focus();
-  });
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var demo=document.getElementById('demo'),nav=document.getElementById('nav'),mbar=document.getElementById('mbar');
+  function dh(){document.documentElement.style.setProperty('--dh',demo.offsetHeight+'px')}
+  dh();addEventListener('resize',dh);
+  function onS(){var y=window.scrollY;nav.classList.toggle('solid',y>40);if(mbar)mbar.classList.toggle('show',y>420)}
+  addEventListener('scroll',onS,{passive:true});onS();
+
+  /* kinetic h2 */
+  document.querySelectorAll('h2.rv').forEach(function(h){var i=0;(function walk(n){[].slice.call(n.childNodes).forEach(function(c){
+    if(c.nodeType===3){var f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(function(t){if(!t)return;if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(t));return}var w=document.createElement('span');w.className='w';var s=document.createElement('span');s.textContent=t;s.style.transitionDelay=(.07*i++)+'s';w.appendChild(s);f.appendChild(w)});n.replaceChild(f,c)}
+    else if(c.nodeType===1&&c.tagName!=='BR')walk(c)})})(h)});
+
+  /* reveal */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var el=e.target;el.classList.add('in');io.unobserve(el);if(el.tagName!=='H2'&&el.id!=='tl'&&el.classList.contains('rv'))setTimeout(function(){el.classList.remove('rv','d1','d2','d3')},1400)}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  var ph=document.querySelector('.split-ph');if(ph){ph.classList.add('rv-img');io.observe(ph)}
+
+  /* parallax on work image */
+  var pim=document.querySelector('.split-ph img');
+  if(pim&&!rm){pim.classList.add('px');function sc(){var r=pim.parentNode.getBoundingClientRect(),vh=innerHeight;if(r.bottom<0||r.top>vh)return;var k=(r.top+r.height/2-vh/2)/vh;pim.style.transform='scale(1.12) translateY('+(k*-40)+'px)'}addEventListener('scroll',sc,{passive:true});sc()}
+
+  /* hero ken burns loop after intro */
+  var hi=document.querySelector('.hero-bg img');
+  if(hi&&!rm)setTimeout(function(){hi.style.animation='none';void hi.offsetWidth;hi.style.animation='';hi.classList.add('kb2')},20000);
+
+  /* hero warm particles */
+  (function(){var c=document.getElementById('fx');if(!c||rm)return;var x=c.getContext('2d'),P=[],W,H,d=Math.min(2,window.devicePixelRatio||1);
+    function rs(){W=c.width=c.offsetWidth*d;H=c.height=c.offsetHeight*d}rs();addEventListener('resize',rs);
+    for(var i=0;i<60;i++)P.push({x:Math.random(),y:Math.random(),r:Math.random()*1.7+.4,s:Math.random()*.22+.05,a:Math.random()*6.3,o:Math.random()*.45+.15});
+    (function f(){x.clearRect(0,0,W,H);P.forEach(function(p){p.y-=p.s/1000;p.a+=.01;if(p.y<-.02){p.y=1.02;p.x=Math.random()}var px=(p.x+Math.sin(p.a)*.01)*W,py=p.y*H,R=p.r*4*d;var g=x.createRadialGradient(px,py,0,px,py,R);g.addColorStop(0,'rgba(255,200,170,'+p.o+')');g.addColorStop(1,'rgba(255,200,170,0)');x.fillStyle=g;x.beginPath();x.arc(px,py,R,0,7);x.fill()});requestAnimationFrame(f)})();
+  })();
+
+  /* count-up */
+  function countUp(el){var t=el.firstChild;if(!t||t.nodeType!==3||rm)return;var orig=t.textContent,raw=orig.trim(),dec=raw.indexOf(',')>-1,end=parseFloat(raw.replace(',','.'));if(isNaN(end))return;var st=null;function f(ts){if(!st)st=ts;var p=Math.min(1,(ts-st)/1500),v=end*(1-Math.pow(1-p,3));t.textContent=(dec?v.toFixed(1).replace('.',','):Math.round(v))+(/\s$/.test(orig)?' ':'');if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+  var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){cio.unobserve(e.target);countUp(e.target)}})},{threshold:.5});
+  document.querySelectorAll('.hero-bar b:not(.nc),.big-proof b').forEach(function(b){cio.observe(b)});
+
+  /* Ariana configurator */
+  var svg=document.getElementById('bedsvg'),st={size:'160',lift:'0',fab:'1'},cur=42900,raf,lt;
+  var priceEl=document.getElementById('price'),extra=document.getElementById('extra'),note=document.getElementById('pnote'),dim=document.getElementById('dim');
+  function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,' ')}
+  function animTo(n){cancelAnimationFrame(raf);if(rm){cur=n;priceEl.textContent=fmt(n);return}var from=cur,s=null;(function f(ts){if(!s)s=ts;var p=Math.min(1,(ts-s)/700),v=Math.round(from+(n-from)*(1-Math.pow(1-p,3)));priceEl.textContent=fmt(v);if(p<1)raf=requestAnimationFrame(f);else cur=n})(performance.now())}
+  function render(){
+    var p=42900+(st.lift==='1'?7000:0);animTo(p);
+    var tbd=[];if(st.size==='180')tbd.push('размер 180×200');if(st.fab==='2')tbd.push('ткань выше 1 категории');
+    extra.textContent=tbd.length?'+ доплата':'';
+    note.textContent=tbd.length?('Доплату за '+tbd.join(' и ')+' назовёт Иван: в прайсе её нет. Базовая цена — 160×200, ткань 1 категории.'):('Цена для 160×200 в ткани 1 категории'+(st.lift==='1'?', с подъёмным механизмом и ящиком для белья.':'.'));
+    svg.classList.toggle('w180',st.size==='180');dim.textContent=st.size+' × 200';
+    svg.classList.toggle('lift',st.lift==='1');
+  }
+  function liftDemo(){clearTimeout(lt);svg.classList.add('up');lt=setTimeout(function(){svg.classList.remove('up')},2200)}
+  document.querySelectorAll('.seg').forEach(function(g){g.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){st[g.dataset.k]=b.dataset.v;g.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});render();if(g.dataset.k==='lift'&&b.dataset.v==='1')liftDemo()})})});
+  document.querySelector('.cfg-stage').addEventListener('mouseenter',function(){if(st.lift==='1')liftDemo()});
+  svg.style.setProperty('--vel','#c99a8f');
+  document.querySelectorAll('#sw button').forEach(function(b){b.addEventListener('click',function(){svg.style.setProperty('--vel',b.dataset.c);document.querySelectorAll('#sw button').forEach(function(x){x.setAttribute('aria-pressed',x===b)})})});
+  document.getElementById('cfgbtn').addEventListener('click',function(){document.getElementById('what').value='Кровать «Ариана»';document.getElementById('mdl').value='«Ариана» '+st.size+'×200, '+(st.lift==='1'?'с подъёмным механизмом':'без механизма')+', ткань '+(st.fab==='1'?'1 категории':'выше 1 категории')});
+  document.querySelectorAll('[data-model]').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mdl').value=a.dataset.model;var w=document.getElementById('what');w.value=/Диван/.test(a.dataset.model)?'Диван':/Стул/.test(a.dataset.model)?'Стулья':'Другая кровать'})});
+  render();
+
+  /* card tilt */
+  if(!rm&&matchMedia('(hover:hover)').matches){document.querySelectorAll('.m').forEach(function(c){c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(900px) rotateY('+(x*7)+'deg) rotateX('+(-y*7)+'deg) translateY(-6px)'});c.addEventListener('mouseleave',function(){c.style.transform=''})})}
+
+  /* form */
+  var form=document.getElementById('form');
+  form.addEventListener('submit',function(){form.querySelector('.ok').classList.add('show')});
 })();
 </script>
 </body>
