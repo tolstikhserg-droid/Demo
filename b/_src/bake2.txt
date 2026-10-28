@@ -1,0 +1,75 @@
+# Bakes headline + badges onto a clean Higgsfield render. Runs in the Higgsfield sandbox.
+# usage: python3 bake.py <slug> <in.png> <out.jpg>
+import sys, json
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+import os
+FONT=os.environ.get('FONT','/usr/share/fonts/truetype/higgsfield/Montserrat-ExtraBold.ttf')
+W,H=2560,1440; S=2
+def hexrgb(h): h=h.lstrip('#'); return tuple(int(h[i:i+2],16) for i in (0,2,4))
+CFG={
+ 'muravyev':dict(lines=[('ПРОДАТЬ','w',1.0),('МОСКВУ','w',1.0),('РАДИ АНАПЫ?','box',0.78)],box=(54,70,640),acc='#ffc93c',badges=[dict(t='трёшка за 20 млн ₽',x=60,y=560,bg='#e61e28',size=44)]),
+ 'georgiev':dict(lines=[('ИГЛЫ,','w',0.9),('БАНКИ, ТРАВЫ','w',0.62),('ЧТО ЛЕЧИТ?','box',0.75)],box=(54,80,520),acc='#ffd23c',badges=[dict(t='Хайнань',x=60,y=560,bg='#e8322b',size=48)]),
+ 'kut':dict(lines=[('ЦЕНЫ','w',1.0),('КОРЕИ','y',1.0),('2026','w',0.8)],box=(50,70,560),acc='#ffd400',badges=[dict(t='БЕЗ НАКРУТОК',x=52,y=560,bg='#e61e28',size=50),dict(t='Скрученный пробег?',x=790,y=40,bg='#ffffff',fg='#111111',size=36,rot=3)]),
+ 'plotnikoff':dict(lines=[('ИЗБА','w',1.0),('154 м²','y',1.0),('ЧТО ВНУТРИ?','box',0.55)],box=(50,60,540),acc='#ffb43c',badges=[]),
+ 'homwood':dict(lines=[('ДОМ','w',0.8),('100 м²','w',1.0),('ЗА 4,9 МЛН','y',0.8),('СТОИТ ЛИ?','box',0.62)],box=(50,50,560),acc='#ffd23c',badges=[]),
+ 'dar':dict(lines=[('25 НЬЮТОНОВ','y',0.8),('СЛОМАЕТСЯ','w',0.9),('ИЛИ НЕТ?','box',0.9)],box=(40,70,600),acc='#ffe14a',badges=[]),
+ 'paradise':dict(lines=[('1+1','y',1.4),('ПОД ВНЖ','w',0.95),('Махмутлар','box',0.55)],box=(54,60,600),acc='#ffd23c',badges=[dict(t='до моря 1800 м',x=60,y=590,bg='#00a6b4',size=40)]),
+ 'pattaya':dict(lines=[('ПХУКЕТ','w',1.0),('В РАССРОЧКУ','y',0.72),('сдача 2026–2027','box',0.42)],box=(54,90,600),acc='#ffd23c',badges=[dict(t='2 спальни · 62 м²',x=60,y=580,bg='#e61e28',size=40)]),
+ 'lovkesh':dict(lines=[('CASINO','w',1.0),('ISLAND','w',1.0),('ROI 2026?','box',0.85)],box=(54,70,600),acc='#f2c14e',badges=[dict(t='75% occupancy',x=60,y=580,bg='#0c1f3f',size=40)]),
+ 'madetheory':dict(lines=[('EMBROIDERY','w',0.7),('vs','y',0.7),('DTF','w',1.5)],box=(54,60,560),acc='#ff8fb3',badges=[dict(t='Which pays more?',x=60,y=580,bg='#ffd400',fg='#111111',size=42)]),
+}
+def font(sz): return ImageFont.truetype(FONT,sz)
+def block(img,lines,x,y,mw,acc,base=150):
+    d=ImageDraw.Draw(img); cy=y
+    for text,style,sc in lines:
+        size=int(base*sc*S); f=font(size)
+        while f.getlength(text)>mw and size>60: size-=6; f=font(size)
+        tw=f.getlength(text); bb=f.getbbox(text)
+        if style=='box':
+            pad=int(size*0.14)
+            box=Image.new('RGBA',(int(tw+pad*2),int(bb[3]-bb[1]+pad*2)),acc+(255,)).rotate(-2,expand=True,resample=Image.BICUBIC)
+            sh=Image.new('RGBA',box.size,(0,0,0,0)); sh.putalpha(box.split()[3].point(lambda v:int(v*0.55)))
+            img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(10)),(int(x-pad+14),int(cy+bb[1]-pad+18)))
+            img.alpha_composite(box,(int(x-pad),int(cy+bb[1]-pad)))
+            d.text((x,cy),text,font=f,fill=(15,15,15))
+        else:
+            col=(255,255,255) if style=='w' else acc
+            sh=Image.new('RGBA',img.size,(0,0,0,0))
+            ImageDraw.Draw(sh).text((x+12,cy+16),text,font=f,fill=(0,0,0,210),stroke_width=int(size*0.07),stroke_fill=(0,0,0,210))
+            img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(12)))
+            d.text((x,cy),text,font=f,fill=col,stroke_width=max(8,int(size*0.055)),stroke_fill=(10,10,10))
+        cy+=(bb[3]-bb[1])+int(size*0.28)
+def badge(img,t,x,y,bg,fg,size,rot):
+    size*=S; f=font(size); tw=f.getlength(t); bb=f.getbbox(t)
+    pw,ph=int(tw+size*0.9),int(bb[3]-bb[1]+size*0.75)
+    b=Image.new('RGBA',(pw,ph),(0,0,0,0)); dd=ImageDraw.Draw(b)
+    dd.rounded_rectangle((0,0,pw-1,ph-1),radius=int(ph*0.25),fill=bg+(255,))
+    dd.text((size*0.45,(ph-(bb[3]-bb[1]))/2-bb[1]),t,font=f,fill=fg)
+    b=b.rotate(rot,expand=True,resample=Image.BICUBIC)
+    sh=Image.new('RGBA',b.size,(0,0,0,0)); sh.putalpha(b.split()[3].point(lambda v:int(v*0.5)))
+    img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(14)),(int(x+12),int(y+20)))
+    img.alpha_composite(b,(int(x),int(y)))
+def shade(img,strength=0.55,width=0.55):
+    xx=np.linspace(0,1,W)[None,:]; g=np.clip(1-xx/width,0,1)
+    g=(g**1.4*strength*255).astype(np.uint8).repeat(H,0)
+    lay=Image.new('RGBA',(W,H),(0,0,0,255)); lay.putalpha(Image.fromarray(g)); img.alpha_composite(lay)
+def person(img,path,hfrac=0.94,right=40):
+    p=Image.open(path).convert('RGBA'); s=H*hfrac/p.height; p=p.resize((round(p.width*s),round(p.height*s)),Image.LANCZOS)
+    if p.width>W*0.6: s2=W*0.6/p.width; p=p.resize((round(p.width*s2),round(p.height*s2)),Image.LANCZOS)
+    x=W-p.width-right*S; y=H-p.height
+    a=p.split()[3]
+    glow=a.filter(ImageFilter.MaxFilter(15)).filter(ImageFilter.GaussianBlur(6))
+    g=Image.new('RGBA',p.size,(255,255,255,0)); g.putalpha(glow.point(lambda v:int(v*0.9)))
+    sh=Image.new('RGBA',p.size,(0,0,0,0)); sh.putalpha(a.filter(ImageFilter.GaussianBlur(30)).point(lambda v:int(v*0.7)))
+    img.alpha_composite(sh,(x-30,y+10)); img.alpha_composite(g,(x,y)); img.alpha_composite(p,(x,y))
+slug,src,out=sys.argv[1:4]; c=CFG[slug]; cut=sys.argv[4] if len(sys.argv)>4 else None
+im=Image.open(src).convert('RGB')
+s=max(W/im.width,H/im.height); im=im.resize((round(im.width*s),round(im.height*s)),Image.LANCZOS)
+x0=(im.width-W)//2; y0=(im.height-H)//2; im=im.crop((x0,y0,x0+W,y0+H)).convert('RGBA')
+shade(im)
+if cut: person(im,cut)
+bx,by,bw=c['box']; block(im,c['lines'],bx*S,by*S,bw*S,hexrgb(c['acc']))
+for b in c['badges']: badge(im,b['t'],b['x']*S,b['y']*S,hexrgb(b.get('bg','#e61e28')),hexrgb(b.get('fg','#ffffff')),b.get('size',46),b.get('rot',-4))
+im=im.convert('RGB'); im.save(out,quality=90)
+im.resize((1280,720),Image.LANCZOS).save(out.replace('.jpg','-720.jpg'),quality=88)
