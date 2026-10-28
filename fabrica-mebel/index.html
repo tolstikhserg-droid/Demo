@@ -249,8 +249,8 @@ select.inp option{color:#111}
 
 /* lead */
 .lead{position:relative;overflow:hidden}
-.lead-bg{position:absolute;inset:0;background:url(img/room.jpg) 70% 50%/cover;opacity:.25}
-.lead::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--k) 30%,rgba(22,24,29,.72));z-index:1}
+.lead-bg{position:absolute;inset:-8% 0;background:url(img/brut-showroom.jpg) 75% 60%/cover;opacity:.55;animation:kb 24s ease-in-out infinite alternate}@keyframes kb{from{transform:scale(1)}to{transform:scale(1.08) translateX(-1.5%)}}
+.lead::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--k) 28%,rgba(22,24,29,.55) 70%,rgba(22,24,29,.35));z-index:1}
 .lead .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
 .lead h2{font-weight:800;font-size:clamp(36px,4.4vw,64px);margin:22px 0}
 .lead p.sub{color:rgba(255,255,255,.7);font-size:17px;max-width:460px}
