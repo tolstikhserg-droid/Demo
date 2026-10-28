@@ -139,22 +139,15 @@ section{padding:130px 0}
 .fl{position:relative;text-align:left;border-radius:22px;padding:24px 22px;background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.1);display:flex;flex-direction:column;gap:16px;min-height:190px;transition:transform .35s var(--ease),border-color .35s,background .35s,box-shadow .35s;overflow:hidden}
 .fl:hover{transform:translateY(-4px);border-color:rgba(125,214,255,.45)}
 .fl[aria-pressed="true"]{background:linear-gradient(160deg,rgba(125,214,255,.16),rgba(125,214,255,.04));border-color:var(--a);box-shadow:0 20px 50px -24px rgba(125,214,255,.55)}
-.fl svg{width:58px;height:58px;color:rgba(255,255,255,.7);transition:color .35s}
-.fl[aria-pressed="true"] svg{color:var(--a)}
+.fl .flph{position:relative;display:block;aspect-ratio:4/3;border-radius:14px;overflow:hidden;background:var(--g2);border:1.5px solid rgba(255,255,255,.1);transition:border-color .35s,box-shadow .35s}
+.fl .flph img{width:100%;height:100%;object-fit:cover;filter:saturate(.85) brightness(.82);transition:transform .8s var(--ease),filter .4s}
+.fl:hover .flph img,.fl[aria-pressed="true"] .flph img{transform:scale(1.07);filter:none}
+.fl:hover .flph,.fl[aria-pressed="true"] .flph{border-color:var(--a);box-shadow:0 0 0 3px rgba(125,214,255,.2),0 16px 34px -18px rgba(125,214,255,.6)}
+.fl:focus-visible{outline:2px solid var(--a);outline-offset:3px}
 .fl b{font-family:var(--h);font-weight:700;font-size:17px;line-height:1.25}
 .fl small{font-size:13px;color:rgba(255,255,255,.5)}
-.fl .n{position:absolute;right:18px;top:16px;font-family:var(--h);font-weight:800;font-size:12px;letter-spacing:.2em;color:rgba(255,255,255,.3)}
-.fl .spn{transform-box:fill-box;transform-origin:center}
-.fl[aria-pressed="true"] .spn,.fl:hover .spn{animation:spin 1.4s linear infinite}
-.fl .drp{animation:none;opacity:.4}
-.fl[aria-pressed="true"] .drp,.fl:hover .drp{animation:drop 1.3s ease-in infinite}
-.fl .drp.d2{animation-delay:.45s}
-@keyframes drop{0%{transform:translateY(-4px);opacity:0}30%{opacity:1}100%{transform:translateY(10px);opacity:0}}
-.fl[aria-pressed="true"] .shk,.fl:hover .shk{animation:shake .32s linear infinite}
-@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-1.6px) rotate(-1deg)}75%{transform:translateX(1.6px) rotate(1deg)}}
-.fl .wv{opacity:0}
-.fl[aria-pressed="true"] .wv,.fl:hover .wv{animation:wave 1s ease-out infinite}
-@keyframes wave{0%{opacity:0}40%{opacity:1}100%{opacity:0}}
+.fl .n{position:absolute;right:32px;top:34px;z-index:2;padding:5px 9px;border-radius:999px;background:rgba(10,20,28,.72);font-family:var(--h);font-weight:800;font-size:11px;letter-spacing:.2em;color:rgba(255,255,255,.8);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.fl[aria-pressed="true"] .n{background:var(--a);color:var(--k)}
 .panel{position:relative;border-radius:28px;padding:38px 36px;background:linear-gradient(160deg,#13283a,#0c1a25);border:1px solid rgba(125,214,255,.25);box-shadow:0 40px 90px -50px rgba(125,214,255,.4);overflow:hidden;display:flex;flex-direction:column}
 .panel::before{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(125,214,255,.25),transparent 70%);animation:breath 5s ease-in-out infinite}
 .pbody{position:relative;display:flex;flex-direction:column;flex:1;transition:opacity .3s,transform .3s var(--ease)}
@@ -233,23 +226,10 @@ section{padding:130px 0}
 .feats b{display:block;font-family:var(--h);font-weight:700;font-size:17px;margin-bottom:6px}
 .feats b::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--a);box-shadow:0 0 10px var(--a);margin-right:10px;vertical-align:2px}
 .feats span{font-size:14.5px;color:rgba(255,255,255,.62)}
-.case{position:relative;aspect-ratio:4/5;max-width:440px;width:100%;justify-self:center;border-radius:26px;background:linear-gradient(180deg,#1b3242,#0e1e2a);border:1px solid rgba(255,255,255,.12);padding:22px;box-shadow:0 50px 100px -40px rgba(125,214,255,.35)}
-.case .glassp{position:absolute;inset:22px 22px 70px;border-radius:14px;background:linear-gradient(180deg,rgba(232,248,255,.10),rgba(232,248,255,.03));border:1px solid rgba(232,248,255,.25);overflow:hidden}
-.case .lamp{position:absolute;left:8%;right:8%;top:0;height:4px;border-radius:0 0 4px 4px;background:var(--ice);box-shadow:0 0 30px 8px rgba(125,214,255,.6);opacity:.15;transition:opacity .2s}
-.case.on .lamp{animation:flick 1.2s steps(1) forwards}
-@keyframes flick{0%{opacity:.15}15%{opacity:1}25%{opacity:.3}35%{opacity:1}45%{opacity:.5}55%,100%{opacity:1}}
-.case .shelf{position:absolute;left:6%;right:6%;height:3px;background:rgba(232,248,255,.35)}
-.case .shelf:nth-of-type(2){top:34%}.case .shelf:nth-of-type(3){top:64%}.case .shelf:nth-of-type(4){top:94%}
-.case .items{position:absolute;left:9%;right:9%;display:flex;gap:6%;align-items:flex-end;height:22%}
-.case .items i{flex:1;border-radius:6px 6px 3px 3px;background:linear-gradient(180deg,rgba(255,255,255,.35),rgba(255,255,255,.1));transform:translateY(16px);opacity:0;transition:transform .8s var(--ease),opacity .8s}
-.case.on .items i{transform:none;opacity:1}
-.case .items:nth-of-type(5){top:11%}.case .items:nth-of-type(6){top:41%}.case .items:nth-of-type(7){top:71%}
-.case .items i:nth-child(1){height:70%}.case .items i:nth-child(2){height:95%;transition-delay:.1s}.case .items i:nth-child(3){height:60%;transition-delay:.2s}.case .items i:nth-child(4){height:85%;transition-delay:.3s}
-.case .fog{position:absolute;inset:0;background:linear-gradient(180deg,rgba(232,248,255,.55),rgba(232,248,255,.3));backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);transition:opacity 2.4s var(--ease) .6s}
-.case.on .fog{opacity:0}
-.case .base{position:absolute;left:22px;right:22px;bottom:20px;height:34px;border-radius:10px;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:space-between;padding:0 14px;font-family:var(--h);font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.5)}
-.case .base i{width:8px;height:8px;border-radius:50%;background:#f45;transition:background .4s 1.4s,box-shadow .4s 1.4s}
-.case.on .base i{background:#3ddc97;box-shadow:0 0 10px #3ddc97}
+.bizph{position:relative;margin:0;width:100%;max-width:620px;justify-self:center;aspect-ratio:4/3;border-radius:26px;overflow:hidden;border:1px solid rgba(255,255,255,.12);background:var(--g2);box-shadow:0 50px 100px -40px rgba(125,214,255,.35)}
+.bizph img{position:absolute;left:0;top:-30px;width:100%;height:calc(100% + 60px);max-width:none;object-fit:cover;scale:1.08;transition:scale 1.8s var(--ease);will-change:translate}
+.bizph.in img{scale:1}
+.bizph::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:linear-gradient(0deg,rgba(6,12,17,.35),rgba(6,12,17,0) 45%)}
 
 /* reviews */
 .proof{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:22px}
@@ -428,7 +408,8 @@ h2.in .w>span{transform:none}
   .sec-h{grid-template-columns:1fr;gap:18px;margin-bottom:40px}.sec-h p{justify-self:start}
   .faults{gap:10px}
   .fl{padding:18px 16px;min-height:0;gap:12px}
-  .fl svg{width:46px;height:46px}
+  .fl .flph{border-radius:12px}
+  .fl .n{right:26px;top:28px}
   .fl b{font-size:15px}
   .panel{padding:28px 22px}
   .pprice b{font-size:28px}
@@ -463,7 +444,7 @@ h2.in .w>span{transform:none}
   .rv,.hero-lead,.hero-cta,.hero-bar{opacity:1;transform:none}
   .hero h1 .ln span,.w>span{transform:none}
   .clock .rg{stroke-dashoffset:0}
-  .case .items i{transform:none;opacity:1}.case .fog{opacity:0}.case .lamp{opacity:1}
+  .bizph img{scale:1;translate:none!important}
   .btn-a::after{display:none}
   .prog{display:none}
 }
@@ -525,16 +506,16 @@ h2.in .w>span{transform:none}
     <div class="picker">
       <div class="faults rv" role="group" aria-label="Выберите поломку">
         <button class="fl" type="button" data-f="0" aria-pressed="true"><span class="n">01</span>
-          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="16" y="6" width="32" height="52" rx="5"/><path d="M16 24h32M22 13v6M22 30v8"/><g class="spn"><path d="M40 34v14M34 41h12M35.5 36.5l9 9M44.5 36.5l-9 9" stroke-width="2"/></g></svg>
+          <span class="flph"><img src="img/f1.jpg?v=1" alt="Холодильник не морозит: ремонт холодильника на дому в Волгограде" loading="lazy" width="800" height="600"></span>
           <b>Холодильник не морозит</b><small>внутри стало тепло</small></button>
         <button class="fl" type="button" data-f="1" aria-pressed="false"><span class="n">02</span>
-          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="16" y="4" width="32" height="46" rx="5"/><path d="M16 20h32M22 10v5M22 26v8"/><path class="drp" d="M28 52c0 2 1.5 3.5 3 3.5s3-1.5 3-3.5-3-6-3-6-3 4-3 6z"/><path class="drp d2" d="M38 54c0 1.6 1.2 2.8 2.4 2.8s2.4-1.2 2.4-2.8-2.4-4.8-2.4-4.8-2.4 3.2-2.4 4.8z"/></svg>
+          <span class="flph"><img src="img/f2.jpg?v=1" alt="Холодильник течёт и намерзает лёд: ремонт холодильника на дому" loading="lazy" width="800" height="600"></span>
           <b>Холодильник течёт</b><small>вода внизу или лёд на стенке</small></button>
         <button class="fl" type="button" data-f="2" aria-pressed="false"><span class="n">03</span>
-          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="10" y="6" width="44" height="52" rx="5"/><path d="M10 16h44M17 11h6"/><g class="spn"><circle cx="32" cy="37" r="13"/><path d="M32 26v6M41 41l-5-2M23 41l5-2" stroke-width="2"/></g></svg>
+          <span class="flph"><img src="img/f3.jpg?v=1" alt="Стиральная машина не отжимает и не сливает воду: ремонт на дому" loading="lazy" width="800" height="600"></span>
           <b>Стиралка не отжимает</b><small>бельё мокрое, вода не уходит</small></button>
         <button class="fl" type="button" data-f="3" aria-pressed="false"><span class="n">04</span>
-          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4"><g class="shk"><rect x="12" y="6" width="40" height="52" rx="5"/><path d="M12 16h40M19 11h6"/><circle cx="32" cy="37" r="12"/></g><path class="wv" d="M4 30q-3 7 0 14M60 30q3 7 0 14" stroke-width="2"/></svg>
+          <span class="flph"><img src="img/f4.jpg?v=1" alt="Стиральная машина шумит и стучит при отжиме: замена подшипников на дому" loading="lazy" width="800" height="600"></span>
           <b>Стиралка шумит</b><small>гул и стук при отжиме</small></button>
       </div>
       <div class="panel rv d1" aria-live="polite">
@@ -615,17 +596,7 @@ h2.in .w>span{transform:none}
       </div>
       <div class="rv d3"><a class="btn btn-a pl" href="#lead" data-pick="2">Вызвать мастера <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     </div>
-    <div class="case rv d1" id="case" aria-hidden="true">
-      <div class="glassp">
-        <div class="lamp"></div>
-        <div class="shelf"></div><div class="shelf"></div><div class="shelf"></div>
-        <div class="items"><i></i><i></i><i></i><i></i></div>
-        <div class="items"><i></i><i></i><i></i><i></i></div>
-        <div class="items"><i></i><i></i><i></i><i></i></div>
-        <div class="fog"></div>
-      </div>
-      <div class="base"><span>Витрина</span><i></i></div>
-    </div>
+    <figure class="bizph rv d1" id="bizph"><img src="img/case.jpg?v=1" alt="Холодильная витрина в продуктовом магазине: ремонт торгового холодильного оборудования в Волгограде" loading="lazy" width="1275" height="952"></figure>
   </div>
 </section>
 
@@ -743,11 +714,12 @@ h2.in .w>span{transform:none}
 <script>
 (function(){
   var rm=matchMedia('(prefers-reduced-motion: reduce)').matches,hov=matchMedia('(hover:hover)').matches;
-  var nav=document.getElementById('nav'),demo=document.getElementById('demo'),prog=document.getElementById('prog'),mbg=document.getElementById('moodbg');
+  var nav=document.getElementById('nav'),demo=document.getElementById('demo'),prog=document.getElementById('prog'),mbg=document.getElementById('moodbg'),bph=document.getElementById('bizph'),bimg=bph&&bph.querySelector('img');
   function setDh(){document.documentElement.style.setProperty('--dh',demo.offsetHeight+'px')}
   setDh();addEventListener('resize',setDh);
   function onS(){var y=scrollY;nav.classList.toggle('solid',y>demo.offsetHeight);var h=document.documentElement.scrollHeight-innerHeight;prog.style.transform='scaleX('+(h>0?y/h:0)+')';
-    if(mbg&&!rm){var r=mbg.parentNode.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight)mbg.style.transform='translateY('+(r.top*-0.12)+'px)'}}
+    if(mbg&&!rm){var r=mbg.parentNode.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight)mbg.style.transform='translateY('+(r.top*-0.12)+'px)'}
+    if(bimg&&!rm){var q=bph.getBoundingClientRect();if(q.bottom>0&&q.top<innerHeight){var k=(q.top+q.height/2-innerHeight/2)/(innerHeight/2+q.height/2);k=Math.max(-1,Math.min(1,k));bimg.style.translate='0 '+(k*24).toFixed(1)+'px'}}}
   addEventListener('scroll',onS,{passive:true});onS();
 
   // kinetic h2
@@ -791,10 +763,6 @@ h2.in .w>span{transform:none}
   // clock counter
   var gl=document.getElementById('glass'),mins=document.getElementById('mins');
   new IntersectionObserver(function(es,o){if(!es[0].isIntersecting)return;o.disconnect();if(rm)return;var st=null;mins.textContent='0';requestAnimationFrame(function f(ts){if(!st)st=ts;var p=Math.min(1,(ts-st)/2200);mins.textContent=Math.round(60*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})},{threshold:.4}).observe(gl);
-
-  // display case wakes up
-  var cs=document.getElementById('case');
-  new IntersectionObserver(function(es,o){if(!es[0].isIntersecting)return;o.disconnect();setTimeout(function(){cs.classList.add('on')},rm?0:500)},{threshold:.4}).observe(cs);
 
   // count-up
   var pio=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;pio.unobserve(e.target);var t=e.target.firstChild;if(!t||t.nodeType!==3||rm)return;var orig=t.textContent,raw=orig.trim();if(!/^\d+(,\d+)?$/.test(raw))return;var dec=raw.indexOf(',')>-1,end=parseFloat(raw.replace(',','.'));if(isNaN(end))return;var st=null;requestAnimationFrame(function f(ts){if(!st)st=ts;var p=Math.min(1,(ts-st)/1600),v=end*(1-Math.pow(1-p,3));t.textContent=(dec?v.toFixed(1).replace('.',','):Math.round(v))+(/\s$/.test(orig)?' ':'');if(p<1)requestAnimationFrame(f)})})},{threshold:.5});
