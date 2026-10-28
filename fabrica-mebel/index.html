@@ -373,7 +373,7 @@ footer{background:var(--k);color:rgba(255,255,255,.6);padding:80px 0 120px;font-
 
 <main id="top">
 <section class="hero">
-  <div class="hero-bg"><img src="img/room.jpg" alt="Графитовая гостиная с серым диваном и горчичными подушками"><video id="hv" muted loop playsinline autoplay preload="auto" poster="img/room.jpg"><source src="https://d8j0ntlcm91z4.cloudfront.net/user_3IxpHVEWJ4RJpwDORiGu1IS5EvU/hf_20261028_065140_343881c8-b03c-4d17-8c40-f05165a70e20.mp4" type="video/mp4"></video></div>
+  <div class="hero-bg"><img src="img/room.jpg" alt="Графитовая гостиная с серым диваном и горчичными подушками"><video id="hv" muted playsinline webkit-playsinline autoplay preload="auto" poster="img/room.jpg"><source src="https://d8j0ntlcm91z4.cloudfront.net/user_3IxpHVEWJ4RJpwDORiGu1IS5EvU/hf_20261028_070035_8528665c-a351-48b7-84ec-9ccb6e0f7adb.mp4" type="video/mp4"></video></div>
   <div class="wrap">
     <div class="hero-kicker"><span class="stars">★★★★★</span>5,0 в 2ГИС · 141 оценка в Волгограде</div>
     <h1><span class="ln"><span>Диван,</span></span><span class="ln"><span>с которого</span></span><span class="ln"><span>не <em>хочется</em> вставать</span></span></h1>
@@ -620,7 +620,7 @@ footer{background:var(--k);color:rgba(255,255,255,.6);padding:80px 0 120px;font-
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
   document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
   var v=document.getElementById('hv'),hi=document.querySelector('.hero-bg img');
-  if(v){v.muted=true;v.addEventListener('playing',function(){v.classList.add('on')});var pp=v.play&&v.play();if(pp&&pp.catch)pp.catch(function(){});
+  if(v){v.muted=true;v.addEventListener('playing',function(){v.classList.add('on')});function go(){var pp=v.play&&v.play();if(pp&&pp.catch)pp.catch(function(){})}go();['touchstart','scroll','click'].forEach(function(e){addEventListener(e,function h(){if(!v.classList.contains('on'))go();removeEventListener(e,h)},{passive:true})});
     setTimeout(function(){if(!v.classList.contains('on')&&hi){hi.style.animation='none';hi.offsetWidth;hi.classList.add('kb2')}},2500)}
   (function(){var c=document.getElementById('fx');if(!c||matchMedia('(prefers-reduced-motion: reduce)').matches)return;var x=c.getContext('2d'),P=[],W,H,d=Math.min(2,window.devicePixelRatio||1);
     function rs(){W=c.width=c.offsetWidth*d;H=c.height=c.offsetHeight*d}rs();addEventListener('resize',rs);
